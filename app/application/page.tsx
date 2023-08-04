@@ -4,7 +4,11 @@ import Link from 'next/link'
 export default function Application() {
   return (
     <>
-      <div>Application</div>
+      <header className='application-header'>
+        <div className="site-wrapper">
+
+        </div>
+      </header>
     </>
   )
 }

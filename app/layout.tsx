@@ -1,5 +1,6 @@
-import './globals.css'
+import './globals.scss'
 import type { Metadata } from 'next'
+import Navbar from './components/common/Navbar'
 
 export const metadata: Metadata = {
   title: 'Builtflat - Digital Agency, New Zealand',
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="_next">{children}</body>
+      <body className="_next">
+        {children}
+        </body>
     </html>
   )
 }

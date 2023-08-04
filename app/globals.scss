@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-background-color: #020214;
+  --primary-color: #7A4AFF;
+  --button-dark-bg: #1c1d2d;
+}
+
+@media (prefers-color-scheme: dark) {
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.site-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+
+.home-page {
+  height: 100vh;
+  background-color: var(--dark-background-color);
+  position: relative;
+  background-image: url('../public/home/header-bg-grid.svg');
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(150deg,#7a4aff,#270093);
+    z-index: 1;
+    top: -5%;
+    height: 80px;
+    filter: blur(100px) opacity(.3);
+  }
+}
+
+.purple-gradient {
+  background: #c294f8;
+  background: linear-gradient(150deg,#94bbf8,#7a4aff 80%);
+    background-clip: border-box;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c294f8",endColorstr="#7a4aff",GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.spaced-m {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.spaced-p {
+  padding: 3rem 0rem;
+}
+
+.background-purple {
+  background: var(--primary-color);
+}
+
+.background-dark {
+  background: var(--button-dark-bg);
+}
+
+.button-behaviour {
+  transition:.2s ease
+ }
+ .button-behaviour:hover {
+  transform:translateY(-2px)
+}
