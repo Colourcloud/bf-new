@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'custom.scss';
+
 :root {
   --dark-background-color: #020214;
   --primary-color: #7A4AFF;
@@ -34,17 +36,7 @@ body {
   position: relative;
   background-image: url('../public/home/header-bg-grid.svg');
   background-repeat: no-repeat;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border-radius: 50%;
-    background: linear-gradient(150deg,#7a4aff,#270093);
-    z-index: 1;
-    top: -5%;
-    height: 80px;
-    filter: blur(100px) opacity(.3);
-  }
+  overflow-y: hidden;
 }
 
 .purple-gradient {
@@ -87,3 +79,24 @@ body {
 .background-dark:hover {
   background: #2B2D3E!important;
 }
+
+.home-page:after,
+.home-page:before {
+ content:"";
+ position:absolute;
+ width:100%;
+ border-radius:50%;
+ background:linear-gradient(150deg,#7a4aff,#270093);
+ z-index:1
+}
+.home-page:after {
+ bottom:-10%;
+ height:700px;
+ filter:blur(100px) opacity(.2)
+}
+
+.home-page:before {
+  top:-5%;
+  height:80px;
+  filter:blur(100px) opacity(.3)
+ }

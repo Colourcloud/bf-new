@@ -23,7 +23,7 @@ export default function Home() {
               </div>
             </div>
         </div>
-
+        <div className="site-wrapper">
         <div className="header-images flex flex-row justify-center relative">
               <Image
                   src={headerImage2}
@@ -47,7 +47,7 @@ export default function Home() {
                   className='absolute z-10 rounded-md header-image'
                 />
               </div>
-
+        </div>
       </header>
     </>
   )
