@@ -91,8 +91,11 @@ body {
 }
 .home-page:after {
  bottom:-10%;
- height:700px;
- filter:blur(100px) opacity(.2)
+ height:400px;
+ filter:blur(100px) opacity(.2);
+  @media screen and (min-width: $tablet-screen) {
+    height:700px;
+  }
 }
 
 .home-page:before {

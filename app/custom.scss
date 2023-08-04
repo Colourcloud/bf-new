@@ -1,20 +1,36 @@
 //HOME PAGE
+$small-screen: 320px;
+$medium-screen: 540px;
+$tablet-screen: 768px;
+$small-desktop-screen: 940px;
+$desktop-screen: 1224px;
+$large-desktop-screen: 1340px;
+$x-large-desktop-screen: 2560px;
 
 .header-images {
     img{
         &:nth-of-type(1) {
-            width: 65%;
+            width: 90%;
             bottom: 0;
+            @media screen and (min-width: $tablet-screen) {
+                width: 65%;
+            }
         }
         &:nth-of-type(2) {
             right: 50%;
-            width: 55%;
+            width: 70%;
             bottom: 0;
+            @media screen and (min-width: $tablet-screen) {
+                width: 55%;
+            }
         }
         &:nth-of-type(3) {
             left: 50%;
-            width: 55%;
+            width: 70%;
             bottom: 0;
+            @media screen and (min-width: $tablet-screen) {
+                width: 55%;
+            }
         }
     }
 }
