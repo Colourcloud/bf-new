@@ -4,16 +4,16 @@ import Link from 'next/link';
 interface CustomButtonProps {
   backgroundColor: string;
   textColor: string;
-  hoverColor: string;
-  href: string; // Add the href prop
+  href: string;
+  className?: string; // Accept an optional className prop
   children: React.ReactNode;
 }
 
 const Button: React.FC<CustomButtonProps> = ({
   backgroundColor,
   textColor,
-  hoverColor,
-  href, // Destructure the href prop
+  href,
+  className, // Destructure the className prop
   children,
 }) => {
   const buttonStyles: React.CSSProperties = {
@@ -24,18 +24,16 @@ const Button: React.FC<CustomButtonProps> = ({
     color: textColor,
   };
 
-  const hoverStyles: React.CSSProperties = {
-    color: `var(${hoverColor})`,
-  };
-
   return (
     <Link href={href}>
-        <div
-          className="px-7 py-3 text-sm rounded-md button-behaviour"
-          style={buttonStyles}
-        >
-          <span style={hoverStyles}>{children}</span>
-        </div>
+      <div
+        className={`px-7 py-3 text-sm rounded-md button-behaviour ${
+          className || ''
+        }`}
+        style={buttonStyles}
+      >
+        <span>{children}</span>
+      </div>
     </Link>
   );
 };

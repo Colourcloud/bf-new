@@ -30,7 +30,6 @@ body {
 }
 
 .home-page {
-  height: 100vh;
   background-color: var(--dark-background-color);
   position: relative;
   background-image: url('../public/home/header-bg-grid.svg');
@@ -79,4 +78,12 @@ body {
  }
  .button-behaviour:hover {
   transform:translateY(-2px)
+}
+
+.background-purple:hover {
+  background-color: #8B62FC!important;
+}
+
+.background-dark:hover {
+  background: #2B2D3E!important;
 }
