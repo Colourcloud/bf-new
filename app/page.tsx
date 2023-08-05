@@ -16,13 +16,12 @@ export default function Home() {
         <div className="bg-gradient-purple relative">
         <Clients></Clients>
           <div className="site-wrapper">
-            <section className="builtflat-section spaced-p spaced-m flex flex-col lg:flex-row gap-9 items-center">
+            <section className="builtflat-section spaced-p spaced-m flex flex-col md:flex-row gap-9 items-center">
               <div className="section-text flex flex-col gap-9">
                 <h2 className='text-4xl md:text-5xl font-bold'>We help businesses thrive through effective digital design</h2>
                 <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
                 <div className="section-buttons flex flex-row gap-4">
                   <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Free Consoltation</Button>
-                  <Button backgroundColor="" textColor="black"  className="font-medium" href="/">Discover our services</Button>
                 </div>
               </div>
               <div className="section-graphic">
