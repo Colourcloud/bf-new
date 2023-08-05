@@ -21,13 +21,14 @@ export default function Home() {
                 <h2 className='text-4xl md:text-5xl font-bold'>We help businesses thrive through effective digital design</h2>
                 <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
                 <div className="section-buttons flex flex-row gap-4">
-                  <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Free Consoltation</Button>
+                  <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Get started today</Button>
                 </div>
               </div>
               <div className="section-graphic">
-                <Image src="/home/header-image-1.jpg" alt="header-graphic" width="3000" height="500" className='shadow-[0px_3px_24px_rgba(0,0,0,0.04)] rounded-lg'></Image>
+                <Image src="/home/test.jpg" alt="header-graphic" width="3000" height="500"></Image>
               </div>
             </section>
+            <section className="builtflat-section spaced-p spaced-m">Hey</section>
           </div>
         </div>
       </main>
