@@ -34,3 +34,24 @@ $x-large-desktop-screen: 2560px;
         }
     }
 }
+
+.brand-container {
+    img {
+        width: auto;
+        height: 36px;
+    }
+}
+
+.bg-gradient-purple {
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 1000px;
+        border-radius: 500px;
+        filter: blur(50px);
+        background: linear-gradient(#fcfcfd 0%, rgba(243, 232, 255, 0.5) 36.95%, rgba(238, 233, 255, 0.5) 64.53%, #fcfcfd 100%);
+
+    }
+}

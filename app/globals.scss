@@ -4,6 +4,14 @@
 
 @import 'custom.scss';
 
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../public/SF-Pro.ttf') format('ttf');
+  /* Add more formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --dark-background-color: #020214;
   --primary-color: #7A4AFF;
@@ -23,6 +31,11 @@
 body {
   font-size: 16px;
   scroll-behavior: smooth;
+  background-color: #FCFCFC;
+  color: #0D0C22;
+  background-image: url('../public/bg-grid.svg');
+  background-repeat: repeat-y;
+  font-family: 'SF Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 .site-wrapper {
@@ -49,12 +62,19 @@ body {
 }
 
 .spaced-m {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media screen and (min-width: $tablet-screen) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .spaced-p {
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
+  @media screen and (min-width: $tablet-screen) {
+    padding: 3rem 0rem;
+  }
 }
 
 .background-purple {
@@ -63,6 +83,9 @@ body {
 
 .background-dark {
   background: var(--button-dark-bg);
+}
+.background-none {
+  background: none;
 }
 
 .button-behaviour {
