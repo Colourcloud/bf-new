@@ -17,7 +17,7 @@ export default function Home() {
         <Clients></Clients>
           <div className="site-wrapper">
             <section className="builtflat-section spaced-p spaced-m flex flex-col md:flex-row gap-9 items-center">
-              <div className="section-text flex flex-col gap-9">
+              <div className="section-text flex flex-col gap-8">
                 <h2 className='text-4xl md:text-5xl font-bold'>We help businesses thrive through effective digital design</h2>
                 <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
                 <div className="section-buttons flex flex-row gap-4">
@@ -29,9 +29,9 @@ export default function Home() {
               </div>
             </section>
             <section className="builtflat-section spaced-p spaced-m">
-              <div className="section-text w-full lg:w-3/5 flex flex-col gap-9">
+              <div className="section-text w-full lg:w-3/5 flex flex-col gap-8">
                 <span className='text-[#7A4AFF] font-bold'>Services</span>
-                <h2 className='text-4xl md:text-5xl font-bold'>Our experience covers a wide range of digital services to help your brand.</h2>
+                <h2 className='text-3xl md:text-4xl font-bold'>Our experience covers a wide range of digital services to help your brand.</h2>
                 <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
               </div>
             </section>
