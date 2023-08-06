@@ -68,14 +68,18 @@ $x-large-desktop-screen: 2560px;
         grid-template-columns: repeat(5,minmax(200px,1fr));
     }
     
-    div  {
+    .service-card  {
         background-color: white;
-        height: 500px;
         border-radius: 10px;
+        p {
+            font-weight: 200;
+        }
         &:nth-of-type(1) {
             //grid-column: auto / span 3;
             grid-column: auto / span 2;
             background-color: #7A4AFF;
+            background: linear-gradient(140deg, #7a4aff 0%, #b02bf6 100%);
+
             @media screen and (min-width: $small-desktop-screen) {
                 grid-column: auto / span 3;
             }
@@ -83,17 +87,43 @@ $x-large-desktop-screen: 2560px;
         &:nth-of-type(2) {
             grid-column: auto / span 2;
             background-color: #020214;
+            background: linear-gradient(-120deg, #020214 0%, #30056c 100%);
+
         }
         &:nth-of-type(3) {
             grid-column: auto / span 2;
             background-color: #020214;
+            background: linear-gradient(60deg, #020214 0%, #30056c 100%);
         }
         &:nth-of-type(4) {
             grid-column: auto / span 2;
             background-color: #7A4AFF;
+            background: linear-gradient(-80deg, #7a4aff 0%, #b02bf6 100%);
             @media screen and (min-width: $small-desktop-screen) {
                 grid-column: auto / span 3;
             }
         }
+    }
+}
+
+.service-card {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        img {
+            scale: 1.04;
+        }
+    }
+}
+
+.service-card-image img {
+    position: absolute;
+    transition: 200ms ease;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    &:nth-of-type(2) {
+        left: 80%;
     }
 }

@@ -34,11 +34,35 @@ export default function Home() {
                 <h2 className='text-3xl md:text-4xl font-bold'>Our experience covers a wide range of digital services to help your brand.</h2>
                 <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
               </div>
-              <div className="service-grid">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+              <div className="service-grid spaced-p">
+                <div className="service-card p-10">
+                  <div className="service-card-text flex flex-col gap-4">
+                    <h4 className="text-white text-2xl font-bold">Application Development</h4>
+                    <p className='text-white w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
+                  </div>
+                </div>
+                <div className="service-card p-10">
+                  <div className="service-card-text flex flex-col gap-4">
+                    <h4 className="text-white text-2xl font-bold">UI / UX Design</h4>
+                    <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
+                  </div>
+                  <div className="service-card-image">
+                    <Image src="/home/image.png" alt="yes" width="250" height="600"></Image>
+                    <Image src="/home/chat-app.png" alt="yes" width="250" height="600"></Image>
+                  </div>
+                </div>
+                <div className="service-card p-10">
+                  <div className="service-card-text flex flex-col gap-4">
+                    <h4 className="text-white text-2xl font-bold">Mobile Development</h4>
+                    <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
+                  </div>
+                </div>
+                <div className="service-card p-10">
+                  <div className="service-card-text flex flex-col gap-4">
+                    <h4 className="text-white text-2xl font-bold">Template Driven Design</h4>
+                    <p className='text-white w-3/4'>Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.</p>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
