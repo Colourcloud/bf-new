@@ -25,7 +25,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="section-graphic">
-                <Image src="/home/test.jpg" alt="header-graphic" width="3000" height="500"></Image>
+                <Image src="/home/test.jpg" alt="header-graphic" width="12000" height="500"></Image>
               </div>
             </section>
             <section className="builtflat-section spaced-p spaced-m flex flex-col gap-8">
@@ -38,7 +38,7 @@ export default function Home() {
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
                     <h4 className="text-white text-2xl font-bold">Application Development</h4>
-                    <p className='text-white w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
+                    <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
                   </div>
                 </div>
                 <div className="service-card p-10">
@@ -47,7 +47,7 @@ export default function Home() {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                    <Image src="/home/ui-ux-image.png" alt="yes" width="700" height="800"></Image>
+                    <Image src="/home/ui-ux-image.png" alt="yes" width="2700" height="2000"></Image>
                   </div>
                 </div>
                 <div className="service-card p-10">
@@ -59,7 +59,7 @@ export default function Home() {
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
                     <h4 className="text-white text-2xl font-bold">Template Driven Design</h4>
-                    <p className='text-white w-3/4'>Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.</p>
+                    <p className='text-white w-full md:w-3/4'>Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.</p>
                   </div>
                 </div>
               </div>

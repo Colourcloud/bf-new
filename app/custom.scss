@@ -122,6 +122,7 @@ $x-large-desktop-screen: 2560px;
     transition: 200ms ease;
     bottom: 0;
     width: 500px;
+    max-width: 500px;
     @media screen and (min-width: $tablet-screen) {
         width: 550px;
     }
