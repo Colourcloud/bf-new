@@ -47,7 +47,7 @@ export default function Home() {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                    <Image src="/home/ui-ux-image.png" alt="yes" width="2700" height="2000"></Image>
+                    <Image src="/home/ui-ux-image.png" alt="yes" width="500" height="600"></Image>
                   </div>
                 </div>
                 <div className="service-card p-10">
