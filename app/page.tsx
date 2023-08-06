@@ -25,7 +25,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="section-graphic">
-                <Image src="/home/test.jpg" alt="header-graphic" width="12000" height="500"></Image>
+                <Image src="/home/test.jpg" alt="header-graphic" width="2700" height="500"></Image>
               </div>
             </section>
             <section className="builtflat-section spaced-p spaced-m flex flex-col gap-8">
