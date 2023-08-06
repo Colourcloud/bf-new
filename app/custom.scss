@@ -59,8 +59,8 @@ $x-large-desktop-screen: 2560px;
 .service-grid {
     display: grid;
     grid-auto-rows: minmax(0,1fr);
-    grid-template-columns: repeat(2,minmax(200px,1fr));
-    grid-template-rows: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(1,minmax(200px,1fr));
+    grid-template-rows: repeat(1,minmax(0,1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     width: 100%;
