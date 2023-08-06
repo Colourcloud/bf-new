@@ -55,3 +55,45 @@ $x-large-desktop-screen: 2560px;
 
     }
 }
+
+.service-grid {
+    display: grid;
+    grid-auto-rows: minmax(0,1fr);
+    grid-template-columns: repeat(2,minmax(200px,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    @media screen and (min-width: $small-desktop-screen) {
+        grid-template-columns: repeat(5,minmax(200px,1fr));
+    }
+    
+    div  {
+        background-color: white;
+        height: 500px;
+        border-radius: 10px;
+        &:nth-of-type(1) {
+            //grid-column: auto / span 3;
+            grid-column: auto / span 2;
+            background-color: #7A4AFF;
+            @media screen and (min-width: $small-desktop-screen) {
+                grid-column: auto / span 3;
+            }
+        }
+        &:nth-of-type(2) {
+            grid-column: auto / span 2;
+            background-color: #020214;
+        }
+        &:nth-of-type(3) {
+            grid-column: auto / span 2;
+            background-color: #020214;
+        }
+        &:nth-of-type(4) {
+            grid-column: auto / span 2;
+            background-color: #7A4AFF;
+            @media screen and (min-width: $small-desktop-screen) {
+                grid-column: auto / span 3;
+            }
+        }
+    }
+}
