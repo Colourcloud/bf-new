@@ -155,3 +155,14 @@ $x-large-desktop-screen: 2560px;
         width: 800px;
     }
 }
+
+.template-graphic {
+    max-width: 550px;
+    position: relative!important;
+    @media screen and (min-width: $medium-screen) {
+        max-width: 800px;
+    }
+    @media screen and (min-width: $desktop-screen) {
+        max-width: 1200px;
+    }
+}

@@ -38,13 +38,16 @@ const Services = () => {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                    <Image src="/home/mobile-dev.png" alt="yes" className='w-full bottom-0 right-0 relative' width="500" height="600"></Image>
+                    <Image src="/home/mobile-dev.png" alt="yes" className='w-full bottom-0 right-0 relative' width="800" height="600"></Image>
                   </div>
                 </div>
-                <div className="service-card p-10">
-                  <div className="service-card-text flex flex-col gap-4">
+                <div className="service-card service-card flex flex-col justify-between">
+                  <div className="service-card-text flex flex-col gap-4 px-10 pt-10">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Template Driven Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
                     <p className='text-white w-full md:w-3/4'>Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.</p>
+                  </div>
+                  <div className="service-card-image flex justify-center">
+                    <Image src="/home/template-graphic.png" alt="yes" className='md:w-[100%] bottom-0 right-0 template-graphic' width="2000" height="600"></Image>
                   </div>
                 </div>
               </div>
