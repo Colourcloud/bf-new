@@ -133,9 +133,17 @@ $x-large-desktop-screen: 2560px;
 
 .application-development-graphic {
     max-width: 1200px;
-    width: 700px;
+    width: 160%;
     right: -58%;
     @media screen and (min-width: $medium-screen) {
+        right: -25%;
+        width: 800px;
+    }
+    @media screen and (min-width: $tablet-screen) {
+        right: -20%;
+        width: 800px;
+    }
+    @media screen and (min-width: $desktop-screen) {
         right: -5%;
         width: 800px;
     }
