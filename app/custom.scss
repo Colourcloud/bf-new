@@ -110,9 +110,16 @@ $x-large-desktop-screen: 2560px;
     height: 500px;
     position: relative;
     overflow: hidden;
+    span {
+        transition: 200ms ease;
+    }
     &:hover {
         img {
             scale: 1.02;
+        }
+        span {
+            opacity: 1;
+            transform: translateX(5px)
         }
     }
 }

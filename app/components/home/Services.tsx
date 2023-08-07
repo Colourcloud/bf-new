@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
+import { MdArrowCircleRight } from "react-icons/md";
 
 const Services = () => {
 
@@ -15,7 +16,7 @@ const Services = () => {
               <div className="service-grid spaced-p">
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
-                    <h4 className="text-white text-2xl md:text-3xl font-bold">Application Development</h4>
+                    <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Application Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
                     <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
                   </div>
                   <div className="service-card-image">
@@ -24,7 +25,7 @@ const Services = () => {
                 </div>
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
-                    <h4 className="text-white text-2xl md:text-3xl font-bold">UI / UX Design</h4>
+                    <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">UI / UX Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
@@ -33,7 +34,7 @@ const Services = () => {
                 </div>
                 <div className="service-card flex flex-col justify-between">
                   <div className="service-card-text flex flex-col gap-4 px-10 pt-10">
-                    <h4 className="text-white text-2xl md:text-3xl font-bold">Mobile Development</h4>
+                    <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Mobile Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
@@ -42,7 +43,7 @@ const Services = () => {
                 </div>
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
-                    <h4 className="text-white text-2xl md:text-3xl font-bold">Template Driven Design</h4>
+                    <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Template Driven Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
                     <p className='text-white w-full md:w-3/4'>Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.</p>
                   </div>
                 </div>
