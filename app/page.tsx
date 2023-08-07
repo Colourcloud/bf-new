@@ -40,6 +40,9 @@ export default function Home() {
                     <h4 className="text-white text-2xl font-bold">Application Development</h4>
                     <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
                   </div>
+                  <div className="service-card-image">
+                    <Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-t-xl bottom-0 application-development-graphic'></Image>
+                  </div>
                 </div>
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
@@ -47,7 +50,7 @@ export default function Home() {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                    <Image src="/home/ui-ux-image.png" alt="yes" width="500" height="600"></Image>
+                    <Image src="/home/ui-ux-image.png" alt="yes" className='ui-ux-graphic' width="500" height="600"></Image>
                   </div>
                 </div>
                 <div className="service-card p-10">

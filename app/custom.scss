@@ -112,12 +112,15 @@ $x-large-desktop-screen: 2560px;
     overflow: hidden;
     &:hover {
         img {
-            scale: 1.04;
+            scale: 1.02;
         }
     }
 }
-
 .service-card-image img {
+    position: absolute;
+    transition: 200ms ease;
+}
+.service-card-image .ui-ux-graphic {
     position: absolute;
     transition: 200ms ease;
     bottom: 0;
@@ -126,8 +129,14 @@ $x-large-desktop-screen: 2560px;
     @media screen and (min-width: $tablet-screen) {
         width: 550px;
     }
-   
-    &:nth-of-type(2) {
+}
 
+.application-development-graphic {
+    max-width: 1200px;
+    width: 700px;
+    right: -58%;
+    @media screen and (min-width: $medium-screen) {
+        right: -5%;
+        width: 800px;
     }
 }
