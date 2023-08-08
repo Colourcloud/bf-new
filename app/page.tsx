@@ -11,7 +11,7 @@ import Collaboration from './components/home/Collaboration'
 export default function Home() {
   return (
     <>
-        <Header></Header>
+          <Header></Header>
           <Clients></Clients>
           <HomeIntroduction></HomeIntroduction>
           <Services></Services>
