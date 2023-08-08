@@ -190,7 +190,7 @@ $x-large-desktop-screen: 2560px;
 }
 .avatar-icon {
     width: 55px;
-    transform: scale(0);
+    transform: scale(0.3);
     opacity: 0;
     visibility: hidden;
     will-change: transform, opacity;
