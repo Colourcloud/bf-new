@@ -14,15 +14,20 @@ const Services = () => {
                 <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
               </div>
               <div className="service-grid spaced-p">
-                <div className="service-card p-10">
-                  <div className="service-card-text flex flex-col gap-4">
-                    <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Application Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
-                    <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
+
+                <Link href='/application' className='service-card-link'>
+                  <div className="service-card p-10">
+                    <div className="service-card-text flex flex-col gap-4">
+                      <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Application Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
+                      <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
+                    </div>
+                    <div className="service-card-image">
+                      <Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-t-xl bottom-0 application-development-graphic'></Image>
+                    </div>
                   </div>
-                  <div className="service-card-image">
-                    <Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-t-xl bottom-0 application-development-graphic'></Image>
-                  </div>
-                </div>
+                </Link>
+
+                <Link href='/application' className='service-card-link'>
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">UI / UX Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
@@ -32,6 +37,9 @@ const Services = () => {
                     <Image src="/home/ui-ux-image.png" alt="yes" className='ui-ux-graphic' width="500" height="600"></Image>
                   </div>
                 </div>
+                </Link>
+
+                <Link href='/application' className='service-card-link'>
                 <div className="service-card flex flex-col justify-between">
                   <div className="service-card-text flex flex-col gap-4 px-10 pt-10">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Mobile Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
@@ -41,6 +49,9 @@ const Services = () => {
                     <Image src="/home/mobile-dev.png" alt="yes" className='w-full bottom-0 right-0 relative' width="800" height="600"></Image>
                   </div>
                 </div>
+                </Link>
+
+                <Link href='/application' className='service-card-link'>
                 <div className="service-card service-card flex flex-col justify-between">
                   <div className="service-card-text flex flex-col gap-4 px-10 pt-10">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Template Driven Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
@@ -50,6 +61,8 @@ const Services = () => {
                     <Image src="/home/template-graphic.png" alt="yes" className='md:w-[100%] bottom-0 right-0 template-graphic' width="2000" height="600"></Image>
                   </div>
                 </div>
+                </Link>
+                
               </div>
             </section>
     );
