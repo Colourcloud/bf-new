@@ -30,21 +30,21 @@ const Header = () => {
                   alt="An example image"
                   width={800}
                   height={600}
-                  className='relative z-20 rounded-md header-image'
+                  className='relative z-20 rounded-t-md header-image'
                 />
                 <Image
                   src={headerImage3}
                   alt="An example image"
                   width={800}
                   height={600}
-                  className='absolute z-10 rounded-md header-image'
+                  className='absolute z-10 rounded-t-md header-image'
                 />
                 <Image
                   src={headerImage1}
                   alt="An example image"
                   width={800}
                   height={600}
-                  className='absolute z-10 rounded-md header-image'
+                  className='absolute z-10 rounded-t-md header-image'
                 />
               </div>
         </div>

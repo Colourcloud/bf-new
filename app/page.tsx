@@ -16,7 +16,7 @@ export default function Home() {
       </header>
       <main>
         <div className="bg-gradient-purple relative">
-        <Clients></Clients>
+          <Clients></Clients>
           <div className="site-wrapper">
             <HomeIntroduction></HomeIntroduction>
             <Services></Services>
