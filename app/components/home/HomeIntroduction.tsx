@@ -8,6 +8,8 @@ const HomeIntroduction = () => {
 
 
     return (
+      <div className="builtflat-container-block">
+      <div className="bg-gradient-purple">
       <div className="site-wrapper">
         <section className="builtflat-section spaced-p spaced-m flex flex-col md:flex-row gap-9 items-center">
               <div className="section-text flex flex-col gap-8">
@@ -21,6 +23,8 @@ const HomeIntroduction = () => {
                 <Image src="/home/test.jpg" alt="header-graphic" width="2700" height="500"></Image>
               </div>
         </section>
+      </div>
+      </div>
       </div>
     );
 };

@@ -7,6 +7,7 @@ const Services = () => {
 
 
     return (
+      <div className="builtflat-container-block">
       <div className="site-wrapper">
         <section className="builtflat-section spaced-p spaced-m flex flex-col gap-8">
               <div className="section-text w-full lg:w-3/5 flex flex-col gap-8">
@@ -66,6 +67,7 @@ const Services = () => {
                 
               </div>
             </section>
+        </div>
         </div>
     );
 };
