@@ -189,7 +189,9 @@ $x-large-desktop-screen: 2560px;
     width: 55px;
     transform: scale(0);
     opacity: 0;
-    animation: scale 600ms ease forwards;
+    &.on-screen {
+        animation: scale 600ms ease forwards;
+    }
     @media screen and (min-width: $tablet-screen) {
         width: 60px;
     }

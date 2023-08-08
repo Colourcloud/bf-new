@@ -1,7 +1,10 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
+import AnimateOnScroll from '../common/AnimateOnScroll';
 
 
 const Collaboration = () => {
@@ -16,13 +19,13 @@ const Collaboration = () => {
                     <h4 className='text-4xl md:text-5xl font-bold'>A collaborative experience to speed up those busy workflows</h4>
                     <p className='text-xl font-light'>We work closely with other design & development agencies, to help them meet their client deadlines. Leveraging workloads can greatly increase the productivity of a team, to deliver a more polished project.</p>
                     <div className="user-icons flex flex-row justify-start">
-                        <Image src="/home/avatars/avatar-1.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-10'></Image>
-                        <Image src="/home/avatars/avatar-2.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-20'></Image>
-                        <Image src="/home/avatars/avatar-3.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-30'></Image>
-                        <Image src="/home/avatars/avatar-4.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-40'></Image>
-                        <Image src="/home/avatars/avatar-5.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-50'></Image>
-                        <Image src="/home/avatars/avatar-6.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-[60]'></Image>
-                        <Image src="/home/avatars/avatar-7.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-[70]'></Image>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-1.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-10'></Image></AnimateOnScroll>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-2.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-20'></Image></AnimateOnScroll>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-3.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-30'></Image></AnimateOnScroll>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-4.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-40'></Image></AnimateOnScroll>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-5.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-50'></Image></AnimateOnScroll>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-6.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-[60]'></Image></AnimateOnScroll>
+                        <AnimateOnScroll><Image src="/home/avatars/avatar-7.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-[70]'></Image></AnimateOnScroll>
                     </div>
                 </div>
                 <div className="section-graphic relative">
