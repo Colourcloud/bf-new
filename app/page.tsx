@@ -15,11 +15,9 @@ export default function Home() {
         <Header></Header>
       </header>
       <main>
-      <Clients></Clients>
-          <div className="site-wrapper">
-            <HomeIntroduction></HomeIntroduction>
-            <Services></Services>
-          </div>
+          <Clients></Clients>
+          <HomeIntroduction></HomeIntroduction>
+          <Services></Services>
           <Collaboration></Collaboration>
       </main>
     </>

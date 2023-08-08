@@ -7,6 +7,7 @@ const Services = () => {
 
 
     return (
+      <div className="site-wrapper">
         <section className="builtflat-section spaced-p spaced-m flex flex-col gap-8">
               <div className="section-text w-full lg:w-3/5 flex flex-col gap-8">
                 <span className='text-[#7A4AFF] font-bold'>Services</span>
@@ -65,6 +66,7 @@ const Services = () => {
                 
               </div>
             </section>
+        </div>
     );
 };
 export default Services;

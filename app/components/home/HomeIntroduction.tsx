@@ -8,6 +8,7 @@ const HomeIntroduction = () => {
 
 
     return (
+      <div className="site-wrapper">
         <section className="builtflat-section spaced-p spaced-m flex flex-col md:flex-row gap-9 items-center">
               <div className="section-text flex flex-col gap-8">
                 <h2 className='text-4xl md:text-5xl font-bold'>We help businesses thrive through effective digital design</h2>
@@ -20,6 +21,7 @@ const HomeIntroduction = () => {
                 <Image src="/home/test.jpg" alt="header-graphic" width="2700" height="500"></Image>
               </div>
         </section>
+      </div>
     );
 };
 export default HomeIntroduction;
