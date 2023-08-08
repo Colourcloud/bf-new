@@ -15,7 +15,7 @@ const Collaboration = () => {
             <div className="bg-gradient-purple">
                 <div className='overflow-hidden'>
                     <div className="site-wrapper">
-                    <section className="builtflat-section spaced-p spaced-m">
+                    <section className="builtflat-section spaced-p spaced-m relative z-10">
                         <div className="flex flex-col gap-8">
                             <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Collaboration</span>
