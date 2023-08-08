@@ -168,11 +168,28 @@ $x-large-desktop-screen: 2560px;
     }
 }
 
+.floating-card {
+    background-color: var(--primary-color);
+    width: 345px;
+    &:nth-of-type(1) {
+        left: -50px;
+        top: 50px;
+    }
+    &:nth-of-type(2) {
+        right: 250px;
+        top: 150px;
+    }
+    &:nth-of-type(3) {
+        left: 100px;
+        top: 400px;
+    }
+}
+
 .avatar-icon {
     width: 36px;
     transform: scale(0);
     opacity: 0;
-    animation: scale 600ms ease-in-out forwards;
+    animation: scale 600ms ease forwards;
     @media screen and (min-width: $tablet-screen) {
         width: 60px;
     }
