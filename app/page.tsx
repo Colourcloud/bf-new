@@ -16,13 +16,11 @@ export default function Home() {
       </header>
       <main>
       <Clients></Clients>
-        <div className="bg-gradient-purple relative">
           <div className="site-wrapper">
             <HomeIntroduction></HomeIntroduction>
             <Services></Services>
-            <Collaboration></Collaboration>
           </div>
-        </div>
+          <Collaboration></Collaboration>
       </main>
     </>
   )

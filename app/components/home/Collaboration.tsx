@@ -11,7 +11,8 @@ const Collaboration = () => {
 
 
     return (
-        <div className="bg-gradient-purple relative">
+        <div className='overflow-hidden'>
+        <div className="site-wrapper">
         <section className="builtflat-section spaced-p spaced-m">
             <div className="flex flex-col gap-8">
                 <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
@@ -56,6 +57,7 @@ const Collaboration = () => {
                 </div>
             </div>
         </section>
+        </div>
         </div>
     );
 };
