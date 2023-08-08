@@ -28,22 +28,16 @@ const Header = () => {
               <Image
                   src={headerImage2}
                   alt="An example image"
-                  width={800}
-                  height={600}
                   className='relative z-20 rounded-t-md header-image'
                 />
                 <Image
                   src={headerImage3}
                   alt="An example image"
-                  width={800}
-                  height={600}
                   className='absolute z-10 rounded-t-md header-image'
                 />
                 <Image
                   src={headerImage1}
                   alt="An example image"
-                  width={800}
-                  height={600}
                   className='absolute z-10 rounded-t-md header-image'
                 />
               </div>
