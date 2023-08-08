@@ -7,7 +7,7 @@ interface AnimateOnScrollProps {
 
 const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children }) => {
   const [ref, inView] = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   return React.cloneElement(children as React.ReactElement, {
