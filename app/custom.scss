@@ -185,48 +185,53 @@ $x-large-desktop-screen: 2560px;
         top: 400px;
     }
 }
-
+.on-screen {
+    visibility: visible!important;
+}
 .avatar-icon {
     width: 55px;
     transform: scale(0);
     opacity: 0;
-    &.on-screen {
-        animation: scale 600ms ease forwards;
+    visibility: hidden;
+    will-change: transform, opacity;
+  
+    &.animate {
+      transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
     }
-    @media screen and (min-width: $tablet-screen) {
-        width: 60px;
-    }
-    &:nth-of-type(1) {
-        animation-delay: 0;
-    }
-    &:nth-of-type(2) {
-        animation-delay: 50ms;
-    }
-    &:nth-of-type(3) {
-        animation-delay: 100ms;
-    }
-    &:nth-of-type(4) {
-        animation-delay: 150ms;
-    }
-    &:nth-of-type(5) {
-        animation-delay: 200ms;
-    }
-    &:nth-of-type(6) {
-        animation-delay: 250ms;
-    }
-    &:nth-of-type(7) {
-        animation-delay: 300ms;
-    }
-}
-
-@keyframes scale {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    100% {
+  
+    &.on-screen.animate {
       transform: scale(1);
       opacity: 1;
     }
+  
+    @media screen and (min-width: $tablet-screen) {
+      width: 60px;
+    }
   }
+  
+  
+  // Apply transition delays
+  .avatar-icon:nth-child(1) {
+    transition-delay: 50ms;
+  }
+  .avatar-icon:nth-child(2) {
+    transition-delay: 100ms;
+  }
+  .avatar-icon:nth-child(3) {
+    transition-delay: 150ms;
+  }
+  .avatar-icon:nth-child(4) {
+    transition-delay: 200ms;
+  }
+  .avatar-icon:nth-child(5) {
+    transition-delay: 250ms;
+  }
+  .avatar-icon:nth-child(6) {
+    transition-delay: 300ms;
+  }
+  .avatar-icon:nth-child(7) {
+    transition-delay: 350ms;
+  }
+  
+  
   
