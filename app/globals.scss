@@ -29,7 +29,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-size: 16px;
   scroll-behavior: smooth;
   background-color: #FCFCFC;

@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <header className='home-page'>
-        <Navbar></Navbar>
         <Header></Header>
       </header>
       <main>
