@@ -167,3 +167,46 @@ $x-large-desktop-screen: 2560px;
         max-width: 1200px;
     }
 }
+
+.avatar-icon {
+    width: 36px;
+    transform: scale(0);
+    opacity: 0;
+    animation: scale 600ms ease-in-out forwards;
+    @media screen and (min-width: $tablet-screen) {
+        width: 60px;
+    }
+    &:nth-of-type(1) {
+        animation-delay: 0;
+    }
+    &:nth-of-type(2) {
+        animation-delay: 50ms;
+    }
+    &:nth-of-type(3) {
+        animation-delay: 100ms;
+    }
+    &:nth-of-type(4) {
+        animation-delay: 150ms;
+    }
+    &:nth-of-type(5) {
+        animation-delay: 200ms;
+    }
+    &:nth-of-type(6) {
+        animation-delay: 250ms;
+    }
+    &:nth-of-type(7) {
+        animation-delay: 300ms;
+    }
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

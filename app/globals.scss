@@ -90,6 +90,15 @@ body {
   background: none;
 }
 
+.highlighted-purple-text {
+  padding: 0.25rem 1.25rem;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  background: linear-gradient(60deg, #c193f8 0%, #6c72f1 100%);
+
+}
+
 .button-behaviour {
   transition:.2s ease
  }
