@@ -34,7 +34,7 @@ body {
   scroll-behavior: smooth;
   background-color: #FCFCFC;
   color: #0D0C22;
-  background-image: url('../public/bg-grid.svg');
+  background-image: url('../public/home/header-bg-grid.svg');
   background-repeat: repeat;
   font-family: 'SF Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
 }
@@ -48,7 +48,7 @@ body {
 .home-page {
   background-color: var(--dark-background-color);
   position: relative;
-  background-image: url('../public/home/header-bg-grid.svg');
+  background-image: url('../public/bg-grid.svg');
   background-repeat: repeat-x;
   overflow: hidden;
 }
