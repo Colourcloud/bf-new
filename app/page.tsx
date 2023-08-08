@@ -11,15 +11,11 @@ import Collaboration from './components/home/Collaboration'
 export default function Home() {
   return (
     <>
-      <header className='home-page'>
         <Header></Header>
-      </header>
-      <main>
           <Clients></Clients>
           <HomeIntroduction></HomeIntroduction>
           <Services></Services>
           <Collaboration></Collaboration>
-      </main>
     </>
   )
 }
