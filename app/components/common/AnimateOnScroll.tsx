@@ -9,6 +9,7 @@ interface AnimateOnScrollProps {
 const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, disableRemoveClass }) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
+    rootMargin: '200px 0px -100px 0px', // top-right-bottom-left
   });
 
   const shouldRemoveClass = !disableRemoveClass && !inView; // Check if the "on-screen" class should be removed

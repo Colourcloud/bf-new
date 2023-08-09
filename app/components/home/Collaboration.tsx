@@ -33,29 +33,29 @@ const Collaboration = () => {
                             </div>
                             <div className="section-graphic relative">
                                 <div className="floating-cards-container">
-                                    <div className="floating-card rounded-lg shadow-sm absolute p-4 flex justify-between items-start gap-3">
+                                    <AnimateOnScroll><div className="floating-card rounded-lg shadow-sm absolute p-4 flex justify-between items-start gap-3 colab-graphic">
                                         <Image src="/home/avatars/avatar-2.jpg" alt="face avatar" width="200" height="200" className='w-12 rounded-full relative z-10'></Image>
                                         <div className="floating-card-text flex flex-col gap-2">
                                             <h6 className='text-white text-sm font-bold flex justify-between items-center'>Mary Woodkin <span className='text-gray-300 text-xs font-extralight'>1h ago</span></h6>
                                             <p className='text-gray-100 text-sm font-light'>Ive finished the type up for the home page and added it to the Trello board.</p>
                                         </div>
-                                    </div>
-                                    <div className="floating-card rounded-lg shadow-sm absolute p-4 flex justify-between items-start gap-3">
+                                    </div></AnimateOnScroll>
+                                    <AnimateOnScroll><div className="floating-card rounded-lg shadow-sm absolute p-4 flex justify-between items-start gap-3 colab-graphic">
                                         <Image src="/home/avatars/avatar-5.jpg" alt="face avatar" width="200" height="200" className='w-12 rounded-full relative z-10'></Image>
                                         <div className="floating-card-text flex flex-col gap-2">
                                             <h6 className='text-white text-sm font-bold flex justify-between items-center'>Sara Hawkins <span className='text-gray-300 text-xs font-extralight'>1h ago</span></h6>
                                             <p className='text-gray-100 text-sm font-light'>Ive emailed through the latest illustrations for the “about-us” page!</p>
                                         </div>
-                                    </div>
-                                    <div className="floating-card rounded-lg shadow-sm absolute p-4 flex justify-between items-start gap-3">
+                                    </div></AnimateOnScroll>
+                                    <AnimateOnScroll><div className="floating-card rounded-lg shadow-sm absolute p-4 flex justify-between items-start gap-3 colab-graphic">
                                         <Image src="/home/avatars/avatar-4.jpg" alt="face avatar" width="200" height="200" className='w-12 rounded-full relative z-10'></Image>
                                         <div className="floating-card-text flex flex-col gap-2">
                                             <h6 className='text-white text-sm font-bold flex justify-between items-center'>Brandon Fisher <span className='text-gray-300 text-xs font-extralight'>1h ago</span></h6>
                                             <p className='text-gray-100 text-sm font-light'>This is looking really good! Could we maybe make some adjustments to the header section?</p>
                                         </div>
-                                    </div>
+                                    </div></AnimateOnScroll>
                                 </div>
-                                <Image src="/home/collaboration-graphic.jpg" width='1200' height='800' alt="Figma UI for collaboration design" className='w-[300%] sm:w-full max-w-[2000px] sm:max-w-full rounded-lg shadow-lg'></Image>
+                                <Image src="/home/collaboration-graphic.jpg" width='1200' height='800' alt="Figma UI for collaboration design" className='w-[300%] sm:w-full max-w-[2000px] sm:max-w-full rounded-lg shadow-l'></Image>
                             </div>
                         </div>
                     </section>

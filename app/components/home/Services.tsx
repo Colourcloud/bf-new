@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
 import { MdArrowCircleRight } from "react-icons/md";
+import AnimateOnScroll from '../common/AnimateOnScroll';
 
 const Services = () => {
 
@@ -24,7 +27,7 @@ const Services = () => {
                       <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
                     </div>
                     <div className="service-card-image">
-                      <Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-t-xl bottom-0 application-development-graphic'></Image>
+                    <AnimateOnScroll><Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-t-xl bottom-0 application-development-graphic colab-graphic'></Image></AnimateOnScroll>
                     </div>
                   </div>
                 </Link>
@@ -36,7 +39,7 @@ const Services = () => {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                    <Image src="/home/ui-ux-image.png" alt="yes" className='ui-ux-graphic' width="500" height="600"></Image>
+                  <AnimateOnScroll><Image src="/home/ui-ux-image.png" alt="yes" className='ui-ux-graphic colab-graphic' width="500" height="600"></Image></AnimateOnScroll>
                   </div>
                 </div>
                 </Link>
@@ -48,7 +51,7 @@ const Services = () => {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                    <Image src="/home/mobile-dev.png" alt="yes" className='w-full bottom-0 right-0 relative' width="800" height="600"></Image>
+                  <AnimateOnScroll><Image src="/home/mobile-dev.png" alt="yes" className='w-full bottom-0 right-0 relative colab-graphic' width="800" height="600"></Image></AnimateOnScroll>
                   </div>
                 </div>
                 </Link>
@@ -60,7 +63,7 @@ const Services = () => {
                     <p className='text-white w-full md:w-3/4'>Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.</p>
                   </div>
                   <div className="service-card-image flex justify-center">
-                    <Image src="/home/template-graphic.png" alt="yes" className='md:w-[100%] bottom-0 right-0 template-graphic' width="2000" height="600"></Image>
+                  <AnimateOnScroll><Image src="/home/template-graphic.png" alt="yes" className='md:w-[100%] bottom-0 right-0 template-graphic colab-graphic' width="2000" height="600"></Image></AnimateOnScroll>
                   </div>
                 </div>
                 </Link>
