@@ -1,15 +1,12 @@
-import React from 'react';
-import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
 import { MdArrowForward } from "react-icons/md";
 
+
 const WebsiteDevelopment = () => {
-
-
     return (
         <>
-        <section className="builtflat-section dark-bg">
+        <section className="builtflat-section dark-bg" id="website-development">
             <div className="site-wrapper">
                 <div className="flex flex-col gap-8">
                     <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center spaced-m spaced-p">

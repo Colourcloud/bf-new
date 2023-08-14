@@ -8,7 +8,7 @@ import WebsiteDevelopment from '../components/application/WebsiteDevelopment';
 
 const Application: React.FC = () => {
     const subNavigationItems = [
-        { label: 'Website Development', href: '#' },
+        { label: 'Website Development', href: '#website-development' },
         { label: 'CMS Development', href: '#' },
         { label: 'E-Commerce', href: '#' },
         { label: 'Technologies', href: '#' },

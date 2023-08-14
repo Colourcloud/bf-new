@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link'
 import { IoSendSharp } from "react-icons/io5";
 

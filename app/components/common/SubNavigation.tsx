@@ -1,4 +1,4 @@
-import React from 'react';
+'use client'
 import Link from 'next/link'
 
 interface SubNavBarProps {
@@ -6,6 +6,15 @@ interface SubNavBarProps {
 }
 
 const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault();
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*\#/, "");
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+          behavior: "smooth",
+        });
+    };
     return (
         <div className='sticky top-0 z-50'>
             <div className='navbar w-100 h-16 bg-white shadow-sm'>
@@ -17,7 +26,7 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
                                 {/* Render the navigation items dynamically */}
                                 {subNavigationItems.map((item, index) => (
                                     <li key={index} className='text-black text-base font-light'>
-                                        <Link href={item.href}>{item.label}</Link>
+                                        <Link href={item.href} onClick={handleScroll}>{item.label}</Link>
                                     </li>
                                 ))}
                             </ul>
