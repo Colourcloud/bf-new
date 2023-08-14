@@ -82,7 +82,9 @@ body {
 .background-purple {
   background: var(--primary-color);
 }
-
+.dark-bg {
+  background: var( --dark-background-color);
+}
 .background-dark {
   background: var(--button-dark-bg);
 }
