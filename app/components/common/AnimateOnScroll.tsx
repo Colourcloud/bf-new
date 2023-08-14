@@ -3,21 +3,20 @@ import { useInView } from 'react-intersection-observer';
 
 interface AnimateOnScrollProps {
   children: React.ReactNode;
-  disableRemoveClass?: boolean;
   threshold?: number; // New prop for threshold value
   rootMarginOffset?: number; // New prop for rootMargin offset value
 }
 
-const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, disableRemoveClass, threshold = 0.3, rootMarginOffset = 0 }) => {
+const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, threshold = 0.3, rootMarginOffset = 0 }) => {
   const [ref, inView] = useInView({
     threshold,
-    rootMargin: `0px 0px -200px 0px`, // top-right-bottom-left with custom offset
+    rootMargin: `200px 0px -200px 0px`, // top-right-bottom-left with custom offset
   });
 
-  const shouldRemoveClass = !disableRemoveClass && !inView;
+  const shouldAddOnScreenClass = inView;
 
   return React.cloneElement(children as React.ReactElement, {
-    className: `${(children as React.ReactElement).props.className} animate ${shouldRemoveClass ? '' : 'on-screen'}`,
+    className: `${(children as React.ReactElement).props.className} animate ${shouldAddOnScreenClass ? 'on-screen' : ''}`,
     ref,
   });
 };

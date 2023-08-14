@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="_next">
+        
         {children}
         </body>
     </html>

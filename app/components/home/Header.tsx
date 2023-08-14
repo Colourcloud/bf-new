@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
+import Navbar from '../common/Navbar';
 import headerImage1 from '../../../public/home/header-image-1.jpg'
 import headerImage2 from '../../../public/home/header-image-2.jpg'
 import headerImage3 from '../../../public/home/header-image-3.jpg'
@@ -12,6 +13,7 @@ const Header = () => {
     return (
         <header className='home-page'>
           <div className="site-wrapper">
+            <Navbar></Navbar>
             <div className="header-content flex flex-col spaced-m spaced-p w-full text-center items-center mx-auto lg:w-4/5">
               <div className="header-text flex flex-col">
                 <h1 className="text-4xl purple-gradient leading-tight font-bold text-center md:text-7xl pb-4">Drive Business Growth with Cutting-Edge Digital Solutions</h1>

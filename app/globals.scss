@@ -16,6 +16,7 @@
   --dark-background-color: #020214;
   --primary-color: #7A4AFF;
   --button-dark-bg: #1c1d2d;
+  --text-grey: #656D76
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,6 +97,10 @@ body {
   display: inline-block;
   background: linear-gradient(60deg, #c193f8 0%, #6c72f1 100%);
 
+}
+
+.text-purple {
+  color: var(--primary-color);
 }
 
 .button-behaviour {

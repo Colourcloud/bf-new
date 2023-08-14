@@ -20,7 +20,7 @@ const HomeIntroduction = () => {
                 </div>
               </div>
               <div className="section-graphic">
-                <Image src="/home/test.jpg" alt="header-graphic" width="2700" height="500"></Image>
+                <Image src="/home/test.jpg" alt="header-graphic" width="2700" height="500" className='rounded-lg'></Image>
               </div>
         </section>
       </div>

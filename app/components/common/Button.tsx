@@ -27,7 +27,7 @@ const Button: React.FC<CustomButtonProps> = ({
   return (
     <Link href={href}>
       <div
-        className={`px-7 py-3 text-sm rounded-md button-behaviour ${
+        className={`px-7 py-3 text-sm font-medium rounded-md button-behaviour ${
           className || ''
         }`}
         style={buttonStyles}
