@@ -20,7 +20,7 @@ const WebsiteDevelopment = () => {
                                 <li className='text-gray-600 font-medium text-sm md:text-base'><MdArrowForward></MdArrowForward></li>
                                 <li className='text-gray-600 font-medium text-sm md:text-base'>Creative Design</li>
                                 <li className='text-gray-600 font-medium text-sm md:text-base'><MdArrowForward></MdArrowForward></li>
-                                <li className='text-white font-bold text-sm md:text-base'>Website Development</li>
+                                <li className='text-white font-bold text-sm md:text-base'>Development</li>
                             </ul>
                         </div>
                     </div>
