@@ -8,6 +8,7 @@ const Header = () => {
 
     return (
         <>
+        <header className='application-header'>
         <div className='full-purple-gradient spaced-m spaced-p'>
         <div className="site-wrapper">
             <div className="header-content flex flex-col md:flex-row gap-8">
@@ -26,6 +27,7 @@ const Header = () => {
             </div>
         </div>
         </div>
+        </header>
         </>
     );
 };

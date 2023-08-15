@@ -5,11 +5,13 @@ import NavbarWhite from '../components/common/NavbarWhite';
 import SubNavBar from '../components/common/SubNavigation';
 import Header from '../components/application/Header';
 import WebsiteDevelopment from '../components/application/WebsiteDevelopment';
+import CmsDevelopment from '../components/application/CmsDevelopment';
+import CmsSoftware from '../components/application/CmsSoftware';
 
 const Application: React.FC = () => {
     const subNavigationItems = [
         { label: 'Website Development', href: '#website-development' },
-        { label: 'CMS Development', href: '#' },
+        { label: 'CMS Development', href: '#cms-development' },
         { label: 'E-Commerce', href: '#' },
         { label: 'Technologies', href: '#' },
         { label: 'Scalability', href: '#' },
@@ -19,10 +21,10 @@ const Application: React.FC = () => {
         <>
             <NavbarWhite />
             <SubNavBar subNavigationItems={subNavigationItems} />
-            <header className='application-header'>
-                <Header></Header>
-            </header>
-            <WebsiteDevelopment></WebsiteDevelopment>
+            <Header />
+            <WebsiteDevelopment />
+            <CmsDevelopment />
+            <CmsSoftware />
         </>
     );
 };
