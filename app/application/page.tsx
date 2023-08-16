@@ -1,6 +1,3 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import NavbarWhite from '../components/common/NavbarWhite';
 import SubNavBar from '../components/common/SubNavigation';
 import Header from '../components/application/Header';

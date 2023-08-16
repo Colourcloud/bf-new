@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
 import Navbar from '../common/Navbar';
-import MobileNav from '../common/MobileNav';
 import headerImage1 from '../../../public/home/header-image-1.jpg'
 import headerImage2 from '../../../public/home/header-image-2.jpg'
 import headerImage3 from '../../../public/home/header-image-3.jpg'
@@ -13,7 +12,6 @@ const Header = () => {
     return (
         <header className='home-page'>
           <Navbar></Navbar>
-          <MobileNav />
           <div className="site-wrapper">
             <div className="header-content flex flex-col spaced-m spaced-p w-full text-center items-center mx-auto lg:w-4/5">
               <div className="header-text flex flex-col">
