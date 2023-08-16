@@ -1,3 +1,4 @@
+import React from 'react'
 import Header from './components/home/Header'
 import Clients from './components/common/Clients'
 import Services from './components/home/Services'
