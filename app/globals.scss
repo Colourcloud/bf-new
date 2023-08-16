@@ -4,6 +4,13 @@
 
 @import 'custom.scss';
 
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../public/SF-Pro.ttf') format('ttf');
+  /* Add more formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --dark-background-color: #020214;
