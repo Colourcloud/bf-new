@@ -27,7 +27,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className='nav-content-right flex items-center'>
-                            <Link className="px-6 py-2 text-sm rounded-md button-behaviour relative background-purple hover: text-white flex flex-row items-center gap-2 font-medium" href="/contact"><IoSendSharp className="rotate-[-45deg]"></IoSendSharp>Start Now</Link>
+                            <Link className="px-4 py-2 text-sm rounded-md button-behaviour relative background-purple hover: text-white flex flex-row items-center gap-2 font-medium" href="/contact"><IoSendSharp className="rotate-[-45deg]"></IoSendSharp>Start Now</Link>
                         </div>
                     </div>
                 </div>
