@@ -12,7 +12,7 @@ const MobileNav = () => {
 
     return (
         <div>
-            <div className="overlay"></div>
+            <div className="overlay hidden fixed top-0 left-0 right-0 bottom-0 z-[9998] bg-[rgba(255,255,255,.5);] backdrop-blur-xl"></div>
             <div className="site-wrapper">
                 <div className='mobile-nav w-full h-16 bg-transparent relative z-10 flex flex-row justify-between items-center lg:hidden'>
                 <span className='w-1/3'><IoMenuOutline className="text-white text-3xl" /></span>
@@ -21,6 +21,9 @@ const MobileNav = () => {
                     <Link className="px-4 py-2 text-sm rounded-md button-behaviour relative background-purple hover: text-white flex flex-row items-center gap-2 font-medium" href="/contact">Start Now</Link>
                 </div>
                 </div>
+            </div>
+            <div className="sidenav w-80 h-full dark-bg z-[9999] fixed left-0 top-0 bottom-0 lg:hidden">
+
             </div>
         </div>
     );
