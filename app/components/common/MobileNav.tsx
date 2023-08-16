@@ -22,7 +22,7 @@ const MobileNav = () => {
                 </div>
                 </div>
             </div>
-            <div className="sidenav w-80 h-full dark-bg z-[9999] fixed left-0 top-0 bottom-0 lg:hidden">
+            <div className="sidenav hidden w-80 h-full dark-bg z-[9999] fixed left-0 top-0 bottom-0 lg:hidden">
 
             </div>
         </div>

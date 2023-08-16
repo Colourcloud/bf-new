@@ -7,6 +7,9 @@ $desktop-screen: 1224px;
 $large-desktop-screen: 1340px;
 $x-large-desktop-screen: 2560px;
 
+.no-scroll-bar {
+    scrollbar-width: none;
+}
 .sidenav {
     &::before {
         content: '';

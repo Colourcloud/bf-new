@@ -20,12 +20,12 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
             <div className='navbar w-100 h-16 bg-white shadow-sm'>
                 <div className='site-wrapper'>
                     <div className='nav-container flex flex-row justify-between h-16'>
-                        <div className='nav-content-left flex flex-row gap-16 items-center'>
-                            <h4 className='text-xl font-extrabold'>Services</h4>
-                            <ul className='flex flex-row gap-10 items-center'>
+                        <div className='nav-content-left flex flex-row gap-10 md:gap-16 items-center overflow-auto no-scroll-bar'>
+                            <h4 className='text-base font-extrabold md:text-xl'>Services</h4>
+                            <ul className='flex flex-row gap-6 md:gap-10 items-center'>
                                 {/* Render the navigation items dynamically */}
                                 {subNavigationItems.map((item, index) => (
-                                    <li key={index} className='text-black text-base font-light'>
+                                    <li key={index} className='text-black text-sm md:text-base font-light whitespace-nowrap'>
                                         <Link href={item.href} onClick={handleScroll}>{item.label}</Link>
                                     </li>
                                 ))}
