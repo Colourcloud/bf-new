@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Ecommerce = () => {
     return (
         <>
-        <section className="builtflat-section dark-bg mt-28 overflow-hidden lg:overflow-auto" id="ecommerce">
+        <section className="builtflat-section dark-bg mt-28 overflow-hidden" id="ecommerce">
             <div className="site-wrapper">
                 <div className="section-text flex flex-col gap-8">
                     <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center spaced-m spaced-p">
