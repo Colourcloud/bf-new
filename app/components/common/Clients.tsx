@@ -13,7 +13,7 @@ const Clients = () => {
                    <Image src="/clients/pg.svg" alt="kpmg logo" width='100' height='44'></Image>
                    <Image src="/clients/pinterest.svg" alt="kpmg logo" width='100' height='44'></Image>
                    <Image src="/clients/stripe.svg" alt="kpmg logo" width='100' height='44'></Image>
-                   <Image src="/clients/telus.svg" alt="kpmg logo" width='100' height='44'></Image>
+                   <Image src="/clients/doofy.svg" alt="kpmg logo" width='100' height='44'></Image>
                 </div>
             </div>
         </div>

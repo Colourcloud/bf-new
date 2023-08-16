@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='navbar w-100 h-16 bg-transparent relative z-10'>
+            <div className='navbar w-full h-16 bg-transparent relative z-10 hidden lg:block'>
                 <div className='site-wrapper'>
                     <div className='nav-container flex flex-row justify-between h-16'>
                         <div className='nav-content-left flex flex-row gap-16 items-center'>

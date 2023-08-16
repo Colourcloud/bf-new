@@ -21,7 +21,7 @@ const CmsSoftware = () => {
                     </div>
                     <div className='h-[70px] bg-[--dark-background-color] rounded-md flex flex-row gap-3 items-center px-6'>
                         <Image src="/application/software/droopal.png" alt="Droopal logo icon" className='w-9' width="100" height="100"></Image>
-                        <p className='font-medium text-lg text-white'>Droopal</p>
+                        <p className='font-medium text-lg text-white'>Drupal</p>
                     </div>
                     <div className='h-[70px] bg-[--dark-background-color] rounded-md flex flex-row gap-3 items-center px-6'>
                         <Image src="/application/software/magento.png" alt="Magento logo icon" className='w-9' width="100" height="100"></Image>
@@ -34,6 +34,14 @@ const CmsSoftware = () => {
                     <div className='h-[70px] bg-[--dark-background-color] rounded-md flex flex-row gap-3 items-center px-6'>
                         <Image src="/application/software/webflow.png" alt="Webflow logo icon" className='w-9' width="100" height="100"></Image>
                         <p className='font-medium text-lg text-white'>Webflow</p>
+                    </div>
+                    <div className='h-[70px] bg-[--dark-background-color] rounded-md flex flex-row gap-3 items-center px-6'>
+                        <Image src="/application/software/squarespace.png" alt="squarespace logo icon" className='w-9' width="100" height="100"></Image>
+                        <p className='font-medium text-lg text-white'>Squarespace</p>
+                    </div>
+                    <div className='h-[70px] bg-[--dark-background-color] rounded-md flex flex-row gap-3 items-center px-6'>
+                        <Image src="/application/software/shopify.png" alt="shopify logo icon" className='w-9' width="100" height="100"></Image>
+                        <p className='font-medium text-lg text-white'>Shopify</p>
                     </div>
                 </div>
                 <span className='text-center w-full block font-medium mt-10'>Don&apos;t see the software your team uses? <Link href="/contact" className='text-purple'>Contact us</Link> to see if we can still help.</span>

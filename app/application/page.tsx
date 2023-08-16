@@ -7,12 +7,13 @@ import Header from '../components/application/Header';
 import WebsiteDevelopment from '../components/application/WebsiteDevelopment';
 import CmsDevelopment from '../components/application/CmsDevelopment';
 import CmsSoftware from '../components/application/CmsSoftware';
+import Ecommerce from '../components/application/Ecommerce';
 
 const Application: React.FC = () => {
     const subNavigationItems = [
         { label: 'Website Development', href: '#website-development' },
         { label: 'CMS Development', href: '#cms-development' },
-        { label: 'E-Commerce', href: '#' },
+        { label: 'E-Commerce', href: '#ecommerce' },
         { label: 'Technologies', href: '#' },
         { label: 'Scalability', href: '#' },
     ];
@@ -25,6 +26,7 @@ const Application: React.FC = () => {
             <WebsiteDevelopment />
             <CmsDevelopment />
             <CmsSoftware />
+            <Ecommerce />
         </>
     );
 };
