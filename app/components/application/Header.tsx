@@ -8,7 +8,7 @@ const Header = () => {
 
     return (
         <>
-        <header className='application-header'>
+        <header className='application-header overflow-hidden lg:overflow-auto'>
         <div className='full-purple-gradient spaced-m spaced-p'>
         <div className="site-wrapper">
             <div className="header-content flex flex-col md:flex-row gap-8">
