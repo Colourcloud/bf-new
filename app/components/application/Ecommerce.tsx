@@ -21,7 +21,7 @@ const Ecommerce = () => {
                         <h4 className='text-4xl font-bold'>Your products direct to your customers.</h4>
                         <p className='font-light'>Online shopping has become incredibly convenient. E-commerce sites offer a wide range of products, giving people worldwide the ability to buy what they want, anytime and anywhere with internet access.</p>
                         <p className='font-light'>E-commerce is booming, especially since the pandemic forced traditional stores to close. Builtflat understands the value of digitalizing businesses and creating customized e-commerce sites with various features and designs for different industries. Whether you need a template-based or fully custom website, Builtflat has solutions to help you reach your customers effectively.</p>
-                        <p className='font-light'>Builtflat knows that every business is unique. We're proactive in designing and testing new features for different industries. Whether you want a pre-built template or a custom website, we have solutions to connect your products directly with buyers.</p>
+                        <p className='font-light'>Builtflat knows that every business is unique. We&apos;re proactive in designing and testing new features for different industries. Whether you want a pre-built template or a custom website, we have solutions to connect your products directly with buyers.</p>
                     </div>
                 </div>
             </div>
