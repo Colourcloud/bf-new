@@ -131,17 +131,6 @@ body {
     z-index:1;
   }
 }
-.home-page:after {
- display: none;
-  @media screen and (min-width: $tablet-screen) {
-    height:700px;
-    bottom:-10%;
-    display: block;
-    height:400px;
-    filter:blur(100px);
-    opacity: 0.2;
-  }
-}
 
 .home-page:before {
   display: none;
