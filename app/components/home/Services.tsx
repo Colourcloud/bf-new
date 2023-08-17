@@ -27,7 +27,7 @@ const Services = () => {
                       <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
                     </div>
                     <div className="service-card-image">
-                    <Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-t-xl bottom-0 application-development-graphic'></Image>
+                    <Image src="/home/application-development.png" alt="yes" width="1200" height="600" className='right-[-5%] rounded-xl bottom-0 application-development-graphic'></Image>
                     </div>
                   </div>
                 </Link>
@@ -51,7 +51,7 @@ const Services = () => {
                     <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
                   </div>
                   <div className="service-card-image">
-                  <Image src="/home/mobile-dev.png" alt="yes" className='w-full bottom-0 right-0 relative' width="800" height="600"></Image>
+                  <Image src="/home/mobile-dev.png" alt="yes" className='w-full sm:w-4/5 lg:w-full bottom-0 relative flex justify-center' width="800" height="600"></Image>
                   </div>
                 </div>
                 </Link>

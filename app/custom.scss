@@ -106,6 +106,7 @@ $x-large-desktop-screen: 2560px;
     .service-card-link  {
         background-color: white;
         border-radius: 10px;
+        overflow: hidden;
         p {
             font-weight: 300;
         }
