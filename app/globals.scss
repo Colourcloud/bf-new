@@ -121,25 +121,35 @@ body {
 .home-page:after,
 .home-page:before {
  content:"";
- position:absolute;
- width:100%;
- border-radius:50%;
- background:linear-gradient(150deg,#7a4aff,#270093);
- z-index:1
+ display: none;
+ @media screen and (min-width: $tablet-screen) {
+    position:absolute;
+    display: block;
+    width:100%;
+    border-radius:50%;
+    background:linear-gradient(150deg,#7a4aff,#270093);
+    z-index:1;
+  }
 }
 .home-page:after {
- bottom:-10%;
- height:400px;
- filter:blur(10px);
- opacity: 0.2;
+ display: none;
   @media screen and (min-width: $tablet-screen) {
     height:700px;
+    bottom:-10%;
+    display: block;
+    height:400px;
+    filter:blur(100px);
+    opacity: 0.2;
   }
 }
 
 .home-page:before {
-  top:-5%;
-  height:80px;
-  filter:blur(10px);
-  opacity: 0.3;
+  display: none;
+  @media screen and (min-width: $tablet-screen) {
+    top:-5%;
+    height:80px;
+    display: block;
+    filter:blur(50px);
+    opacity: 0.3;
+  }
  }
