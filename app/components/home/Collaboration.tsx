@@ -11,7 +11,7 @@ const Collaboration = () => {
 
     return (
         <div className="builtflat-container-block">
-            <div className="bg-gradient-purple">
+            <div>
                 <div className='overflow-hidden'>
                     <div className="site-wrapper">
                     <section className="builtflat-section relative z-10">
