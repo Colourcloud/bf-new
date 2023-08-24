@@ -24,6 +24,7 @@ const Ecommerce = () => {
                         <p className='font-light'>Builtflat knows that every business is unique. We&apos;re proactive in designing and testing new features for different industries. Whether you want a pre-built template or a custom website, we have solutions to connect your products directly with buyers.</p>
                     </div>
                 </div>
+                
             </div>
         </section>
         </>
