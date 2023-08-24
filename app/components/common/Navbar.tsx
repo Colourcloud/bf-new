@@ -55,7 +55,7 @@ const Navbar = () => {
                 </div>
                 </div>
             </div>
-            <div className={`sidenav w-96 h-full dark-bg z-[9999] fixed left-0 top-0 bottom-0 lg:hidden ${isSideNavActive ? 'active' : ''}`}>
+            <div className={`sidenav w-10/12 h-full dark-bg z-[9999] fixed left-0 top-0 bottom-0 lg:hidden ${isSideNavActive ? 'active' : ''}`}>
 
             </div>
         </div>
