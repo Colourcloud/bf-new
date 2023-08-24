@@ -19,6 +19,8 @@ const Navbar = () => {
     const toggleSideNav = () => {
         setIsSideNavActive(!isSideNavActive);
         setIsOverlayActive(!isOverlayActive); // Toggle overlay along with side navigation
+
+        document.body.style.overflow = isSideNavActive ? 'auto' : 'hidden';
     };
 
 
