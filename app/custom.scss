@@ -13,22 +13,18 @@ $x-large-desktop-screen: 2560px;
 .sidenav {
     transform: translateX(-100%);
     transition: 200ms ease;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 12px;
-        background-image: linear-gradient(#c529f6 0%, #54bbf9 16.26%, #e55bda 30.05%, #53b7f9 38.17%, #877eff 41.87%, #52b4f9 57.14%, #c15dff 70.44%, #ff83d9 86.7%, #7614f5 100%);
-    }
+    background-color: #212122;
+    overflow-y: scroll;
+    background-image: url('../public/nav-bg.jpg');
+    background-size: 12px;
+    background-repeat: no-repeat;
 }
 
 .sidenav.active {
     transform: translateX(0px);
 }
 .overlay {
-    transition: 200ms ease;
+    transition: 50ms ease;
 }
 .overlay.active {
     opacity: 1;

@@ -62,8 +62,46 @@ const Navbar = () => {
                 </div>
                 </div>
             </div>
-            <div className={`sidenav w-10/12 h-full dark-bg z-[9999] fixed left-0 top-0 bottom-0 lg:hidden ${isSideNavActive ? 'active' : ''}`}>
-
+            <div className={`sidenav w-10/12 h-full z-[9999] fixed left-0 top-0 bottom-0 lg:hidden ${isSideNavActive ? 'active' : ''}`}>
+                <div className='sidenav-container flex flex-col gap-10 p-8'>
+                    <ul className='flex flex-col gap-4'>
+                        <span className='text-gray-400 uppercase text-xs'>Solutions</span>
+                        <li className='text-gray-200'>Application Development</li>
+                        <li className='text-gray-200'>UI/UX Design</li>
+                        <li className='text-gray-200'>Mobile Development</li>
+                        <li className='text-gray-200'>Template Driven Design</li>
+                    </ul>
+                    <ul className='flex flex-col gap-4'>
+                        <span className='text-gray-400 uppercase text-xs'>Our Work</span>
+                        <li className='text-gray-200'>Case Studies</li>
+                    </ul>
+                    <ul className='flex flex-col gap-4'>
+                        <span className='text-gray-400 uppercase text-xs'>Partnership</span>
+                        <li className='text-gray-200'>Colaboration</li>
+                        <li className='text-gray-200'>How We Work</li>
+                        <li className='text-gray-200'>Contracting</li>
+                    </ul>
+                    <ul className='flex flex-col gap-4'>
+                        <span className='text-gray-400 uppercase text-xs'>Why Builtflat</span>
+                        <li className='text-gray-200'>Meet The Team</li>
+                        <li className='text-gray-200'>Our Story</li>
+                        <li className='text-gray-200'>Our Design Mission</li>
+                    </ul>
+                    <ul className='flex flex-col gap-4'>
+                        <span className='text-gray-400 uppercase text-xs'>News & Updates</span>
+                        <li className='text-gray-200'>Blog</li>
+                        <li className='text-gray-200'>Business News</li>
+                    </ul>
+                    <ul className='flex flex-col gap-4'>
+                        <span className='text-gray-400 uppercase text-xs'>Builtflat</span>
+                        <li className='text-gray-200'>Careers</li>
+                        <li className='text-gray-200'>Terms & Conditions</li>
+                        <li className='text-gray-200'>Privacy Policy</li>
+                    </ul>
+                    <div className="sidenav-contact sticky bottom-2 w-full left-0 bg-[#212122]">
+                        <a href="" className='bg-white text-black p-3 text-center text-sm w-full block rounded-md flex flex-row items-center justify-center gap-2'><span><IoSendSharp className="rotate-[-45deg] text-base"></IoSendSharp></span>Contact us Today</a>
+                    </div>
+                </div>
             </div>
         </div>
     );
