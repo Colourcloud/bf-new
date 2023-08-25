@@ -52,7 +52,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className={`overlay ${isOverlayActive ? 'active' : ''} opacity-0 invisible fixed top-0 left-0 right-0 bottom-0 z-[9998] bg-[rgba(255,255,255,.5);] backdrop-blur-xl`} onClick={closeSideNav}></div>
+            <div className={`overlay ${isOverlayActive ? 'active' : ''} opacity-0 invisible fixed top-0 left-0 right-0 bottom-0 z-[9998] bg-[rgba(255,255,255,.3);] backdrop-blur-xl`} onClick={closeSideNav}></div>
             <div className="site-wrapper">
                 <div className='mobile-nav w-full h-16 bg-transparent relative z-10 flex flex-row justify-between items-center lg:hidden'>
                 <span className="w-1/3 toggle-nav" onClick={toggleSideNav}><IoMenuOutline className="text-white text-3xl" /></span>
