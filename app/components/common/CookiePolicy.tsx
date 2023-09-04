@@ -35,7 +35,7 @@ const CookiePolicyPrompt = () => {
   return (
     <>
       {showPrompt && (
-        <div className="cookie-policy-prompt w-full fixed bottom-0 p-8 z-50 bg-white">
+        <div className="cookie-policy-prompt w-full fixed bottom-0 p-8 z-50 bg-white border-slate-200 border-t">
           <div className="global-wrapper flex flex-col gap-5">
             <span className='text-2xl'>&#127850;</span>
             <p>
@@ -43,7 +43,7 @@ const CookiePolicyPrompt = () => {
               <Link href="/privacy-policy" className='text-sky-500'>Learn more</Link>
             </p>
             <div className="flex gap-3">
-              <button className='primary-button' onClick={handleAccept}>Accept</button>
+              <button className='px-4 py-2 text-sm background-purple rounded-full text-white' onClick={handleAccept}>Accept</button>
               <button className='secondary-button' onClick={handleDecline}>Decline</button>
             </div>
           </div>
