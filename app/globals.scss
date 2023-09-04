@@ -13,21 +13,20 @@
 }
 
 :root {
-  --light-background-color: #ffffff;
-  --primary-color: #007bff;
-  --button-light-bg: #f8f9fa;
-  --text-dark: #000000;
+  --dark-background-color: #020214;
+  --primary-color: #7A4AFF;
+  --button-dark-bg: #1c1d2d;
+  --text-grey: #656D76
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #020214;
-    --primary-color: #7a4aff;
+    --dark-background-color: #020214;
+    --primary-color: #7A4AFF;
     --button-dark-bg: #1c1d2d;
-    --text-grey: #656d76;
+    --text-grey: #656D76
   }
 }
-
 
 * {
   box-sizing: border-box;
