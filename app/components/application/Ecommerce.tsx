@@ -24,6 +24,26 @@ const Ecommerce = () => {
                         <p className='font-light'>Builtflat knows that every business is unique. We&apos;re proactive in designing and testing new features for different industries. Whether you want a pre-built template or a custom website, we have solutions to connect your products directly with buyers.</p>
                     </div>
                 </div>
+
+                <div className="payments spaced-m spaced-p flex flex-col lg:flex-row gap-24 items-center justify-center">
+                    <div className="section-text w-full lg:w-2/6 text-white flex flex-col gap-6">
+                        <h4 className='text-4xl font-bold'>Accept payments from anywhere, anytime.</h4>
+                        <p className='font-light'>Nowadays it seems like you can buy anything online, from tools to food essentials and cars to holidays. E-commerce websites have not only opened consumers purchasing options to more than just what the local stores have, they’ve given consumers around the world the ability to make purchases on their terms wherever there’s an internet connection.. Which is basically everywhere!</p>
+                    </div>
+                    <div className="section-image flex flex-row justify-center">
+                        <Image src="/application/payment-graphic.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-[75%]' width="1200" height="800"></Image>
+                    </div>
+                </div>
+
+                <div className="products spaced-m spaced-p flex flex-col flex-col-reverse lg:flex-row gap-36 items-center justify-center">
+                    <div className="section-image flex flex-row justify-center">
+                        <Image src="/application/products-graphic.png" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-[85%]' width="1200" height="800"></Image>
+                    </div>
+                    <div className="section-text w-full lg:w-2/6 text-white flex flex-col gap-6">
+                        <h4 className='text-4xl font-bold'>Add products, track orders, all in one place.</h4>
+                        <p className='font-light'>Nowadays it seems like you can buy anything online, from tools to food essentials and cars to holidays. E-commerce websites have not only opened consumers purchasing options to more than just what the local stores have, they’ve given consumers around the world the ability to make purchases on their terms wherever there’s an internet connection.. Which is basically everywhere!</p>
+                    </div>
+                </div>
                 
             </div>
         </section>

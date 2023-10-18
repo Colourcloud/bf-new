@@ -51,6 +51,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 16px;
+  @media screen and (min-width: $tablet-screen) {
+    padding: 0px 64px;
+  }
 }
 
 .home-page {
