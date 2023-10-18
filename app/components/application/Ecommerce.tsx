@@ -25,7 +25,7 @@ const Ecommerce = () => {
                     </div>
                 </div>
 
-                <div className="payments spaced-m spaced-p flex flex-col lg:flex-row gap-24 items-center justify-center">
+                <div className="payments spaced-m spaced-p flex flex-col lg:flex-row gap-12 lg:gap-24 items-center justify-center">
                     <div className="section-text w-full lg:w-2/6 text-white flex flex-col gap-6">
                         <h4 className='text-4xl font-bold'>Accept payments from anywhere, anytime.</h4>
                         <p className='font-light'>Nowadays it seems like you can buy anything online, from tools to food essentials and cars to holidays. E-commerce websites have not only opened consumers purchasing options to more than just what the local stores have, they’ve given consumers around the world the ability to make purchases on their terms wherever there’s an internet connection.. Which is basically everywhere!</p>
@@ -35,7 +35,7 @@ const Ecommerce = () => {
                     </div>
                 </div>
 
-                <div className="products spaced-m spaced-p flex flex-col flex-col-reverse lg:flex-row gap-36 items-center justify-center">
+                <div className="products spaced-m spaced-p flex flex-col flex-col-reverse lg:flex-row gap-12 lg:gap-36 items-center justify-center">
                     <div className="section-image flex flex-row justify-center">
                         <Image src="/application/products-graphic.png" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-[85%]' width="1200" height="800"></Image>
                     </div>
