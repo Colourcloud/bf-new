@@ -154,3 +154,26 @@ body {
     opacity: 0.3;
   }
  }
+
+ input {
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &::placeholder {
+    font-size: 14px;
+    color: gray;
+  }
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+textarea {
+  resize: none;
+  &::placeholder {
+    font-size: 14px;
+    color: gray;
+  }
+}

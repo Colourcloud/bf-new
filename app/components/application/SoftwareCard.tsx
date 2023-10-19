@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ title, description, link, icon }) => {
                     <h2 className='text-lg font-semibold'>{title}</h2>
                     <p className='text-sm text-gray-500 font-light'>{description}</p>
                 </div>
-                <Image src={icon} alt={`${title} icon`} className="card-icon rounded-full w-16 h-16" width="100" height="100" />
+                <Image src={icon} alt={`${title} icon`} className="card-icon rounded-full w-14 h-14" width="100" height="100" />
             </div>
             <a href={link} target="_blank" rel="noopener noreferrer" className='text-sm font-medium text-gray-500 border-t py-3 px-6'>Learn about {title}</a>
         </div>

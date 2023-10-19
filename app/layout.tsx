@@ -1,6 +1,7 @@
 import './globals.scss'
 import type { Metadata } from 'next'
 import CookiePolicyPrompt from './components/common/CookiePolicy'
+import ContactForm from './components/common/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Builtflat - Digital Agency, New Zealand',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="_next">
+        {/* <ContactForm /> */}
         <CookiePolicyPrompt />
         {children}
         </body>

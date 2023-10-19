@@ -322,3 +322,9 @@ $x-large-desktop-screen: 2560px;
     gap: 1rem; /* or whatever gap you prefer */
     width: max-content;
 }
+
+.contact-container-image {
+    background-image: url("../public/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
