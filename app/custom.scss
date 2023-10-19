@@ -334,3 +334,12 @@ $x-large-desktop-screen: 2560px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
 }
+
+.submit-button {
+    transition: 200ms ease;
+}
+
+.submit-button.active {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
