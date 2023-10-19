@@ -323,7 +323,15 @@ $x-large-desktop-screen: 2560px;
     width: max-content;
 }
 
-
+.contact-container {
+    transform: translateX(100%);
+    transition: 300ms ease;
+    visibility: hidden;
+    &.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
 .contact-container-image::before {
     content: '';
     position: absolute;

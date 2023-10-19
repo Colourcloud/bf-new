@@ -31,7 +31,7 @@ const ContactForm = () => {
         <div className="contact-container fixed top-0 left-0 right-0 bottom-0 bg-black w-full z-[999]">
             <span className='absolute top-6 right-6'><MdClose className="text-white text-3xl" /></span>
             <div className="contact-wrapper flex flex-row">
-                <div className="contact-container-image w-1/3 relative bg-white h-screen">
+                <div className="contact-container-image md:w-1/3 relative bg-white h-screen">
                 <video 
                     autoPlay 
                     loop 
@@ -42,7 +42,7 @@ const ContactForm = () => {
                     Your browser does not support the video tag.
                 </video>
                 </div>
-                <div className="contact-form max-w-xl ml-24 flex flex-col gap-6 justify-center">
+                <div className="contact-form p-6 md:p-0 max-w-xl md:ml-24 flex flex-col gap-6 justify-center">
                     <div className="logo"></div>
                     <div>
                         <h2 className="text-4xl text-white leading-tight font-bold md:text-6xl pb-4">Your digital journey begins here</h2>
