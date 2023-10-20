@@ -29,7 +29,7 @@ const ContactForm = () => {
     return (
         <>
         <div className="contact-container fixed top-0 left-0 right-0 bottom-0 bg-black w-full z-[999]">
-            <span className='absolute top-6 right-6'><MdClose className="text-white text-3xl" /></span>
+            <span className='absolute top-6 right-6 close-contact'><MdClose className="text-white text-3xl" /></span>
             <div className="contact-wrapper flex flex-row">
                 <div className="contact-container-image md:w-1/3 relative bg-white h-screen">
                 <video 

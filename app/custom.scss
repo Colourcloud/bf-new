@@ -325,7 +325,7 @@ $x-large-desktop-screen: 2560px;
 
 .contact-container {
     transform: translateX(100%);
-    transition: 300ms ease;
+    transition: 200ms ease;
     visibility: hidden;
     &.active {
         transform: translateX(0);
@@ -349,5 +349,9 @@ $x-large-desktop-screen: 2560px;
 
 .submit-button.active {
     background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.close-contact {
     cursor: pointer;
 }
