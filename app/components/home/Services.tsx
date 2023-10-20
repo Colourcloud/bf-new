@@ -23,7 +23,7 @@ const Services = () => {
                 <Link href='/application' className='service-card-link'>
                   <div className="service-card p-10">
                     <div className="service-card-text flex flex-col gap-4">
-                      <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Application Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
+                      <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Website Development <span className='opacity-40'><MdArrowCircleRight/></span></h4>
                       <p className='text-white w-full md:w-3/4'>Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.</p>
                     </div>
                     <div className="service-card-image">

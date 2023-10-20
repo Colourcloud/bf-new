@@ -76,6 +76,10 @@ const ContactForm = () => {
                                 />
                             </fieldset>
                             <fieldset className='flex flex-col gap-1'>
+                                <label className='text-white'>Phone Number:</label>
+                                <input type="tel" name="number" className='py-3 px-4 rounded-md border-2 bg-transparent border-[#343434] text-white' id="number" placeholder='Please enter your contact number'/>
+                            </fieldset>
+                            <fieldset className='flex flex-col gap-1'>
                                 <label className='text-white'>Website Link:</label>
                                 <input type="text" name="link" className='py-3 px-4 rounded-md border-2 bg-transparent border-[#343434] text-white' id="link" placeholder='www.yourwebsite.co.nz'/>
                             </fieldset>
