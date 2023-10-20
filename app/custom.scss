@@ -327,6 +327,7 @@ $x-large-desktop-screen: 2560px;
     transform: translateX(100%);
     transition: 200ms ease;
     visibility: hidden;
+    overflow-y: scroll;
     &.active {
         transform: translateX(0);
         visibility: visible;
