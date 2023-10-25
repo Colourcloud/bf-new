@@ -9,7 +9,7 @@ const WebsiteDevelopment = () => {
         <section className="builtflat-section dark-bg" id="website-development">
             <div className="site-wrapper">
                 <div className="flex flex-col gap-8">
-                    <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center spaced-m spaced-p">
+                    <div className="section-text flex flex-col gap-8 w-full lg:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center spaced-m spaced-p">
                         <span className='highlighted-purple-text rounded-full text-sm font-medium'>Website Development</span>
                         <h4 className='text-4xl md:text-5xl font-bold purple-gradient'>Tailored website development solutions for your business</h4>
                         <p className='text-xl font-light text-white'>We build fully custom, scalable web applications for your business using the latest web technologies. We make sure all web applications we build have the functionality your customers need, and can be easily managed by you.</p>

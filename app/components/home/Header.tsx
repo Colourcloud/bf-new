@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
 import Navbar from '../common/Navbar';
+import AnimatedText from '../common/AnimateText';
 import headerImage1 from '../../../public/home/header-image-1.jpg'
 import headerImage2 from '../../../public/home/header-image-2.jpg'
 import headerImage3 from '../../../public/home/header-image-3.jpg'

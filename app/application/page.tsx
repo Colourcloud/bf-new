@@ -6,6 +6,7 @@ import CmsDevelopment from '../components/application/CmsDevelopment';
 import CmsSoftware from '../components/application/CmsSoftware';
 import Ecommerce from '../components/application/Ecommerce';
 import Technology from '../components/application/Technology';
+import Portfolio from '../components/common/Portfolio';
 
 const Application: React.FC = () => {
     const subNavigationItems = [
@@ -26,6 +27,7 @@ const Application: React.FC = () => {
             <CmsSoftware />
             <Ecommerce />
             <Technology />
+            <Portfolio />
         </>
     );
 };

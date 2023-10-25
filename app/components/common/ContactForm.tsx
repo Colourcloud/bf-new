@@ -103,7 +103,7 @@ const ContactForm = () => {
                                 type="submit" 
                                 value={isValid ? "Let's get to work" : "Please fill out the rest of the form"} 
                                 {...(!isValid && { disabled: true })} 
-                                className={`p-3 text-sm mt-6 submit-button text-white rounded-md ${isValid ? 'bg-[#7A4AFF]' : 'bg-gray-500 opacity-50'}`}
+                                className={`p-3 text-sm mt-6 submit-button text-white rounded-md ${isValid ? 'bg-[#7A4AFF] cursor-pointer' : 'bg-gray-500 opacity-50'}`}
                             />
                             </fieldset>
                         </div>
