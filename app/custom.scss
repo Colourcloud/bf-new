@@ -356,3 +356,36 @@ $x-large-desktop-screen: 2560px;
 .close-contact {
     cursor: pointer;
 }
+
+.showreel-wrapper {
+    margin-top: -400px!important;
+}
+
+.responsive-wrapper {
+    &:hover {
+        .responsive-showcase {
+            transform: translateX(-50px);
+        }
+    }
+}
+
+.responsive-showcase {
+    width: min-content;
+    transition: 600ms ease;
+
+    .responsive-card {
+       img {
+        height: 100%;
+       }
+    }
+}
+
+.section-graphic {
+    position: relative;
+    background-image: url('../public/uiux/paralax-bg.jpg');
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}

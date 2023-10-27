@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
@@ -33,7 +31,7 @@ const Services = () => {
                   </div>
                 </Link>
 
-                <Link href='/application' className='service-card-link'>
+                <Link href='/uiux' className='service-card-link'>
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">UI / UX Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
