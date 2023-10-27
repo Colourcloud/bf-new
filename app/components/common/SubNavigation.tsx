@@ -9,6 +9,7 @@ interface SubNavBarProps {
 
 const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
     const [activeSection, setActiveSection] = useState('');
+    const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>, href: string) => {
         e.preventDefault();
@@ -18,7 +19,6 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
           behavior: "smooth",
         });
     };
-    
 
     useEffect(() => {
         const handleSectionVisibility = () => {
@@ -38,12 +38,27 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
             setActiveSection(currentSection);
         };
 
+        const handleScrollVisibility = () => {
+            const currentScrollPosition = window.scrollY;
+            setIsVisible(currentScrollPosition > 80);
+        };
+
         window.addEventListener('scroll', handleSectionVisibility);
+        window.addEventListener('scroll', handleScrollVisibility);
         
+        // Trigger the visibility function initially in case the page is loaded with a scroll position > 80
+        handleScrollVisibility();
+
         return () => {
             window.removeEventListener('scroll', handleSectionVisibility);
+            window.removeEventListener('scroll', handleScrollVisibility);
         }
     }, [subNavigationItems]);
+
+    // Conditional rendering based on isVisible
+    if (!isVisible) {
+        return null;
+    }
 
     return (
         <div className='sticky top-0 z-50'>

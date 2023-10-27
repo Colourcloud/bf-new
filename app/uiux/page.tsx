@@ -1,4 +1,5 @@
 import NavbarWhite from '../components/common/NavbarWhite';
+import Navbar from '../components/common/Navbar';
 import SubNavBar from '../components/common/SubNavigation';
 import Portfolio from '../components/common/Portfolio';
 import Header from '../components/uiux/Header';
@@ -15,7 +16,6 @@ const Application: React.FC = () => {
 
     return (
         <>
-            <NavbarWhite />
             <SubNavBar subNavigationItems={subNavigationItems} />
             <Header />
             <Responsive />
