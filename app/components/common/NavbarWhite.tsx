@@ -12,7 +12,7 @@ const NavbarWhite = () => {
 
     return (
         <div>
-            <div className='navbar w-full h-16 bg-[#020214] relative z-10 hidden lg:block'>
+            <div className='navbar w-full h-16 bg-[#020214] relative z-50 hidden lg:block'>
                 <div className='site-wrapper'>
                     <div className='nav-container flex flex-row justify-between h-16'>
                         <div className='nav-content-left flex flex-row gap-16 items-center'>

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Button from '../common/Button';
 import Navbar from '../common/Navbar';
 import AnimatedText from '../common/AnimateText';
+import ScrollSlide from '../common/animation/ScrollSlide';
 
 const Responsive = () => {
 
@@ -18,12 +19,12 @@ const Responsive = () => {
                 </div>
             </div>
             <div className="site-wrapper spaced-m responsive-wrapper">
-                <div className="responsive-showcase flex flex-col lg:flex-row gap-6 mx-auto">
+               <div className="responsive-showcase flex flex-col lg:flex-row gap-6 mx-auto">
                     <div className="responsive-card w-[720px] shadow-md rounded-md bg-white">
                         <Image src="/uiux/responsive-group1-1.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>
                     </div>
                     <div className="responsive-card w-[480px] shadow-md rounded-md bg-white">
-                    <Image src="/uiux/responsive-group1-2.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>
+                        <Image src="/uiux/responsive-group1-2.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>
                     </div>
                     <div className="responsive-card w-[340px] shadow-md rounded-md bg-white">
                         <Image src="/uiux/responsive-group1-3.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>

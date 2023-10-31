@@ -5,11 +5,13 @@ import Portfolio from '../components/common/Portfolio';
 import Header from '../components/uiux/Header';
 import Responsive from '../components/uiux/Responsive';
 import Paralax from '../components/uiux/Paralax';
+import Research from '../components/uiux/Research';
+import Interaction from '../components/uiux/Interaction';
 
 const Application: React.FC = () => {
     const subNavigationItems = [
         { label: 'Responsive Design', href: '#responsive' },
-        { label: 'Design Research', href: '#cms-development' },
+        { label: 'Design Research', href: '#design-research' },
         { label: 'Interaction Design', href: '#ecommerce' },
         { label: 'Visual Design', href: '#technology' },
     ];
@@ -20,6 +22,8 @@ const Application: React.FC = () => {
             <Header />
             <Responsive />
             <Paralax />
+            <Research />
+            <Interaction />
         </>
     );
 };

@@ -13,7 +13,7 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
 
     const handleScroll = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>, href: string) => {
         e.preventDefault();
-        const targetId = href.replace(/.*\#/, "");
+        const targetId = href.replace(/.*#/, "");
         const elem = document.getElementById(targetId);
         elem?.scrollIntoView({
           behavior: "smooth",
@@ -55,13 +55,13 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
         }
     }, [subNavigationItems]);
 
-    // Conditional rendering based on isVisible
-    if (!isVisible) {
-        return null;
-    }
+    const subNavStyle = {
+        transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+        transition: 'transform 0.3s ease-in-out'
+    };
 
     return (
-        <div className='sticky top-0 z-50'>
+        <div className='sticky top-0 z-40' style={subNavStyle}>
             <div className='navbar w-100 h-16 bg-white shadow-sm'>
                 <div className='site-wrapper'>
                     <div className='nav-container flex flex-row justify-between h-16'>
