@@ -57,7 +57,7 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
 
     const subNavStyle = {
         transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-        transition: isVisible ? 'transform 0.3s ease-in-out, z-index 0s, display 0s' : 'transform 0.3s ease-in-out, z-index 0s 0.3s, display 0s 0.3s',
+        transition: isVisible ? 'transform 0.2s ease-in-out, z-index 0s, display 0s' : 'transform 0.2s ease-in-out, z-index 0s 0.2s, display 0s 0.2s',
         zIndex: isVisible ? '50' : '-1',
     };
 
