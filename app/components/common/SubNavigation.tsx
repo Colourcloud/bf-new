@@ -57,11 +57,12 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
 
     const subNavStyle = {
         transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-        transition: 'transform 0.3s ease-in-out'
+        transition: isVisible ? 'transform 0.3s ease-in-out, z-index 0s, display 0s' : 'transform 0.3s ease-in-out, z-index 0s 0.3s, display 0s 0.3s',
+        zIndex: isVisible ? '50' : '-1',
     };
 
     return (
-        <div className='sticky top-0 z-40' style={subNavStyle}>
+        <div className='fixed w-full top-0' style={subNavStyle}>
             <div className='navbar w-100 h-16 bg-white shadow-sm'>
                 <div className='site-wrapper'>
                     <div className='nav-container flex flex-row justify-between h-16'>
