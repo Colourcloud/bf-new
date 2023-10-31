@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div>
-        <header className='home-page pb-96'>
+        <header className='home-page pb-40 xl:pb-96'>
         <Navbar></Navbar>
           <div className="site-wrapper">
             <div className="header-content flex flex-col spaced-m spaced-p w-full text-center items-center mx-auto lg:w-4/5">

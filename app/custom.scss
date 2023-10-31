@@ -358,7 +358,10 @@ $x-large-desktop-screen: 2560px;
 }
 
 .showreel-wrapper {
-    margin-top: -400px!important;
+    margin-top: -150px!important;
+    @media screen and (min-width: $desktop-screen) {
+        margin-top: -400px!important;
+    }
 }
 
 .responsive-wrapper {
