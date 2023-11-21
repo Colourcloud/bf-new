@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 import Button from '../common/Button';
 import AnimatedText from '../common/AnimateText';
+import IntroductionImage from '../../../public/home/test.jpg';
 
 
 const HomeIntroduction = () => {
@@ -20,7 +21,7 @@ const HomeIntroduction = () => {
                 </div>
               </div>
               <div className="section-graphic">
-                <Image src="/home/test.jpg" alt="header-graphic" width="800" height="500" className='rounded-lg'></Image>
+                <Image src={IntroductionImage} alt="header-graphic" width="800" placeholder='blur' priority height="500" className='rounded-lg'></Image>
               </div>
         </section>
       </div>

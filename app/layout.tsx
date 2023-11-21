@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="_next">
+      <body className="_next" >
         <ToggleContactListener />
         <ContactForm />
         <CookiePolicyPrompt />
