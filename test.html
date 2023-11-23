@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+<style>
+    body {
+  background: #1b1b1b;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-container {
+  text-align: center;
+  line-height: 1;
+}
+
+.container h1, .container h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  margin: 0;
+  text-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+}
+
+.container h2 {
+  font-size: 100px;
+  position: relative;
+  z-index: -1;
+  margin-top: -6%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-container">
+      <h1 class="animated-text">Production & Digital</h1>
+      <h2 class="animated-text">Marketing Agency</h2>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="text-container">
+      <h1 class="animated-text">Production Test</h1>
+      <h2 class="animated-text">Services</h2>
+    </div>
+  </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  animateTextOnVisibility('.animated-text');
+});
+
+function animateTextOnVisibility(selector) {
+  const elements = document.querySelectorAll(selector);
+
+  elements.forEach(element => {
+    let words = element.textContent.trim().split(/\s+/);
+    element.textContent = ''; // Clear the existing text
+
+    words.forEach((word, index) => {
+      // Create inner span for the word
+      const innerSpan = document.createElement('span');
+      innerSpan.textContent = word;
+      innerSpan.style.display = 'inline-block';
+      innerSpan.style.transform = 'translateY(100px)';
+      innerSpan.style.opacity = '0';
+      innerSpan.style.lineHeight = '1.1';
+      innerSpan.style.transition = `transform 0.4s ${index * 0.1}s, opacity 0.4s ${index * 0.1}s`;
+
+      // Create outer span (word wrapper)
+      const outerSpan = document.createElement('span');
+      outerSpan.style.display = 'inline-block';
+      outerSpan.style.overflow = 'hidden';
+      outerSpan.appendChild(innerSpan);
+
+      // Append the word wrapper to the element
+      element.appendChild(outerSpan);
+
+      // Add a space after each word (except the last one)
+      if (index < words.length - 1) {
+        element.appendChild(document.createTextNode(' '));
+      }
+    });
+
+    // Intersection Observer to trigger the animation
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        words.forEach((word, index) => {
+          element.children[index].firstChild.style.transform = 'translateY(0px)';
+          element.children[index].firstChild.style.opacity = '1';
+        });
+        observer.disconnect();
+      }
+    }, { threshold: 0.1 });
+
+    observer.observe(element);
+  });
+}
+
+
+
+
+</script>
+    
+</body>
+</html>

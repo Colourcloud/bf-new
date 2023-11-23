@@ -12,7 +12,7 @@ const Application: React.FC = () => {
     const subNavigationItems = [
         { label: 'Responsive Design', href: '#responsive' },
         { label: 'Design Research', href: '#design-research' },
-        { label: 'Interaction Design', href: '#ecommerce' },
+        { label: 'Interaction Design', href: '#interaction-research' },
         { label: 'Visual Design', href: '#technology' },
     ];
 

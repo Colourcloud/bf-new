@@ -389,6 +389,9 @@ $x-large-desktop-screen: 2560px;
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     overflow: hidden;
+    @media screen and (min-width: $desktop-screen) {
+        background-size: contain;
+    }
 }

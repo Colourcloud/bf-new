@@ -15,7 +15,7 @@ const CmsDevelopment = () => {
                 </div>
                 <div className="section-container flex flex-col lg:flex-row gap-10 spaced-m spaced-p">
                     <div className="section-graphic w-full lg:w-3/5 position: relative;">
-                        <Image src="/application/cms-graphic.jpg" alt="dashboard ui for managing users" className='shadow-lg rounded-lg' width="1600" height="800"></Image>
+                        <Image src="/application/cms-graphic.jpg" alt="dashboard ui for managing users" className='shadow-sm rounded-lg' width="1600" height="800"></Image>
                     </div>
                     <div className="section-text w-full lg:w-2/5 flex flex-col gap-6">
                         <h4 className='text-3xl font-bold'>Making sure your CMS is packed with all the features you need</h4>

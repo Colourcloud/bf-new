@@ -2,15 +2,16 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 import { MdClose } from "react-icons/md";
 
 const ContactForm = () => {
-
     const maxLength = 500;
     const [text, setText] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState(''); // Added state for phone number
+    const [websiteLink, setWebsiteLink] = useState(''); // Added state for website link
     const [charsLeft, setCharsLeft] = useState(maxLength);
     const [isValid, setIsValid] = useState(false);
 
@@ -25,6 +26,27 @@ const ContactForm = () => {
             setIsValid(false);
         }
     }, [text, name, email]);
+
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        // Send a POST request
+        const response = await fetch('/api/sendMail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, phoneNumber, websiteLink, message: text }),
+        });
+
+        if (response.ok) {
+            // Redirect to the home page or another route
+            window.location.href = '/';
+        } else {
+            // Handle the error case
+            console.error('Failed to send message');
+        }
+    };
 
     return (
         <>
@@ -47,7 +69,7 @@ const ContactForm = () => {
                     <div>
                         <h2 className="text-4xl text-white leading-tight font-bold md:text-6xl pb-4">Your digital journey begins here</h2>
                     </div>
-                    <form action="">
+                    <form onSubmit={handleSubmit}>
                         <div className="form-fields flex flex-col gap-6">
                             <fieldset className='flex flex-col gap-1'>
                                 <label className='text-white'>Name:</label>
@@ -80,7 +102,7 @@ const ContactForm = () => {
                                 <input type="tel" name="number" className='py-3 px-4 rounded-md border-2 bg-transparent border-[#343434] text-white' id="number" placeholder='Please enter your contact number'/>
                             </fieldset>
                             <fieldset className='flex flex-col gap-1'>
-                                <label className='text-white'>Website Link:</label>
+                                <label className='text-white'>Website Link: <span className='text-xs italic'>Not Required</span></label>
                                 <input type="text" name="link" className='py-3 px-4 rounded-md border-2 bg-transparent border-[#343434] text-white' id="link" placeholder='www.yourwebsite.co.nz'/>
                             </fieldset>
                             <fieldset className='flex flex-col gap-1 relative'>

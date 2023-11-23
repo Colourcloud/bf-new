@@ -9,9 +9,10 @@ const Research = () => {
 
     return (
         <>
-        <section className="builtflat-section" id="design-research">
+        <section id="design-research">
+        <section className="builtflat-section">
             <div className="site-wrapper spaced-m spaced-p">
-            <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
+            <div className="section-text flex flex-col gap-8 w-full lg:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Design Research</span>
                 <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>A collaborative experience to speed up those busy workflows</h4></AnimatedText>
                 <p className='text-xl font-light'>We work closely with other design & development agencies, to help them meet their client deadlines. Leveraging workloads can greatly increase the productivity of a team, to deliver a more polished project.</p>       
@@ -31,6 +32,7 @@ const Research = () => {
               </div>
         </section>
         </div>
+        </section>
         
         </>
     );

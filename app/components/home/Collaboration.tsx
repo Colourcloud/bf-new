@@ -53,7 +53,7 @@ const Collaboration = () => {
                                         </div>
                                     </div></AnimateOnScroll>
                                 </div>
-                                <Image src="/home/collaboration-graphic.jpg" width='1200' height='800' alt="Figma UI for collaboration design" className='w-[300%] sm:w-full max-w-[2000px] sm:max-w-full rounded-lg shadow-l'></Image>
+                                <Image src="/home/collaboration-graphic.jpg" width='1200' height='800' alt="Figma UI for collaboration design" className='w-[300%] sm:w-full max-w-[2000px] sm:max-w-full rounded-lg'></Image>
                             </div>
                         </div>
                     </section>
