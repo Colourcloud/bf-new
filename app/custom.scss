@@ -386,12 +386,13 @@ $x-large-desktop-screen: 2560px;
 .paralax-image  {
     position: relative;
     background-image: url('../public/uiux/paralax-bg.jpg');
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     @media screen and (min-width: $desktop-screen) {
         background-size: contain;
+        background-attachment: fixed;
     }
 }
