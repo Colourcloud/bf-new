@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navigationItems = [
         { label: 'Solutions', href: '#' },
-        { label: 'Case Studies', href: '#' },
+        { label: 'Case Studies', href: '/case-studies' },
         { label: 'Why Builtflat', href: '#' },
         { label: 'Partnership', href: '#' },
         { label: 'Blog', href: '#' }

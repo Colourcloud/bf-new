@@ -396,3 +396,34 @@ $x-large-desktop-screen: 2560px;
         background-attachment: fixed;
     }
 }
+
+
+.portfolio-card-container {
+    align-items: flex-start;
+    .portfolio-card-image {
+        transition: 500ms ease;
+    }
+    &:hover {
+        .portfolio-card-image {
+            scale: 1.05;
+        }
+    }
+}
+.portfolio-title {
+    position: relative;
+    line-height: 2;
+}
+.portfolio-title:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: var(--primary-color);
+    transition: width 0.5s ease 0s;
+    width: 0;
+  }
+  .portfolio-card-container:hover .portfolio-title:after { 
+    width: 100%; 
+  }
