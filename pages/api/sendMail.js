@@ -9,7 +9,7 @@ export default function handler(req, res) {
       secure: false, // true for 465, false for other ports
       auth: {
         user: "contact@builtflat.co.nz", // Your SMTP username
-        pass: "HQREaHawdw0c", // Your SMTP password
+        pass: "//", // Your SMTP password
       },
       tls: {
         // This is necessary only if your server uses self-signed certificates
