@@ -1,4 +1,6 @@
 [
     { "id": 1, "title": "CSSBuy", "image": "/portfolio/cssbuy/portfolio-banner.jpg", "slug": "cssbuyy" },
-    { "id": 2, "title": "Blank Canvas Studios", "image": "/portfolio/cssbuy/portfolio-banner.jpg", "slug": "blank-canvas-studios" }
+    { "id": 2, "title": "Blank Canvas Studios", "image": "/portfolio/blankcanvas/portfolio-banner.jpg", "slug": "blank-canvas-studios" },
+    { "id": 3, "title": "Chasnz - Construction Health & Safety", "image": "/portfolio/chasnz/portfolio-banner.jpg", "slug": "chasnz" },
+    { "id": 3, "title": "Bureau - Recruitment & HR Business", "image": "/portfolio/bureau/portfolio-banner.jpg", "slug": "bureau" }
 ]
