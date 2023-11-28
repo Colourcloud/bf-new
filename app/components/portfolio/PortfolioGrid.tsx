@@ -1,7 +1,6 @@
 // Work.tsx
 import PortfolioCard from './PortfolioCard';
 import portfolioData from '../../data/portfolioData.json';
-
 const PotrfolioGrid: React.FC = () => {
     return (
         <section className='portfolio-page bg-[--dark-background-color] spaced-p'>
