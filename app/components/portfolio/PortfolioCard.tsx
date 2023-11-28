@@ -6,13 +6,13 @@ interface PortfolioItem {
     id: number;
     title: string;
     image: string;
-    url: string;
+    slug: string;
 }
 
-const PortfolioCard: React.FC<PortfolioItem> = ({ title, image, url }) => {
+const PortfolioCard: React.FC<PortfolioItem> = ({ title, image, slug }) => {
     return (
         <div className='flex flex-col gap-4 portfolio-card-container'>
-            <Link href={url}>
+            <Link href={`/portfolio/${slug}`}>
             <div className="portfolio-card rounded-sm relative overflow-hidden">
                 <Image src={image} alt={title} objectFit='cover' className='portfolio-card-image' width={800} height={80} />
             </div>
