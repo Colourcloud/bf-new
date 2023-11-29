@@ -8,15 +8,16 @@ interface PortfolioUserComponentProps {
     portfolioProps: {
       id: number;
       title: string;
-      brief: string;
+      brief?: string; // Make brief optional
       image: string;
       slug: string;
-      images: string[];
-      link?: string;
-      discovered: string;
-      mobile_statement?: string;
+      images?: string[]; // Make images optional
+      link?: string; // Already optional
+      discovered?: string; // Make discovered optional
+      mobile_statement?: string; // Make mobile_statement optional
     }[];
   }
+  
 
   const PortfolioUserComponent: React.FC<PortfolioUserComponentProps> = ({ portfolioProps }) => {
     const [data] = portfolioProps
