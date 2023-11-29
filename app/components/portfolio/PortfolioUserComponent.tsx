@@ -41,17 +41,17 @@ interface PortfolioUserComponentProps {
               </div>
             <section className="content m-auto">
               <div className="content-photo w-full"> 
-                <Image src={data.images[0]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/>
+                { data.images?.[0] && <Image src={data.images[0]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/> }
               </div>
               <div className="flex flex-col gap-4 w-2/3 m-auto spaced-m spaced-p">
                 <h4 className="text-2xl font-bold">What we discovered</h4>
                 <p className="text-xl font-light">{data.discovered}</p>
               </div>
               <div className="content-photo w-full"> 
-                <Image src={data.images[1]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/>
+                { data.images?.[0] && <Image src={data.images[1]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/> }
               </div>
               <div className="content-photo w-full mt-6"> 
-                <Image src={data.images[2]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/>
+                { data.images?.[0] && <Image src={data.images[2]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/> }
               </div>
               <div className="flex flex-col gap-4 w-2/3 m-auto spaced-m spaced-p">
                   {
@@ -64,11 +64,11 @@ interface PortfolioUserComponentProps {
                   }
               </div>
               <div className="content-photo w-full mt-6"> 
-                <Image src={data.images[3]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/>
+                { data.images?.[0] && <Image src={data.images[3]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/> }
               </div>
               <div className="content-photo w-full flex flex-row"> 
-                <Image src={data.images[4]} alt={data.title} loading="lazy" width={800} height={800} className="object-cover"/>
-                <Image src={data.images[5]} alt={data.title} loading="lazy" width={800} height={800} className="object-cover"/>
+                { data.images?.[0] && <Image src={data.images[4]} alt={data.title} loading="lazy" width={800} height={800} className="object-cover"/> }
+                { data.images?.[0] && <Image src={data.images[5]} alt={data.title} loading="lazy" width={800} height={800} className="object-cover"/> }
               </div>
             </section>
           </div>
