@@ -1,6 +1,38 @@
 [
-    { "id": 1, "title": "CSSBuy", "image": "/portfolio/cssbuy/portfolio-banner.jpg", "slug": "cssbuyy" },
-    { "id": 2, "title": "Blank Canvas Studios", "image": "/portfolio/blankcanvas/portfolio-banner.jpg", "slug": "blank-canvas-studios" },
-    { "id": 3, "title": "Chasnz - Construction Health & Safety", "image": "/portfolio/chasnz/portfolio-banner.jpg", "slug": "chasnz" },
-    { "id": 3, "title": "Bureau - Recruitment & HR Business", "image": "/portfolio/bureau/portfolio-banner.jpg", "slug": "bureau" }
+    { 
+        "id": 1, 
+        "title": "CSSBuy",
+        "brief": "We were asked to redesign the current CSSBuy mobile application, to create a more modern, easy to use version that their users would love. CSSBuy wanted to keep their current colour scheme with a few adjustments, but wanted us to decide on new typography and icons to use through the website. We started by looking through all the pages their current app has and broke them down to their core functionally, which would later be used in the design decisions.",
+        "link": "hello",
+        "image": "/portfolio/cssbuy/portfolio-banner.jpg", 
+        "slug": "cssbuyy", 
+        "images": [
+            "/portfolio/cssbuy/test.png",
+            "/portfolio/cssbuy/image-2.png",
+            "/portfolio/cssbuy/image-3.png",
+            "/portfolio/cssbuy/image-4.png",
+            "/portfolio/cssbuy/image-5.png",
+            "/portfolio/cssbuy/image-6.png"
+        ],
+        "discovered": "The first thing we noticed was their current use of colour and typography. We really liked their current colour palette which matched their branding, however there were a lot of inconsistencies with different shades of the brand colour for buttons, highlights and text. So we wanted to really focus on fixing this.",
+        "mobile_statement": "We were also tasked to redesign CSSBuy's mobile application to enhance the shopping experience for all their users. With a total of over 40+ pages, this was no small feat, but we were able to completely overhaul the design and deliver them a product not only they loved, but their customers aswell."
+    },
+    { 
+        "id": 2, 
+        "title": "Blank Canvas Studios", 
+        "image": "/portfolio/blankcanvas/portfolio-banner.jpg", 
+        "slug": "blank-canvas-studios" 
+    },
+    { 
+        "id": 3, 
+        "title": "Chasnz - Construction Health & Safety",
+        "image": "/portfolio/chasnz/portfolio-banner.jpg", 
+        "slug": "chasnz" 
+    },
+    { 
+        "id": 4, 
+        "title": "Bureau - Recruitment & HR Business", 
+        "image": "/portfolio/bureau/portfolio-banner.jpg", 
+        "slug": "bureau" 
+    }
 ]
