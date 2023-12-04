@@ -23,7 +23,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="header-graphic w-full lg:w-2/4">
-                    <Image src="/application/blank.jpg" className='w-[120%] lg:w-[180%] rounded-lg max-w-none' alt="blank image" width="1800" height="800"></Image>
+                    <Image src="/application/header-image.jpg" className='w-[120%] lg:w-[180%] rounded-lg max-w-none' alt="blank image" width="1800" height="800"></Image>
                 </div>
             </div>
         </div>

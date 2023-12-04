@@ -9,7 +9,7 @@ const Collaboration = () => {
 
 
     return (
-        <div className="builtflat-container-block">
+        <div className="builtflat-container-block bg-[#f0f5ff] py-16">
             <div>
                 <div className='overflow-hidden'>
                     <div className="site-wrapper">

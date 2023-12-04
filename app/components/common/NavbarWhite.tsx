@@ -4,7 +4,7 @@ import { IoSendSharp, IoMenuOutline } from "react-icons/io5";
 const NavbarWhite = () => {
     const navigationItems = [
         { label: 'Solutions', href: '#' },
-        { label: 'Case Studies', href: '#' },
+        { label: 'Case Studies', href: '/portfolio' },
         { label: 'Why Builtflat', href: '#' },
         { label: 'Partnership', href: '#' },
         { label: 'Blog', href: '#' }

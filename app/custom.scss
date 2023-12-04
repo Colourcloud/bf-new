@@ -37,7 +37,7 @@ $x-large-desktop-screen: 2560px;
             width: 90%;
             bottom: 0;
             @media screen and (min-width: $tablet-screen) {
-                width: 65%;
+                width: 70%;
             }
         }
         &:nth-of-type(2) {
@@ -45,7 +45,7 @@ $x-large-desktop-screen: 2560px;
             width: 70%;
             bottom: 0;
             @media screen and (min-width: $tablet-screen) {
-                width: 55%;
+                width: 60%;
             }
         }
         &:nth-of-type(3) {
@@ -53,7 +53,7 @@ $x-large-desktop-screen: 2560px;
             width: 70%;
             bottom: 0;
             @media screen and (min-width: $tablet-screen) {
-                width: 55%;
+                width: 60%;
             }
         }
     }
@@ -426,4 +426,32 @@ $x-large-desktop-screen: 2560px;
   }
   .portfolio-card-container:hover .portfolio-title:after { 
     width: 100%; 
+  }
+
+.services_used_link {
+    position: relative;
+    line-height: 2;
+}
+.services_used_link:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: var(--primary-color);
+    transition: width 0.5s ease 0s;
+    width: 0;
+  }
+  .services_used_link:hover {
+    &:after {
+        width: 100%; 
+    } 
+  }
+
+  .portfolio_get-started {
+    background-image: url('../public/portfolio/get-started-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }

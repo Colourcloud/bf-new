@@ -13,7 +13,7 @@ const PortfolioCard: React.FC<PortfolioItem> = ({ title, image, slug }) => {
     return (
         <div className='flex flex-col gap-4 portfolio-card-container'>
             <Link href={`/portfolio/${encodeURIComponent(slug)}`}>
-            <div className="portfolio-card rounded-sm relative overflow-hidden">
+            <div className="portfolio-card rounded-md relative overflow-hidden">
                 <Image src={image} alt={title} objectFit='cover' placeholder='blur' blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="' className='portfolio-card-image' width={1200} height={560} />
              </div>
             </Link>
