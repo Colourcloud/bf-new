@@ -109,7 +109,7 @@ interface PortfolioUserComponentProps {
               <div className="portfolio_get-started flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between items-center py-16 px-10 w-full lg:w-2/3 m-auto rounded-md bg-[--dark-background-color]">
                 <div className="w-full lg:w-2/4 flex flex-col gap-4 text-center lg:text-left">
                   <h4 className="text-4xl font-bold items-center text-white">Have a project you want completed?</h4>
-                  <p className="text-lg font-light text-white">If you have a project you'd like to develop, feel free to reach out to us. We're ready to look into it and see how we can help make it a reality.</p>
+                  <p className="text-lg font-light text-white">If you have a project you&apos;d like to develop, feel free to reach out to us. We&apos;re ready to look into it and see how we can help make it a reality.</p>
                 </div>
                 <Button backgroundColor="--primary-color" textColor="white"  className="background-purple" href="/">Get Started Today</Button>
               </div>
