@@ -16,10 +16,15 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
         e.preventDefault();
         const targetId = href.replace(/.*#/, "");
         const elem = document.getElementById(targetId);
-        elem?.scrollIntoView({
-          behavior: "smooth",
-        });
+        const isMobile = window.innerWidth <= 768; // Adjust the value as per your mobile breakpoint
+    
+        if (elem) {
+            elem.scrollIntoView({
+                behavior: isMobile ? "auto" : "smooth"
+            });
+        }
     };
+    
 
     useEffect(() => {
         const handleSectionVisibility = () => {
