@@ -34,15 +34,6 @@
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@media (max-width: 768px) {
-  html {
-      scroll-behavior: auto;
-  }
-}
 
 .no-scroll {
   overflow: hidden;
