@@ -50,5 +50,11 @@
         "title": "Bureau - Recruitment & HR Business", 
         "image": "/portfolio/bureau/portfolio-banner.jpg", 
         "slug": "bureau" 
+    },
+    { 
+        "id": 5, 
+        "title": "Doofy - The Marketplace for Creatives", 
+        "image": "/portfolio/doofy/portfolio-banner.jpg", 
+        "slug": "doofy" 
     }
 ]

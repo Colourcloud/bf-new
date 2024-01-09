@@ -12,6 +12,7 @@ const ToggleContactListener: React.FC = () => {
             if (target.classList.contains('toggle-contact') || target.closest('.toggle-contact')) {
                 if (contactContainer) {
                     contactContainer.classList.toggle('active');
+                    document.body.classList.add('no-scroll');
                 }
             }
 
@@ -19,6 +20,7 @@ const ToggleContactListener: React.FC = () => {
             if (target.classList.contains('close-contact') || target.closest('.close-contact')) {
                 if (contactContainer) {
                     contactContainer.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
                 }
             }
         };

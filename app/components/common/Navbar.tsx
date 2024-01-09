@@ -66,7 +66,7 @@ const Navbar = () => {
                 <div className='sidenav-container flex flex-col gap-10 p-8'>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Solutions</span>
-                        <li className='text-gray-200'>Application Development</li>
+                        <li className='text-gray-200'>Website Development</li>
                         <li className='text-gray-200'>UI/UX Design</li>
                         <li className='text-gray-200'>Mobile Development</li>
                         <li className='text-gray-200'>Template Driven Design</li>
