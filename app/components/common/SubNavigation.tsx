@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 interface SubNavBarProps {
@@ -10,6 +10,7 @@ interface SubNavBarProps {
 const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
     const [activeSection, setActiveSection] = useState('');
     const [isVisible, setIsVisible] = useState(false);
+    const navRef = useRef<HTMLDivElement>(null);
 
     const handleScroll = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>, href: string) => {
         e.preventDefault();
@@ -23,7 +24,7 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
     useEffect(() => {
         const handleSectionVisibility = () => {
             let currentSection = '';
-
+    
             subNavigationItems.forEach(item => {
                 const element = document.getElementById(item.href.replace('#', ''));
                 if (element) {
@@ -31,10 +32,18 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
             
                     if (rect.top <= 200 && rect.bottom >= 200) {
                         currentSection = item.href;
+    
+                        // Check if navRef.current is not null before using it
+                        if (navRef.current) {
+                            const activeNavItem = navRef.current.querySelector(`[href='${currentSection}']`);
+                            if (activeNavItem) {
+                                activeNavItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                            }
+                        }
                     }
                 }
             });            
-
+    
             setActiveSection(currentSection);
         };
 
@@ -66,7 +75,7 @@ const SubNavBar: React.FC<SubNavBarProps> = ({ subNavigationItems }) => {
             <div className='navbar w-100 h-16 bg-white shadow-sm'>
                 <div className='site-wrapper'>
                     <div className='nav-container flex flex-row justify-between h-16'>
-                        <div className='nav-content-left flex flex-row gap-10 md:gap-16 items-center overflow-auto no-scroll-bar'>
+                        <div ref={navRef} className='nav-content-left flex flex-row gap-10 md:gap-16 items-center overflow-auto no-scroll-bar'>
                             <h4 className='text-base font-extrabold md:text-xl'>Services</h4>
                             <ul className='flex flex-row gap-6 md:gap-10 items-center'>
                                 {subNavigationItems.map((item, index) => (
