@@ -5,7 +5,7 @@ import PotrfolioGrid from '../portfolio/PortfolioGrid';
 const Portfolio = () => {
     return (
         <>
-        <section className="builtflat-section spaced-p h-full bg-[--dark-background-color]">
+        <section className="builtflat-section pt-16 pb-40 h-full bg-[--dark-background-color]">
             <div className="site-wrapper">
                 <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center spaced-p">
                     <h4 className='text-4xl md:text-5xl font-semibold purple-gradient'>Some our recent case studies</h4>
