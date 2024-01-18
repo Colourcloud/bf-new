@@ -15,40 +15,39 @@ type ImageMap = {
 
 const Services = () => {
     const [currentImage, setCurrentImage] = useState('/template-design/image1.jpg');
+    const [lastCrossedBreakpoint, setLastCrossedBreakpoint] = useState(0);
 
     const handleScroll = () => {
-        // Hardcoded pixel values for breakpoints
-        const breakpoints = [930, 1860]; // Adjust these values as needed
-
-        // Define the image source for each breakpoint
+        const breakpoints = [0, 930, 1860]; // Defined breakpoints
+        const threshold = 50; // Threshold in pixels for changing images
         const images = [
-            '/template-design/image1.jpg', // 0px to 930px
-            '/template-design/image2.jpg', // 931px to 1860px
-            '/template-design/image3.jpg', // 1861px and beyond
+            '/template-design/image1.jpg', // Image for 0px
+            '/template-design/image2.jpg', // Image for 930px
+            '/template-design/image3.jpg', // Image for 1860px
         ];
 
         const container = document.getElementById('content-container');
         if (!container) return;
 
-        // Calculate scroll position relative to the container
-        const scrollPosition = window.scrollY - container.offsetTop;
-        let imageIndex;
+        const containerTop = container.offsetTop;
+        const relativeScrollPosition = window.scrollY - containerTop;
 
-        if (scrollPosition < breakpoints[0]) {
-            imageIndex = 0;
-        } else if (scrollPosition < breakpoints[1]) {
-            imageIndex = 1;
-        } else {
-            imageIndex = 2;
+        // Find the nearest breakpoint
+        const nearestBreakpoint = breakpoints.reduce((nearest, breakpoint) =>
+            Math.abs(breakpoint - relativeScrollPosition) < Math.abs(nearest - relativeScrollPosition) ? breakpoint : nearest
+        );
+
+        if (Math.abs(relativeScrollPosition - nearestBreakpoint) <= threshold && nearestBreakpoint !== lastCrossedBreakpoint) {
+            const imageIndex = breakpoints.indexOf(nearestBreakpoint);
+            setCurrentImage(images[imageIndex]);
+            setLastCrossedBreakpoint(nearestBreakpoint);
         }
-
-        setCurrentImage(images[imageIndex]);
     };
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [lastCrossedBreakpoint]);
 
     return (
         <div className='bg-[--dark-background-color]'>
@@ -72,7 +71,10 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="content-graphic-container w-2/3  h-full p-8"> {/* Image that scrolls down the page */}
-                        <AnimateOnScroll><Image src={currentImage} alt="yes" className='w-full sticky top-8 rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                    <div className='sticky top-8 flex justify-center items-center'>
+                    <span id="trigger" className='w-2 h-2'></span>
+                    <AnimateOnScroll><Image src={currentImage} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                    </div>
                     </div>
                 </div>
             </div>
