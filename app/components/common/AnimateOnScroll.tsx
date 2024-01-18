@@ -9,7 +9,7 @@ interface AnimateOnScrollProps {
   rootMarginOffset?: number; // New prop for rootMargin offset value
 }
 
-const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, threshold = 0.3, rootMarginOffset = 0 }) => {
+const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, threshold = 0.1, rootMarginOffset = 0 }) => {
   const [ref, inView] = useInView({
     threshold,
     rootMargin: `200px 0px -200px 0px`, // top-right-bottom-left with custom offset

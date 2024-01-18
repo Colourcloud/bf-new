@@ -6,11 +6,13 @@ import AnimatedText from '../common/AnimateText';
 import headerImage1 from '../../../public/home/header-image-1.jpg'
 import headerImage2 from '../../../public/home/header-image-2.jpg'
 import headerImage3 from '../../../public/home/header-image-3.jpg'
+import { MdArrowForward } from "react-icons/md";
 
 const Header = () => {
 
 
     return (
+      <>
         <header className='home-page'>
           <Navbar></Navbar>
           <div className="site-wrapper">
@@ -55,6 +57,8 @@ const Header = () => {
               </div>
           </div>
         </header>
+        <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-base text-white">We&apos;re currently offering a complimentary website &amp; competitor analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-medium'>Apply Here</Link></div>
+        </>
     );
 };
 export default Header;

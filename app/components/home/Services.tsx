@@ -55,7 +55,7 @@ const Services = () => {
                 </div>
                 </Link>
 
-                <Link href='/application' className='service-card-link'>
+                <Link href='/template-design' className='service-card-link'>
                 <div className="service-card service-card flex flex-col justify-between">
                   <div className="service-card-text flex flex-col gap-4 px-10 pt-10">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">Template Driven Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>

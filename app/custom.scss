@@ -455,3 +455,90 @@ $x-large-desktop-screen: 2560px;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .template-design-header {
+    margin-top: 8.75rem;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 350px;
+        background: linear-gradient(180deg, rgba(2, 2, 20, 0.00) 0%, #020214 100%);
+        z-index: 100;
+    }
+
+    .floating-header-image {
+        opacity: 0;
+        transition: 300ms ease-in-out;
+        scale: 0.5;
+        &:nth-of-type(2) {
+            left: 20%;
+            top: 14%;
+        }
+        &:nth-of-type(3) {
+            right: 20%;
+            top: 14%;
+        }
+        &:nth-of-type(4) {
+            left: 20%;
+            bottom: 20%;
+        }
+        &:nth-of-type(5) {
+            bottom: 20%;
+            left: 39%;
+        }
+        &:nth-of-type(6) {
+            bottom: 6%;
+            right: 23%;
+        }
+    }
+  }
+
+  .floating-header-image.on-screen {
+    opacity: 1!important;
+    scale: 1!important;
+  }
+
+  .scale {
+        opacity: 0;
+        transition: 300ms ease-in-out;
+        scale: 0.7;
+  }
+  .scale.on-screen {
+        opacity: 1!important;
+        scale: 1!important;
+  }
+
+  .figma-screen {
+        opacity: 0.6;
+        transition: 300ms ease-in-out;
+        scale: 0.9;
+        &.on-screen {
+            opacity: 1!important;
+            scale: 1!important;
+        }
+  }
+
+  .template-service-image {
+    border: 1px solid #222;
+  }
+
+
+  .catalogue-showcase {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(12, 1fr); 
+    gap: 24px;
+    height: 800px;
+    div {
+        background: #D9D9D9;
+        border-radius: 8px;
+    }
+    .div1 { grid-area: 1 / 5 / 6 / 9; }
+.div2 { grid-area: 1 / 1 / 8 / 5; }
+.div3 { grid-area: 8 / 1 / 13 / 5; }
+.div4 { grid-area: 6 / 5 / 13 / 7; }
+.div5 { grid-area: 6 / 7 / 13 / 9; } 
+    }
