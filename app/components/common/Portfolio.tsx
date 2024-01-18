@@ -13,12 +13,12 @@ const Portfolio = () => {
                     <Link href="/portfolio" className='text-purple font-medium'>View all our case studies</Link>       
                 </div>
             </div>
-            <div className="recent-work_cards-layout max-w-[1600px] flex flex-row justify-center gap-6 m-auto">
-                <div className="recent-work_card h-80 w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-72 bg-white rounded-md"></div>
+            <div className="recent-work_cards-layout max-w-[1600px] px-4 flex flex-row flex-wrap justify-center gap-6 m-auto">
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
             </div>
         </section>
         </>

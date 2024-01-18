@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "imageSrc": "/template-design/testimonials/1.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "The design service I received was top-notch! The team was incredibly talented and helped me bring my vision to life in a way that exceeded my expectations."
+    },
+    {
+        "id": 2,
+        "imageSrc": "/template-design/testimonials/2.jpg",
+        "altText": "yes",
+        "name": "Ronald Bailey",
+        "company": "Velocienta",
+        "testimonial": "I was blown away by the quality of the design work I received from this service."
+    },
+    {
+        "id": 3,
+        "imageSrc": "/template-design/testimonials/3.jpg",
+        "altText": "yes",
+        "name": "Elizabeth Hayes",
+        "company": "Velocienta",
+        "testimonial": "I had a great experience working with this design service. They were able to take my vague ideas and turn them into a stunning final product that really captured the essence of my brand."
+    },
+    {
+        "id": 4,
+        "imageSrc": "/template-design/testimonials/4.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "If you're looking for a design service that can deliver quality work on time and within budget, look no further! I was blown away by the professionalism and creativity of this team."
+    },
+    {
+        "id": 5,
+        "imageSrc": "/template-design/testimonials/5.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "The team at this design service is simply amazing. They were able to create a unique, eye-catching design."
+    },
+    {
+        "id": 6,
+        "imageSrc": "/template-design/testimonials/6.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "I would highly recommend this design service to anyone looking for a team that can deliver quality work on time and within budget. They truly exceeded my expectations in every way."
+    },
+    {
+        "id": 7,
+        "imageSrc": "/template-design/testimonials/7.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "The design service I received was top-notch! The team was incredibly talented and helped me bring my vision to life in a way that exceeded my expectations."
+    },
+    {
+        "id": 8,
+        "imageSrc": "/template-design/testimonials/8.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "unique, eye-catching design for my business that really helped me stand out from the competition."
+    },
+    {
+        "id": 9,
+        "imageSrc": "/template-design/testimonials/8.jpg",
+        "altText": "yes",
+        "name": "Marilyn Wood",
+        "company": "Velocienta",
+        "testimonial": "The designers at this service are true professionals. They took the time to understand my needs and preferences and delivered a final product that was beyond my wildest dreams."
+    }
+
+]

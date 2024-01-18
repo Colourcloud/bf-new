@@ -457,7 +457,6 @@ $x-large-desktop-screen: 2560px;
   }
 
   .template-design-header {
-    margin-top: 8.75rem;
     &::before {
         content: '';
         position: absolute;
@@ -472,6 +471,7 @@ $x-large-desktop-screen: 2560px;
     .floating-header-image {
         opacity: 0;
         transition: 300ms ease-in-out;
+        
         scale: 0.5;
         &:nth-of-type(2) {
             left: 20%;
@@ -502,12 +502,10 @@ $x-large-desktop-screen: 2560px;
   }
 
   .scale {
-        opacity: 0;
         transition: 300ms ease-in-out;
         scale: 0.7;
   }
   .scale.on-screen {
-        opacity: 1!important;
         scale: 1!important;
   }
 
@@ -541,4 +539,14 @@ grid-template-rows: repeat(12, 1fr);
 .div3 { grid-area: 8 / 1 / 13 / 5; }
 .div4 { grid-area: 6 / 5 / 13 / 7; }
 .div5 { grid-area: 6 / 7 / 13 / 9; } 
+    }
+
+
+    @keyframes flickerAnimation {
+        0%   { opacity:0.5; }
+        100% { opacity:1; }
+    }
+
+    .flicker {
+        animation: flickerAnimation 0.5s linear;
     }

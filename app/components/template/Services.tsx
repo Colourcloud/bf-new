@@ -16,6 +16,12 @@ type ImageMap = {
 const Services = () => {
     const [currentImage, setCurrentImage] = useState('/template-design/image1.jpg');
     const [lastCrossedBreakpoint, setLastCrossedBreakpoint] = useState(0);
+    const [flicker, setFlicker] = useState(false);
+
+    const triggerFlicker = () => {
+        setFlicker(true);
+        setTimeout(() => setFlicker(false), 500); // Match the duration of the animation
+    };
 
     const handleScroll = () => {
         const breakpoints = [0, 930, 1860]; // Defined breakpoints
@@ -41,6 +47,7 @@ const Services = () => {
             const imageIndex = breakpoints.indexOf(nearestBreakpoint);
             setCurrentImage(images[imageIndex]);
             setLastCrossedBreakpoint(nearestBreakpoint);
+            triggerFlicker(); // Trigger the flicker effect
         }
     };
 
@@ -73,7 +80,7 @@ const Services = () => {
                     <div className="content-graphic-container w-2/3  h-full p-8"> {/* Image that scrolls down the page */}
                     <div className='sticky top-8 flex justify-center items-center'>
                     <span id="trigger" className='w-2 h-2'></span>
-                    <AnimateOnScroll><Image src={currentImage} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                    <AnimateOnScroll><Image src={currentImage} alt="yes" className={`w-full rounded-lg template-service-image scale ${flicker ? 'flicker' : ''}`} width="1200" height="1200"></Image></AnimateOnScroll>
                     </div>
                     </div>
                 </div>

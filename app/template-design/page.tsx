@@ -18,6 +18,7 @@ const Template: React.FC = () => {
             <Styles />
             <Catalogue />
             <Testimonials />
+            <Portfolio />
         </>
     );
 };

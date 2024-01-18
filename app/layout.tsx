@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import CookiePolicyPrompt from './components/common/CookiePolicy';
 import ContactForm from './components/common/ContactForm';
 import ToggleContactListener from './components/common/ToggleContact';
+import Footer from './components/common/Footer';
 
 export const metadata: Metadata = {
   title: 'Builtflat - Digital Agency, New Zealand',
@@ -21,6 +22,7 @@ export default function RootLayout({
         <ContactForm />
         <CookiePolicyPrompt />
         {children}
+        <Footer />
       </body>
     </html>
   );

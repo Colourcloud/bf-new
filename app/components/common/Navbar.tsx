@@ -11,9 +11,9 @@ const Navbar = () => {
     const navigationItems = [
         { label: 'Solutions', href: '#' },
         { label: 'Case Studies', href: '/portfolio' },
-        { label: 'Why Builtflat', href: '#' },
         { label: 'Partnership', href: '#' },
-        { label: 'Blog', href: '#' }
+        { label: 'About us', href: '#' },
+        { label: 'News & Updates', href: '#' }
     ];
     
     const closeSideNav = () => {
