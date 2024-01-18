@@ -7,6 +7,7 @@ import Introduction from '../components/template/Introduction';
 import Services from '../components/template/Services';
 import Styles from '../components/template/Styles';
 import Catalogue from '../components/template/Catalogue';
+import Testimonials from '../components/common/Testimonials';
 
 const Template: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const Template: React.FC = () => {
             <Services />
             <Styles />
             <Catalogue />
+            <Testimonials />
         </>
     );
 };

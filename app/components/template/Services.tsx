@@ -14,43 +14,36 @@ type ImageMap = {
 };
 
 const Services = () => {
-    const [currentImage, setCurrentImage] = useState('/template-design/image1.jpg'); // Default image
+    const [currentImage, setCurrentImage] = useState('/template-design/image1.jpg');
 
     const handleScroll = () => {
-        // Define the image source for each block
-        const images: ImageMap = {
-            'block-1': '/template-design/image1.jpg',
-            'block-2': '/template-design/image2.jpg',
-            'block-3': '/template-design/image3.jpg',
-        };
-    
-        let foundBlock = false;
-    
-        // Iterate through each block and check if it's in view
-        for (const blockId of Object.keys(images)) {
-            const block = document.getElementById(blockId);
-            if (block && isInViewport(block)) {
-                setCurrentImage(images[blockId]);
-                foundBlock = true;
-                break;
-            }
+        // Hardcoded pixel values for breakpoints
+        const breakpoints = [930, 1860]; // Adjust these values as needed
+
+        // Define the image source for each breakpoint
+        const images = [
+            '/template-design/image1.jpg', // 0px to 930px
+            '/template-design/image2.jpg', // 931px to 1860px
+            '/template-design/image3.jpg', // 1861px and beyond
+        ];
+
+        const container = document.getElementById('content-container');
+        if (!container) return;
+
+        // Calculate scroll position relative to the container
+        const scrollPosition = window.scrollY - container.offsetTop;
+        let imageIndex;
+
+        if (scrollPosition < breakpoints[0]) {
+            imageIndex = 0;
+        } else if (scrollPosition < breakpoints[1]) {
+            imageIndex = 1;
+        } else {
+            imageIndex = 2;
         }
-    
-        // If no block is found, check if 'block-1' is in view to revert to the first image
-        const block1 = document.getElementById('block-1');
-        if (!foundBlock && block1 && isInViewport(block1)) {
-            setCurrentImage(images['block-1']);
-        }
+
+        setCurrentImage(images[imageIndex]);
     };
-    
-    const isInViewport = (element: HTMLElement) => {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-    
-        // Check if the top of the element is within the viewport
-        return rect.top >= 0 && rect.bottom <= windowHeight;
-    };
-    
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -60,7 +53,7 @@ const Services = () => {
     return (
         <div className='bg-[--dark-background-color]'>
             <div className="site-wrapper">
-                <div className="content-container flex flex-row h-[2800px] gap-10 w-full">
+                <div className="content-container flex flex-row h-[2800px] gap-10 w-full" id="content-container">
                     <div className="content-text w-2/5 h-full flex flex-col gap-80">  {/* Text down the page */}
                         <div className="text-block flex flex-col gap-6 min-h-[600px] justify-center">
                             <span id="block-1"></span>
