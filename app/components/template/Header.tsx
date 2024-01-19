@@ -10,6 +10,8 @@ import headerImage3 from '../../../public/template-design/header-image.png';
 import headerImage4 from '../../../public/template-design/colour-palette.png';
 import headerImage5 from '../../../public/template-design/header-image-2.png';
 import headerImage6 from '../../../public/template-design/header-buttons.png';
+import HeaderImageTablet from '../../../public/template-design/header-graphic-tablet.jpg';
+import HeaderImageMobile from '../../../public/template-design/header-graphic-phone.jpg';
 
 const Header = () => {
 
@@ -31,13 +33,19 @@ const Header = () => {
                 
                 </div>
 
-            <div className="header-graphic template-design-header relative w-full flex justify-center">
-                <AnimateOnScroll><Image src={headerImage} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen' width='2000' height='1400' priority /></AnimateOnScroll>
+            <div className="header-graphic max-w-[1920px] mx-auto template-design-header relative w-full hidden xl:flex invisible xl:visible justify-center">
+                <AnimateOnScroll><Image src={headerImage} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
                 <AnimateOnScroll><Image src={headerImage2} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='550' height='400' priority /></AnimateOnScroll>
                 <AnimateOnScroll><Image src={headerImage3} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='450' height='600' priority  /></AnimateOnScroll>
                 <AnimateOnScroll><Image src={headerImage4} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='300' height='400' priority  /></AnimateOnScroll>
                 <AnimateOnScroll><Image src={headerImage5} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='225' height='400' priority  /></AnimateOnScroll>
                 <AnimateOnScroll><Image src={headerImage6} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='400' height='400' priority  /></AnimateOnScroll>
+            </div>
+            <div className="header-graphic-tablet template-design-header relative w-full justify-center hidden md:flex xl:hidden invisible md:visible xl:invisible">
+                <AnimateOnScroll><Image src={HeaderImageTablet} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
+            </div>
+            <div className="header-graphic-mobile template-design-header relative w-full justify-center flex md:hidden lg:hidden xl:hidden visible md:invisible lg:invisible xl:invisible">
+                <AnimateOnScroll><Image src={HeaderImageMobile} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
             </div>
             </header>
         </div>

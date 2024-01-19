@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
         <section className="builtflat-section pt-[100px] pb-10 bg-[--dark-background-color]">
             <section className="builtflat-section relative z-10">
                 <div className="flex flex-col gap-8">
-                    <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
+                    <div className="section-text flex flex-col gap-8 w-full px-4 xl:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                         <span className='highlighted-purple-text rounded-full text-sm font-medium'>Testimonials</span>
                         <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-extrabold'>Not sure if this is right for you? Let us help</h4></AnimatedText>
                         <p className='text-white text-xl font-light'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
@@ -34,12 +34,12 @@ const Testimonials: React.FC = () => {
                 </div>
             </section>
             <div className="site-wrapper spaced-m spaced-p">
-                <h6 className='text-center text-4xl font-bold opacity-50 text-white'>Heres what other people had to say</h6>
-                <section className="testimonial-cards flex flex-row gap-6 mt-12">
+                <h6 className='text-left lg:text-center text-2xl lg:text-4xl font-bold opacity-50 text-white'>Heres what other people had to say</h6>
+                <section className="testimonial-cards flex flex-col xl:flex-row flex-wrap gap-6 mt-12">
                     {rows.map((row, rowIndex) => (
-                    <div key={rowIndex} className="card-row flex flex-col gap-6">
+                    <div key={rowIndex} className="card-row flex flex-col xl:flex-row gap-6">
                     {row.map((item) => (
-                        <div key={item.id} className="quote-card w-[450px] p-6 rounded-md bg-[#010112] border border-[#222] flex flex-col gap-6">
+                        <div key={item.id} className="quote-card w-full 2xl:w-[450px] p-6 rounded-md bg-[#010112] border border-[#222] flex flex-col gap-6">
                             <div className="top-section flex flex-row gap-3">
                                 <Image src={item.imageSrc} alt={item.altText} className="rounded-full w-11 h-11" width="120" height="120" />
                                 <div className="test-name">

@@ -8,6 +8,12 @@ import AnimatedText from '../common/AnimateText';
 
 import { useEffect, useState } from 'react';
 
+const images = [
+    '/template-design/image1.jpg', 
+    '/template-design/image2.jpg',
+    '/template-design/image3.jpg',
+];
+
 // Define a type for the image map
 type ImageMap = {
     [key: string]: string;
@@ -59,7 +65,7 @@ const Services = () => {
     return (
         <div className='bg-[--dark-background-color]'>
             <div className="site-wrapper">
-                <div className="content-container flex flex-row h-[2800px] gap-10 w-full" id="content-container">
+                <div className="content-container hidden md:flex invisible md:visible flex-row h-[2800px] gap-10 w-full" id="content-container">
                     <div className="content-text w-2/5 h-full flex flex-col gap-80">  {/* Text down the page */}
                         <div className="text-block flex flex-col gap-6 min-h-[600px] justify-center">
                             <span id="block-1"></span>
@@ -84,6 +90,31 @@ const Services = () => {
                     </div>
                     </div>
                 </div>
+
+                <section className='mobile-services-layout pb-40 visible md:invisible flex gap-16 flex-col md:hidden'>
+                    <div className="content-block flex flex-col gap-6">
+                        <AnimateOnScroll><Image src={images[0]} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                        <div className="content-text flex flex-col gap-6">
+                            <AnimatedText><h4 className='text-white text-3xl font-bold'>Build with designed & coded templates. Ready for production</h4></AnimatedText>
+                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                        </div>
+                    </div>
+                    <div className="content-block flex flex-col gap-6">
+                        <AnimateOnScroll><Image src={images[1]} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                        <div className="content-text flex flex-col gap-6">
+                            <AnimatedText><h4 className='text-white text-3xl font-bold'>Tailor made design components for any project</h4></AnimatedText>
+                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                        </div>
+                    </div>
+                    <div className="content-block flex flex-col gap-6">
+                        <AnimateOnScroll><Image src={images[2]} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                        <div className="content-text flex flex-col gap-6">
+                            <AnimatedText><h4 className='text-white text-3xl font-bold'>Responsive in mind. Designed to work on any screen size</h4></AnimatedText>
+                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
             </div>
     );

@@ -16,10 +16,10 @@ const Styles = () => {
                     <div className="site-wrapper">
                     <section className="builtflat-section relative z-10">
                         <div className="flex flex-col gap-8">
-                            <div className="section-text w-2/3 flex flex-col gap-2 text-left items-start py-3">
+                            <div className="section-text w-full xl:w-2/3 flex flex-col gap-2 text-left items-start py-3">
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Rapid Production</span>
-                                <h1 className="text-4xl text-black leading-tight font-extrabold md:text-8xl">Personalised styles</h1>
-                                <h4 className="text-xl text-black font-medium mt-2 lg:text-5xl">Making sure our pre-designed assets fit your branding & style guidelines.</h4>
+                                <h1 className="text-6xl text-black leading-tight font-extrabold md:text-8xl">Personalised styles</h1>
+                                <h4 className="text-3xl text-black font-medium mt-2 lg:text-5xl">Making sure our pre-designed assets fit your branding & style guidelines.</h4>
                             </div>
                         </div>
                         <div className="section-graphic mt-[100px]">
