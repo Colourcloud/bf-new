@@ -6,25 +6,31 @@
 
 @font-face {
   font-family: 'SF Pro';
-  src: url('../public/SF-Pro.ttf') format('ttf');
+  src: url('/SF-Pro.ttf') format('ttf');
   /* Add more formats if available */
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --dark-background-color: #101213;
+  --dark-background-color: #080707;
   --primary-color: #7A4AFF;
   --button-dark-bg: #1c1d2d;
   --text-grey: #656D76
+  --border-colour-dark: #222222;
+  --background-light: #FBFBFD;
+  --text-on-dark: #9a9a9a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dark-background-color: #020214;
+    --dark-background-color: #080707;
     --primary-color: #7A4AFF;
     --button-dark-bg: #1c1d2d;
     --text-grey: #656D76
+    --border-colour-dark: #222222;
+    --background-light: #FBFBFD;
+    --text-on-dark: #9a9a9a;
   }
 }
 
@@ -44,7 +50,7 @@ body {
   overflow-x: hidden;
   background-color: #FCFCFC;
   color: #0D0C22;
-  background-image: url('../public/home/header-bg-grid.svg');
+  background-image: url('/home/header-bg-grid.svg');
   background-repeat: repeat;
   font-family: 'SF Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
 }
@@ -64,7 +70,7 @@ body {
 .home-page {
   background-color: var(--dark-background-color);
   position: relative;
-  background-image: url('../public/bg-grid.svg');
+  background-image: url('/bg-grid.svg');
   background-repeat: repeat-x;
   overflow: hidden;
 }

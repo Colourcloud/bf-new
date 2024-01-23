@@ -12,7 +12,7 @@ const Navbar = () => {
         { label: 'Solutions', href: '#' },
         { label: 'Case Studies', href: '/portfolio' },
         { label: 'Partnership', href: '#' },
-        { label: 'About us', href: '#' },
+        { label: 'About us', href: '/about' },
         { label: 'News & Updates', href: '#' }
     ];
     

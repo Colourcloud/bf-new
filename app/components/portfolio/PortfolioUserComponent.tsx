@@ -36,7 +36,7 @@ interface PortfolioUserComponentProps {
       <>
       <NavbarWhite />
       <section className=''>
-          <div className="max-w-[1600px] m-auto px-4 lg:px-0">
+          <div className="max-w-[1600px] m-auto pb-[100px] px-4 lg:px-0">
             <div className="header-content flex flex-col spaced-m spaced-p w-full text-center items-center mx-auto lg:max-w-[1600px] px-4">
               <div className="header-text flex flex-col lg:flex-row justify-between gap-6 md:gap-0">
                   <div className="flex flex-col gap-4">

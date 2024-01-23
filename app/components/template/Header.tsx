@@ -23,7 +23,7 @@ const Header = () => {
             <div className="site-wrapper">
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
                 <div className="header-text flex flex-col">
-                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-7xl pb-4">Give your project a headstart - <br/> Pre designed elements & templates for any industry</h1>
+                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Give your project a headstart - <br/> Pre designed elements & templates for any industry</h1>
                     <h4 className="text-xl text-white mt-6 lg:text-xl">We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects.</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
@@ -41,10 +41,10 @@ const Header = () => {
                 <AnimateOnScroll><Image src={headerImage5} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='225' height='400' priority  /></AnimateOnScroll>
                 <AnimateOnScroll><Image src={headerImage6} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='400' height='400' priority  /></AnimateOnScroll>
             </div>
-            <div className="header-graphic-tablet template-design-header relative w-full justify-center hidden md:flex xl:hidden invisible md:visible xl:invisible">
-                <AnimateOnScroll><Image src={HeaderImageTablet} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
+            <div className="header-graphic-tablet template-design-header relative w-full justify-center hidden tablet:flex tablet:visible md:flex xl:hidden invisible xl:invisible">
+                <AnimateOnScroll><Image src={HeaderImageTablet} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none tablet:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
             </div>
-            <div className="header-graphic-mobile template-design-header relative w-full justify-center flex md:hidden lg:hidden xl:hidden visible md:invisible lg:invisible xl:invisible">
+            <div className="header-graphic-mobile template-design-header relative w-full justify-center flex tablet:hidden md:hidden lg:hidden xl:hidden visible md:invisible lg:invisible xl:invisible">
                 <AnimateOnScroll><Image src={HeaderImageMobile} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
             </div>
             </header>

@@ -7,6 +7,9 @@ $desktop-screen: 1224px;
 $large-desktop-screen: 1340px;
 $x-large-desktop-screen: 2560px;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 .no-scroll-bar {
     scrollbar-width: none;
 }
@@ -15,7 +18,7 @@ $x-large-desktop-screen: 2560px;
     transition: 200ms ease;
     background-color: #212122;
     overflow-y: scroll;
-    background-image: url('../public/nav-bg.jpg');
+    background-image: url('/nav-bg.jpg');
     background-size: 12px;
     background-repeat: no-repeat;
 }
@@ -388,7 +391,7 @@ $x-large-desktop-screen: 2560px;
 
 .paralax-image  {
     position: relative;
-    background-image: url('../public/uiux/paralax-bg.jpg');
+    background-image: url('/uiux/paralax-bgg.jpg');
     background-attachment: scroll;
     background-position: left;
     background-repeat: no-repeat;
@@ -453,7 +456,7 @@ $x-large-desktop-screen: 2560px;
   }
 
   .portfolio_get-started {
-    background-image: url('../public/portfolio/get-started-bg.png');
+    background-image: url('/portfolio/get-started-bg.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -467,7 +470,7 @@ $x-large-desktop-screen: 2560px;
         right: 0;
         left: 0;
         height: 350px;
-        background: linear-gradient(180deg, rgba(2, 2, 20, 0.00) 0%, #020214 100%);
+        background: linear-gradient(180deg, rgba(2, 2, 20, 0.00) 0%, #000 100%);
         z-index: 100;
     }
 
@@ -553,3 +556,39 @@ grid-template-rows: repeat(12, 1fr);
     .flicker {
         animation: flickerAnimation 0.5s linear;
     }
+
+    .new-kids {
+        font-family: "Caveat", cursive;
+        font-weight: bold;
+        font-size: 42px;
+        @media screen and (min-width: $tablet-screen) {
+            font-size: 72px;
+        }
+    }
+
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    @media screen and (min-width: $medium-screen) {
+        grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
+    }
+}
+
+.team-member-card {
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        z-index: 49;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    }
+}
