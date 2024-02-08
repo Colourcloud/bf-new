@@ -27,7 +27,7 @@ const Header = () => {
                     <h4 className="text-xl text-white mt-6 lg:text-xl">We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects.</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
-                    <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Free Consultation</Button>
+                    <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>
                     </div>
                 </div>
                 

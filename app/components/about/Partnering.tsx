@@ -22,7 +22,7 @@ const Partnering = () => {
                                 <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-bold'>Partnering with other talented teams</h4></AnimatedText>
                                 <p className='text-[--text-on-dark] text-xl font-light'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
                                 <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
-                                <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Learn about Partnerships</Button>
+                                <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/partnership" >Learn about Partnerships</Button>
                                 </div>
                             </div>
                         </div>

@@ -8,7 +8,7 @@
     },
     {
         "id": 2,
-        "imageSrc": "/about/team/2.jpg",
+        "imageSrc": "/about/team/sam.jpg",
         "altText": "Picture of ...",
         "name": "Sam Jones",
         "roles": ["Founder", "Cat-Lover"]

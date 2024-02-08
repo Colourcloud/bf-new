@@ -111,7 +111,7 @@ interface PortfolioUserComponentProps {
                   <h4 className="text-4xl font-bold items-center text-white">Have a project you want completed?</h4>
                   <p className="text-lg font-light text-white">If you have a project you&apos;d like to develop, feel free to reach out to us. We&apos;re ready to look into it and see how we can help make it a reality.</p>
                 </div>
-                <Button backgroundColor="--primary-color" textColor="white"  className="background-purple" href="/">Get Started Today</Button>
+                <Button backgroundColor="--primary-color" textColor="white"  className="background-purple" href="/">Let&apos;s have a chat</Button>
               </div>
 
             </section>

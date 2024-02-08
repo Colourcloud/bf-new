@@ -18,8 +18,8 @@ const Header = () => {
                 <h4 className="text-xl text-white text-center mt-6 lg:text-2xl">Whether you’re building an e-commerce store, or a platform that uses a lot of data, we have you covered. Our experienced development teams can bring your ideas to life. Using the most robust and up to date technologies, we ensure your application is built with functionality and scalability in mind.</h4>
                 </div>
                 <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
-                  <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Free Consultation</Button>
-                  <Button backgroundColor="--button-dark-bg" textColor="white"  className="background-dark" href="/">View Case Studies</Button>
+                  <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>
+                  <Button backgroundColor="--button-dark-bg" textColor="white"  className="background-dark" href="/portfolio">View Case Studies</Button>
                 </div>
               </div>
             

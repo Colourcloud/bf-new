@@ -16,8 +16,8 @@
   --dark-background-color: #080707;
   --primary-color: #7A4AFF;
   --button-dark-bg: #1c1d2d;
-  --text-grey: #656D76
-  --border-colour-dark: #222222;
+  --text-grey: #656D76;
+  --border-colour-dark: #222;
   --background-light: #FBFBFD;
   --text-on-dark: #9a9a9a;
 }
@@ -27,8 +27,8 @@
     --dark-background-color: #080707;
     --primary-color: #7A4AFF;
     --button-dark-bg: #1c1d2d;
-    --text-grey: #656D76
-    --border-colour-dark: #222222;
+    --text-grey: #656D76;
+    --border-colour-dark: #222;
     --background-light: #FBFBFD;
     --text-on-dark: #9a9a9a;
   }
@@ -38,6 +38,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -51,7 +55,7 @@ body {
   background-color: #FCFCFC;
   color: #0D0C22;
   background-image: url('/home/header-bg-grid.svg');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   font-family: 'SF Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
 }
 
@@ -71,7 +75,7 @@ body {
   background-color: var(--dark-background-color);
   position: relative;
   background-image: url('/bg-grid.svg');
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 

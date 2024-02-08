@@ -22,8 +22,8 @@ const Header = () => {
                 <h4 className="text-xl text-white text-center mt-6 lg:text-2xl">In a world driven by technology, it&apos;s important for your customers that your brand has a digital space on the web. Our team can make this happen.</h4>
                 </div>
                 <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
-                  <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Free Consultation</Button>
-                  <Button backgroundColor="--button-dark-bg" textColor="white"  className="background-dark" href="/">View Case Studies</Button>
+                  <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>
+                  <Button backgroundColor="--button-dark-bg" textColor="white"  className="background-dark" href="/portfolio">View Case Studies</Button>
                 </div>
               </div>
               <div className="header-images flex flex-row justify-center relative">
@@ -57,7 +57,6 @@ const Header = () => {
               </div>
           </div>
         </header>
-        <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-base text-white">We&apos;re currently offering a complimentary website &amp; competitor analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-medium'>Apply Here</Link></div>
         </>
     );
 };
