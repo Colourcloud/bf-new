@@ -20,7 +20,7 @@ const Header = () => {
                         <h1 className='text-white text-4xl md:text-5xl md:leading-[1.1] font-bold'>Collaborating with other creatives. Helping to reach those client deadlines</h1>
                         <p className='text-[--text-on-dark] text-xl font-light'>We work closely along side other design & development agencies to help leverage some of those busy workloads. We understand how important it is to delegate when it comes to design & development, which is why you can trust our team to not only help deliver your projects on time, but with exceptional results.</p>
                         <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
-                            <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Let's have a chat</Button>
+                            <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Let&apos;s have a chat</Button>
                         </div>
                         <div className="partner-faces flex flex-col gap-6">
                             <p className='text-[--text-on-dark] text-sm'>We already work alongside 50+ designers throughout the New Zealand</p>
