@@ -15,7 +15,7 @@ const Values = () => {
                 <div className="section-block">
                     <div className="section-text w-full flex flex-col gap-8">
                         <AnimatedText><h2 className='text-4xl text-white md:text-6xl font-bold w-full md:w-2/3'>We pride ourselves on our companies core values</h2></AnimatedText>
-                        <div className='flex flex-row justify-between'>
+                        <div className='flex flex-col md:flex-row justify-between items-start gap-6'>
                             <p className='text-xl text-[--text-on-dark] font-light w-full md:w-2/3'>We are deeply committed to upholding our core values, ensuring they are intricately woven into every project we undertake and infused in every interaction we engage in.</p>
                             <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Let&apos;s have a chat</Button>
                         </div>
@@ -26,7 +26,7 @@ const Values = () => {
         <div className="values py-10 md:py-20 border-b border-[--border-colour-dark]">
             <div className="site-wrapper">
                 <div className="value-container flex flex-col gap-20">
-                    <div className="value-row flex flex-row gap-40">
+                    <div className="value-row flex flex-col lg:flex-row gap-20 lg:gap-40">
                         <div className="value-card flex flex-col gap-6 items-start max-w-[550px]">
                             <div className="value-icon p-3 rounded-md bg-[--primary-color]"><FaHeart className='text-white text-2xl'/></div>
                             <h4 className='text-white text-3xl font-bold'>Lasting Relationships</h4>
@@ -38,7 +38,7 @@ const Values = () => {
                             <p className='text-[--text-on-dark]'>Before we start any project, we always back-up the direction we take with research on all things related to your brand. We sit down with our clients to better understand the in&amp;s and out&amp;s of their business and brand so we can translate that into our work.</p>
                         </div>
                     </div>
-                    <div className="value-row flex flex-row gap-40">
+                    <div className="value-row flex flex-col lg:flex-row gap-20 lg:gap-40">
                         <div className="value-card flex flex-col gap-6 items-start max-w-[550px]">
                             <div className="value-icon p-3 rounded-md bg-[--primary-color]"><GrTechnology className='text-white text-2xl'/></div>
                             <h4 className='text-white text-3xl font-bold'>Design & Technology Driven</h4>

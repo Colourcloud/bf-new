@@ -14,11 +14,21 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="recent-work_cards-layout max-w-[1600px] px-4 flex flex-row flex-wrap justify-center gap-6 m-auto">
-                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
-                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md"></div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
+                    <Link href="/portfolio/cssbuyy"><Image src="/portfolio/cssbuy/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
+                </div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
+                    <Link href="/portfolio/chasnz"><Image src="/portfolio/chasnz/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
+                </div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
+                    <Link href="/portfolio/blank-canvas-studios"><Image src="/portfolio/blankcanvas/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
+                </div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
+                    <Link href="/portfolio/doofy"><Image src="/portfolio/doofy/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
+                </div>
+                <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
+                    <Link href="/portfolio/bureau"><Image src="/portfolio/bureau/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
+                </div>
             </div>
         </section>
         </>

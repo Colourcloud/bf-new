@@ -30,7 +30,6 @@ const BlogPost = () => {
 
   return (
     <>
-      <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">We&apos;re currently offering a complimentary website &amp; competitor analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-bold'>Apply Here</Link></div>
       <div className='bg-[--dark-background-color]'>
         <Navbar></Navbar>
         <div className='blog-wrapper py-40'>
@@ -53,36 +52,6 @@ const BlogPost = () => {
                       />
                   ))
               }
-            </div>
-            <h4 className='text-[--text-on-dark] text-3xl py-12'>Design &amp; Development News:</h4>
-            <div className="blog-section grid grid-cols-4 gap-8">
-            {isLoading
-                ? Array(4).fill().map((_, index) => <BlogCardSkeleton key={index} />)
-                : blogPosts.map(post => (
-                    <BlogCard 
-                    key={post.id} 
-                    title={post.title.rendered} 
-                    thumbnail={post._embedded?.['wp:featuredmedia']?.[0]?.source_url} 
-                    btnLabel='Learn More' 
-                    href={`/blog/${post.slug}`}
-                    />
-                ))
-            }
-            </div>
-            <h4 className='text-[--text-on-dark] text-3xl py-12'>Digital Business Growth:</h4>
-            <div className="blog-section grid grid-cols-4 gap-8">
-            {isLoading
-                ? Array(4).fill().map((_, index) => <BlogCardSkeleton key={index} />)
-                : blogPosts.map(post => (
-                    <BlogCard 
-                    key={post.id} 
-                    title={post.title.rendered} 
-                    thumbnail={post._embedded?.['wp:featuredmedia']?.[0]?.source_url} 
-                    btnLabel='Learn More' 
-                    href={`/blog/${post.slug}`}
-                    />
-                ))
-            }
             </div>
           </div>
         </div>

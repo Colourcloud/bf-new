@@ -57,6 +57,7 @@ const Header = () => {
               </div>
           </div>
         </header>
+        <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">We&apos;re currently offering a complimentary website &amp; competitor analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-bold'>Apply Here</Link></div>
         </>
     );
 };

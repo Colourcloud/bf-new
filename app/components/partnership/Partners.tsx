@@ -11,7 +11,7 @@ const Partners = () => {
        <section className='partners py-10 border-t border-b border-[--border-colour-dark]'>
         <div className="site-wrapper flex flex-col gap-6">
             <h4 className='text-[--text-on-dark] font-semibold text-large text-center'>Our Design Partners</h4>
-            <div className="partner-logos flex flex-row gap-14 justify-center">
+            <div className="partner-logos flex flex-row flex-wrap gap-14 justify-center">
                 <Image src="/partnership/brands/amazon.svg" alt="face avatar" width="100" height="125" className=''></Image>
                 <Image src="/partnership/brands/shopify.svg" alt="face avatar" width="100" height="125" className=''></Image>
                 <Image src="/partnership/brands/facebook.svg" alt="face avatar" width="100" height="125" className=''></Image>

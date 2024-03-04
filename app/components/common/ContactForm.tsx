@@ -4,16 +4,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState, useEffect, FormEvent } from 'react';
 import { MdClose } from "react-icons/md";
+const loadingIndicator = <span>Loading...</span>;
 
 const ContactForm = () => {
     const maxLength = 1000;
     const [text, setText] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState(''); // Added state for phone number
-    const [websiteLink, setWebsiteLink] = useState(''); // Added state for website link
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [websiteLink, setWebsiteLink] = useState('');
     const [charsLeft, setCharsLeft] = useState(maxLength);
     const [isValid, setIsValid] = useState(false);
+    const [isLoading, setIsLoading] = useState(false); // New state for loading indication
 
     useEffect(() => {
         setCharsLeft(maxLength - text.length);
@@ -29,8 +31,8 @@ const ContactForm = () => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsLoading(true); // Start loading indication
 
-        // Send a POST request
         const response = await fetch('/api/sendMail', {
             method: 'POST',
             headers: {
@@ -39,11 +41,11 @@ const ContactForm = () => {
             body: JSON.stringify({ name, email, phoneNumber, websiteLink, message: text }),
         });
 
+        setIsLoading(false); // Stop loading indication
+
         if (response.ok) {
-            // Redirect to the home page or another route
             window.location.href = '/';
         } else {
-            // Handle the error case
             console.error('Failed to send message');
         }
     };
@@ -139,10 +141,11 @@ const ContactForm = () => {
                             <fieldset className='flex flex-col gap-1'>
                             <input 
                                 type="submit" 
-                                value={isValid ? "Let's get to work" : "Please fill out the rest of the form"} 
-                                {...(!isValid && { disabled: true })} 
-                                className={`p-3 text-sm mt-6 submit-button text-white rounded-md ${isValid ? 'bg-[#7A4AFF] cursor-pointer' : 'bg-gray-500 opacity-50'}`}
+                                value={isLoading ? "Sending..." : (isValid ? "Let's get to work" : "Please fill out the rest of the form")} 
+                                disabled={!isValid || isLoading} // Disable the button when not valid or loading
+                                className={`p-3 text-sm mt-6 submit-button text-white rounded-md ${isValid && !isLoading ? 'bg-[#7A4AFF] cursor-pointer' : 'bg-gray-500 opacity-50'}`}
                             />
+                                {isLoading && <div className="loading-indicator">{loadingIndicator}</div>} {/* Show loading indicator when isLoading is true */}
                             </fieldset>
                         </div>
                     </form>
