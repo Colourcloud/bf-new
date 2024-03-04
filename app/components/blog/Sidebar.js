@@ -19,7 +19,7 @@ const Sidebar = ({ content }) => {
   }, [content]);
 
   return (
-    <div className="sidebar w-[60%] flex flex-col gap-6 relative lg:sticky top-6 max-h-[400px]">
+    <div className="sidebar w-full lg:w-[60%] flex flex-col gap-6 relative lg:sticky top-6 max-h-[400px]">
       <h4 className='text-[--primary-color] text-sm font-medium'>Article Navigation:</h4>
       {h2Tags.length > 0 ? (
         <ul className='flex flex-col gap-6'>

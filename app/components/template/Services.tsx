@@ -91,23 +91,25 @@ const Services = () => {
                     </div>
                 </div>
 
+                {/* MOBILE VIEW*/}
+
                 <section className='mobile-services-layout pb-40 visible md:invisible flex gap-16 flex-col md:hidden'>
-                    <div className="content-block flex flex-col gap-6">
-                        <AnimateOnScroll><Image src={images[0]} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                    <div className="content-block flex flex-col gap-8">
+                        <AnimateOnScroll><Image src={images[0]} alt="yes" className='w-full rounded-lg template-service-image' width="1200" height="1200"></Image></AnimateOnScroll>
                         <div className="content-text flex flex-col gap-6">
                             <AnimatedText><h4 className='text-white text-3xl font-bold'>Build with designed & coded templates. Ready for production</h4></AnimatedText>
                             <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
                         </div>
                     </div>
-                    <div className="content-block flex flex-col gap-6">
-                        <AnimateOnScroll><Image src={images[1]} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                    <div className="content-block flex flex-col gap-8">
+                        <AnimateOnScroll><Image src={images[1]} alt="yes" className='w-full rounded-lg template-service-image' width="1200" height="1200"></Image></AnimateOnScroll>
                         <div className="content-text flex flex-col gap-6">
                             <AnimatedText><h4 className='text-white text-3xl font-bold'>Tailor made design components for any project</h4></AnimatedText>
                             <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
                         </div>
                     </div>
-                    <div className="content-block flex flex-col gap-6">
-                        <AnimateOnScroll><Image src={images[2]} alt="yes" className='w-full rounded-lg template-service-image scale' width="1200" height="1200"></Image></AnimateOnScroll>
+                    <div className="content-block flex flex-col gap-8">
+                        <AnimateOnScroll><Image src={images[2]} alt="yes" className='w-full rounded-lg template-service-image' width="1200" height="1200"></Image></AnimateOnScroll>
                         <div className="content-text flex flex-col gap-6">
                             <AnimatedText><h4 className='text-white text-3xl font-bold'>Responsive in mind. Designed to work on any screen size</h4></AnimatedText>
                             <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>

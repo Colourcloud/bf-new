@@ -44,20 +44,18 @@ const MobileNav = () => {
                 <div className='sidenav-container flex flex-col gap-10 p-8'>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Solutions</span>
-                        <li className='text-gray-200'>Website Development</li>
-                        <li className='text-gray-200'>UI/UX Design</li>
+                        <li className='text-gray-200'><Link href="/application">Website Development</Link></li>
+                        <li className='text-gray-200'><Link href="/ui-ux">UI/UX Design</Link></li>
                         <li className='text-gray-200'>Mobile Development</li>
-                        <li className='text-gray-200'>Template Driven Design</li>
+                        <li className='text-gray-200'><Link href="/template-design">Template Driven Design</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Our Work</span>
-                        <li className='text-gray-200'>Case Studies</li>
+                        <li className='text-gray-200'><Link href="/portfolio">Case Studies</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Partnership</span>
-                        <li className='text-gray-200'>Colaboration</li>
-                        <li className='text-gray-200'>How We Work</li>
-                        <li className='text-gray-200'>Contracting</li>
+                        <li className='text-gray-200'><Link href="/partnership">Collaboration</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Why Builtflat</span>
@@ -67,8 +65,7 @@ const MobileNav = () => {
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>News & Updates</span>
-                        <li className='text-gray-200'>Blog</li>
-                        <li className='text-gray-200'>Business News</li>
+                        <li className='text-gray-200'><Link href="/blog">Blog</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Builtflat</span>
@@ -77,7 +74,7 @@ const MobileNav = () => {
                         <li className='text-gray-200'>Privacy Policy</li>
                     </ul>
                     <div className="sidenav-contact sticky bottom-2 w-full left-0 bg-[#212122]">
-                        <a href="" className='bg-white text-black p-3 text-center text-sm w-full block rounded-md flex flex-row items-center justify-center gap-2'><span><IoSendSharp className="rotate-[-45deg] text-base"></IoSendSharp></span>Contact us Today</a>
+                        <Link href="/contact" className='bg-white text-black p-3 text-center text-sm w-full block rounded-md flex flex-row items-center justify-center gap-2'><span><IoSendSharp className="rotate-[-45deg] text-base"></IoSendSharp></span>Contact us Today</Link>
                     </div>
                 </div>
             </div>
