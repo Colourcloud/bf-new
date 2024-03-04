@@ -44,18 +44,18 @@ const MobileNav = () => {
                 <div className='sidenav-container flex flex-col gap-10 p-8'>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Solutions</span>
-                        <li className='text-gray-200'><Link href="/application">Website Development</Link></li>
-                        <li className='text-gray-200'><Link href="/ui-ux">UI/UX Design</Link></li>
+                        <li className='text-gray-200'><Link href="/application" onClick={() => closeSideNav()}>Website Development</Link></li>
+                        <li className='text-gray-200'><Link href="/uiux" onClick={() => closeSideNav()}>UI/UX Design</Link></li>
                         <li className='text-gray-200'>Mobile Development</li>
-                        <li className='text-gray-200'><Link href="/template-design">Template Driven Design</Link></li>
+                        <li className='text-gray-200'><Link href="/template-design" onClick={() => closeSideNav()}>Template Driven Design</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Our Work</span>
-                        <li className='text-gray-200'><Link href="/portfolio">Case Studies</Link></li>
+                        <li className='text-gray-200'><Link href="/portfolio" onClick={() => closeSideNav()}>Case Studies</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Partnership</span>
-                        <li className='text-gray-200'><Link href="/partnership">Collaboration</Link></li>
+                        <li className='text-gray-200'><Link href="/partnership onClick={() => closeSideNav()}">Collaboration</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Why Builtflat</span>
@@ -65,7 +65,7 @@ const MobileNav = () => {
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>News & Updates</span>
-                        <li className='text-gray-200'><Link href="/blog">Blog</Link></li>
+                        <li className='text-gray-200'><Link href="/blog" onClick={() => closeSideNav()}>Blog</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Builtflat</span>
