@@ -35,7 +35,7 @@ const Services = () => {
                 <div className="service-card p-10">
                   <div className="service-card-text flex flex-col gap-4">
                     <h4 className="text-white text-2xl md:text-3xl font-bold flex flex-row justify-between items-center">UI / UX Design <span className='opacity-40'><MdArrowCircleRight/></span></h4>
-                    <p className='text-white w-full'>Builtflat covers a wide scope of graphic design services to best help your brand. Whether its branding, to marketing, we have you covered.</p>
+                    <p className='text-white w-full'>Beautiful interfaces are what we&apos;re good at, no matter the screen size. At Builtflat we only create crisp responsive designs tailored to your brands needs.</p>
                   </div>
                   <div className="service-card-image">
                   <Image src="/home/ui-ux-image.png" alt="yes" className='ui-ux-graphic' width="500" height="600"></Image>

@@ -39,7 +39,7 @@ const BlogPost = () => {
           </div>
           <div className='flex flex-col gap-6 py-20'>
             <h4 className='text-[--text-on-dark] text-3xl py-12'>Builtflat News &amp; Updates:</h4>
-            <div className="blog-section grid grid-cols-4 gap-8">
+            <div className="blog-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {isLoading
                   ? Array(4).fill().map((_, index) => <BlogCardSkeleton key={index} />)
                   : blogPosts.map(post => (

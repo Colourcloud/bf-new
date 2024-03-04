@@ -22,8 +22,8 @@ const serviceCards: ServiceCard[] = [
   },
   {
     title: 'User Interface & Experience',
-    description: 'Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.',
-    imageUrl: '/path/to/ui-ux.jpg', // Replace with actual image path
+    description: 'Beautiful interfaces are what we&apos;re good at, no matter the screen size. At Builtflat we only create crisp responsive designs tailored to your brands needs.',
+    imageUrl: '/partnership/ui-ux-graphic.jpg', // Replace with actual image path
     serviceLink: '/uiux',
   },
   {

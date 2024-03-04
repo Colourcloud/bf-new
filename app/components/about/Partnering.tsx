@@ -26,9 +26,9 @@ const Partnering = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="partner-images flex flex-row gap-5 py-12">
-                            <Image src={PartnerImageOne} alt="An example image" className='relative z-20 rounded-md' width='1200' height='500' priority  />
-                            <Image src={PartnerImageTwo} alt="An example image" className='relative z-20 rounded-md' width='1200' height='500' priority />
+                        <div className="partner-images flex flex-col lg:flex-row gap-5 py-12">
+                            <Image src={PartnerImageOne} alt="An example image" className='relative z-20 rounded-md w-full lg:w-2/4' width='1200' height='500' priority  />
+                            <Image src={PartnerImageTwo} alt="An example image" className='relative z-20 rounded-md w-full lg:w-2/4' width='1200' height='500' priority />
                         </div>
                     </section>
                     </div>

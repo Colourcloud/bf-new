@@ -23,7 +23,7 @@ const Header = () => {
                     </div>
                     <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-full">
                         <div className="header-text flex flex-col">
-                            <h1 className="text-4xl text-white leading-tight font-bold md:text-7xl pb-4">We may be the <span className='new-kids purple-gradient'>New Kids </span> on the block - <br/>But we&apos;re backed with years of experience</h1>
+                            <h1 className="text-5xl text-white leading-tight font-bold md:text-7xl pb-4">We may be the <span className='new-kids purple-gradient'>New Kids </span> on the block - <br/>But we&apos;re backed with years of experience</h1>
                         </div>
                     </div>
                     <div className="flex flex-row gap-6 pb-[230px] pt-10">
