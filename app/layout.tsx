@@ -5,6 +5,7 @@ import ContactForm from './components/common/ContactForm';
 import ToggleContactListener from './components/common/ToggleContact';
 import Footer from './components/common/Footer';
 import NextTopLoader from 'nextjs-toploader';
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: 'Builtflat - Digital Agency, New Zealand',
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="_next" >
+        <Analytics/>
         <NextTopLoader showSpinner={false} color='#7a4aff'/>
         <ToggleContactListener />
         <ContactForm />
