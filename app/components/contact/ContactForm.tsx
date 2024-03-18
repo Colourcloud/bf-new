@@ -55,7 +55,7 @@ const ContactForm = () => {
 
 
     return (
-        <div className='flex flex-row gap-10'>
+        <div className='flex flex-row gap-10 justify-center lg:justify-start'>
             <div className="contact-left">
                 
             </div>

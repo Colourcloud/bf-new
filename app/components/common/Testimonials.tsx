@@ -26,7 +26,7 @@ const Testimonials: React.FC = () => {
                     <div className="section-text flex flex-col gap-8 w-full px-4 xl:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                         <span className='highlighted-purple-text rounded-full text-sm font-medium'>Testimonials</span>
                         <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-extrabold'>Not sure if this is right for you? Let us help</h4></AnimatedText>
-                        <p className='text-white text-xl font-light'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                        <p className='text-white text-xl font-light'>Get in touch with us today and speak to an expert about a project you have. Book a free consultation today and one of our experts will set up a meeting and discuss the best solution for your business.</p>
                         <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                         <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Book a free consultation </Button>
                         </div>

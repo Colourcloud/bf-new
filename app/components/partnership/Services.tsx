@@ -83,7 +83,7 @@ const Services = () => {
                     </ul>
                     </div>
                     <div className="w-full md:w-2/3">
-                        <Image src={activeService.imageUrl} className='w-[120%] rounded-lg max-w-none' alt={activeService.title} width="1800" height="800" />
+                        <Image src={activeService.imageUrl} className='w-[120%] rounded-lg max-w-none' alt={activeService.title} priority={true} width="1800" height="800" />
                     </div>
                 </div>
             </div>

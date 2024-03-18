@@ -193,3 +193,49 @@ textarea {
     color: gray;
   }
 }
+.mobile-services_grid {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, min-content);
+}
+
+.mobile-services_card:nth-of-type(1) {
+  grid-column: auto / span 3;
+}
+
+.mobile-services_card:nth-of-type(2),
+.mobile-services_card:nth-of-type(3) {
+  grid-column: auto / span 2;
+}
+
+.mobile-services_card:nth-of-type(4) {
+  grid-column: auto / span 3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* Tablet breakpoint */
+  .mobile-services_grid {
+    grid-template-columns: repeat(2, 1fr); /* Equal width columns for tablets */
+  }
+  
+  .mobile-services_card:nth-of-type(1),
+  .mobile-services_card:nth-of-type(2),
+  .mobile-services_card:nth-of-type(3),
+  .mobile-services_card:nth-of-type(4) {
+    grid-column: auto / span 1; /* Each card spans one column */
+  }
+}
+
+@media (max-width: 1000px) { /* Mobile breakpoint */
+  .mobile-services_grid {
+    grid-template-columns: 1fr; /* Full-width column for mobile */
+  }
+
+  .mobile-services_card:nth-of-type(1),
+  .mobile-services_card:nth-of-type(2),
+  .mobile-services_card:nth-of-type(3),
+  .mobile-services_card:nth-of-type(4) {
+    grid-column: auto / span 1; /* Each card spans one column */
+  }
+}

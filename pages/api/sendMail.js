@@ -88,7 +88,7 @@ export default function handler(req, res) {
     // Set email data
     const mailData = {
       from: '"Builtflat Contact" <email@builtflat.co.nz>',
-      to: `hello@builtflat.co.nz, ${req.body.email}`,
+      to: `lisa@cvcompton.co.nz, ${req.body.email}`,
       subject: `Message From ${req.body.name}`,
       text: req.body.message + " | Sent from: " + req.body.email,
       html: htmlContent // Updated to use the new HTML template
