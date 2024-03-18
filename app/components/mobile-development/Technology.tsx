@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Technology = () => {
   return (
-    <div className="bg-[--background-light] p-10 md:p-20">
+    <div className="bg-[--background-light] py-10 md:py-20">
             <div className="site-wrapper">
                 <div className="section-block">
                     <div className="section-text w-full flex flex-col gap-8">
