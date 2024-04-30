@@ -12,7 +12,7 @@ const Technology = () => {
                         <AnimatedText><h2 className='text-4xl text-[text-colour] md:text-6xl font-bold w-full md:w-2/3'>We cover a wide range of mobile development technologies</h2></AnimatedText>
                         <div className='flex flex-col md:flex-row justify-between items-start gap-6'>
                             <p className='text-xl text-[--text-colour] font-light w-full md:w-2/3'>We are deeply committed to upholding our core values, ensuring they are intricately woven into every project we undertake and infused in every interaction we engage in.</p>
-                            <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Let&apos;s have a chat</Button>
+                            <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Let&apos;s have a chat</Button>
                         </div>
                   </div>
                 </div>

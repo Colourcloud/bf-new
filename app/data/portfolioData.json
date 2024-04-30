@@ -42,8 +42,32 @@
     { 
         "id": 3, 
         "title": "Chasnz - Construction Health & Safety",
+        "logo": "/portfolio/chasnz/logo.svg",
+        "brief": "We were asked to redesign the current CSSBuy mobile application, to create a more modern, easy to use version that their users would love. CSSBuy wanted to keep their current colour scheme with a few adjustments, but wanted us to decide on new typography and icons to use through the website. We started by looking through all the pages their current app has and broke them down to their core functionally, which would later be used in the design decisions.",
+        "link": "https://chasnz.org",
         "image": "/portfolio/chasnz/portfolio-banner.jpg", 
-        "slug": "chasnz" 
+        "slug": "chasnz",
+        "images": [
+            "/portfolio/cssbuy/test.png",
+            "/portfolio/cssbuy/image-2.png",
+            "/portfolio/cssbuy/image-3.png",
+            "/portfolio/cssbuy/image-4.png",
+            "/portfolio/cssbuy/image-5.png",
+            "/portfolio/cssbuy/image-6.png"
+        ],
+        "discovered": "The first thing we noticed was their current use of colour and typography. We really liked their current colour palette which matched their branding, however there were a lot of inconsistencies with different shades of the brand colour for buttons, highlights and text. So we wanted to really focus on fixing this.",
+        "mobile_statement": "We were also tasked to redesign CSSBuy's mobile application to enhance the shopping experience for all their users. With a total of over 40+ pages, this was no small feat, but we were able to completely overhaul the design and deliver them a product not only they loved, but their customers aswell.",
+        "closing_statement": "Following comprehensive evaluations of both the website and mobile application, we have garnered highly favorable responses from CSSBuy's user community, specifically in relation to the user experience and the structure of information architecture. Users reported that finding relevent information was a lot easier and streamlined, making the service a lot more enjoyable and easy to understand. We're going to continue working with CSSBuy to monitor the websites user engagement to ensure our product is delivering what we promised.",
+        "servicesUsed": [
+            {
+              "name": "Website Development",
+              "link": "/application"
+            },
+            {
+              "name": "UI/UX Design",
+              "link": "/uiux"
+            }
+          ]
     },
     { 
         "id": 4, 

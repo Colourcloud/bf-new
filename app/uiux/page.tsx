@@ -24,6 +24,7 @@ const Application: React.FC = () => {
             <Paralax />
             <Research />
             <Interaction />
+            <Portfolio />
         </>
     );
 };

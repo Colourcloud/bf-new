@@ -15,7 +15,7 @@ const Responsive = () => {
                 <div className="section-text w-full md:w-3/4 flex flex-col gap-8 items-start">
                     <span className='highlighted-purple-text rounded-full text-sm font-medium'>Responsive Design</span>
                     <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>Keeping every screen size in mind. Smooth user experience not matter the device</h4></AnimatedText>
-                    <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
+                    <p className='text-xl font-light'>Long gone are the days of desktops being the most common screens used. Responsive design isn&apos;t a &apos;maybe&apos; unless you want your application interface to look, well - Terrible.</p>
                 </div>
             </div>
             <div className="site-wrapper spaced-m responsive-wrapper">

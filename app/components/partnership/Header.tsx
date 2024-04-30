@@ -17,8 +17,8 @@ const Header = () => {
                 <div className="header-content flex flex-col lg:flex-row gap-20">
                     <div className="header-text flex flex-col gap-6 w-full lg:w-2/5 items-start justify-center">
                         <span className='highlighted-purple-text rounded-full text-sm font-medium'>Partnership</span>
-                        <h1 className='text-white text-4xl md:text-5xl md:leading-[1.1] font-bold'>Collaborating with other creatives. Helping to reach those client deadlines</h1>
-                        <p className='text-[--text-on-dark] text-xl font-light'>We work closely along side other design & development agencies to help leverage some of those busy workloads. We understand how important it is to delegate when it comes to design & development, which is why you can trust our team to not only help deliver your projects on time, but with exceptional results.</p>
+                        <h1 className='text-white text-4xl md:text-5xl md:leading-[1.1] font-bold'>We collaborate with other creatives to help them hit their targets.</h1>
+                        <p className='text-[--text-on-dark] text-xl font-light'>We understand both the importance of every project your clients give you and that sometimes workloads and capacity can be limited. That&apos;s why Builtflat works closely with other design & development agencies to help enhance and boost their capabilities. Find out why multiple agencies trust Builtflat to not only help deliver your project on time, but with exceptional results.</p>
                         <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
                             <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Let&apos;s have a chat</Button>
                         </div>

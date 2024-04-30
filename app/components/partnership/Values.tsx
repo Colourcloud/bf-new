@@ -16,7 +16,7 @@ const Values = () => {
                     <div className="section-text w-full flex flex-col gap-8">
                         <AnimatedText><h2 className='text-4xl text-white md:text-6xl font-bold w-full md:w-2/3'>We pride ourselves on our companies core values</h2></AnimatedText>
                         <div className='flex flex-col md:flex-row justify-between items-start gap-6'>
-                            <p className='text-xl text-[--text-on-dark] font-light w-full md:w-2/3'>We are deeply committed to upholding our core values, ensuring they are intricately woven into every project we undertake and infused in every interaction we engage in.</p>
+                            <p className='text-xl text-[--text-on-dark] font-light w-full md:w-2/3'>We don&apos;t have commitment issues, that's why we&apos;re deeply committed to our core values which we ingrain into every project we undertake. Straight up - No surprises.</p>
                             <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Let&apos;s have a chat</Button>
                         </div>
                   </div>
@@ -30,24 +30,24 @@ const Values = () => {
                         <div className="value-card flex flex-col gap-6 items-start max-w-[550px]">
                             <div className="value-icon p-3 rounded-md bg-[--primary-color]"><FaHeart className='text-white text-2xl'/></div>
                             <h4 className='text-white text-3xl font-bold'>Lasting Relationships</h4>
-                            <p className='text-[--text-on-dark]'>We&amp;re here to stay so one of our core values is to create great long lasting relationships with all our clients. Through amazing design, affordable pricing, top-notch communication, and giving you exactly what you need, we hope to earn your trust and friendship.</p>
+                            <p className='text-[--text-on-dark]'>Long lasting positive relationships are the best, aren&apos;t they? We believe so. Through effective designs, amazing communication, and the common goal to help our clients we&apos;re out here to create lifelong friendships.</p>
                         </div>
                         <div className="value-card flex flex-col gap-6 items-start max-w-[550px]">
                             <div className="value-icon p-3 rounded-md bg-[--primary-color]"><AiOutlineFileSearch className='text-white text-2xl'/></div>
                             <h4 className='text-white text-3xl font-bold'>Research First</h4>
-                            <p className='text-[--text-on-dark]'>Before we start any project, we always back-up the direction we take with research on all things related to your brand. We sit down with our clients to better understand the in&amp;s and out&amp;s of their business and brand so we can translate that into our work.</p>
+                            <p className='text-[--text-on-dark]'>Before we start any project, we take the time to strengthen our understanding of your project and needs through research. We sit down with our clients to find out the in&apos;s and out&apos;s of their business, customers and brand to translate that knowledge into our work.</p>
                         </div>
                     </div>
                     <div className="value-row flex flex-col lg:flex-row gap-20 lg:gap-40">
                         <div className="value-card flex flex-col gap-6 items-start max-w-[550px]">
                             <div className="value-icon p-3 rounded-md bg-[--primary-color]"><GrTechnology className='text-white text-2xl'/></div>
                             <h4 className='text-white text-3xl font-bold'>Design & Technology Driven</h4>
-                            <p className='text-[--text-on-dark]'>When it comes to building a platform for your business, we want to ensure it looks and works the right way. Using the latest technologies backed with some awesome designing that keeps scalability in mind, we can create the platform your business needs right now and as your business grows.</p>
+                            <p className='text-[--text-on-dark]'>When it comes to building any digital platform, we ensure it looks, feels and works the right way. By using the latest technologies backed with some awesome designs that keep scalability in mind, we can create a platform for your business to suit your needs right now and as your business grows in the future.</p>
                         </div>
                         <div className="value-card flex flex-col gap-6 items-start max-w-[550px]">
                             <div className="value-icon p-3 rounded-md bg-[--primary-color]"><GoMirror className='text-white text-2xl'/></div>
                             <h4 className='text-white text-3xl font-bold'>Transparency</h4>
-                            <p className='text-[--text-on-dark]'>Just as you weren&amp;t born yesterday, we weren&amp;t either. That&amp;s why we know that being open and honest is the best policy which we maintain with all our clients. Your trust is important to us so we keep you in the loop throughout the entire process. No hidden surprises, no radio silence, no agendas other than getting your job done properly.</p>
+                            <p className='text-[--text-on-dark]'>Just as we weren&apos;t born yesterday, you weren&apos;t either. That&apos;s why we know honesty and openness is the best policy which we maintain with every client. Your trust is super important to us and allows us to keep doing our thing so you can be assured no hidden surprises, no radio silence, and no agendas other than getting your job done properly.</p>
                         </div>
                     </div>
                 </div>

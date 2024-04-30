@@ -15,7 +15,7 @@ const Interaction = () => {
                 <div className="section-text w-full md:w-3/4 flex flex-col gap-8 items-start">
                     <span className='highlighted-purple-text rounded-full text-sm font-medium'>Interaction Design</span>
                     <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>Ensuring quality user experience with seemless design interactions</h4></AnimatedText>
-                    <p className='text-xl font-light'>Whether you want to grow brand awareness, showcase your services, increase sales, or increase user engagement, Builtflat can help. We understand it can be difficult to get your brand online, so let us do the hard work for you.</p>
+                    <p className='text-xl font-light'>Your customers expect the best interaction with your brand. That&apos;s why part of our designers mission is to think deeply about how users will interact with the designs we create to give them the best experience possible.</p>
                 </div>
             </div>
             <div className="site-wrapper spaced-m">

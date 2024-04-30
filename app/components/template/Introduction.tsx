@@ -18,7 +18,7 @@ const Introduction = () => {
                             <div className="section-text flex flex-col gap-8 w-full xl:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Rapid Production</span>
                                 <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-bold'>Accelerating your online presence efficiently</h4></AnimatedText>
-                                <p className='text-white text-xl font-light'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                                <p className='text-white text-xl font-light'>With our pre-designed template websites all the hard work is already done for you. This means we can cut the delivery time of a standard website down by over 50%. Less time, less cost, less mucking around!</p>
                                 <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                                 <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Book a free consultation</Button>
                                 </div>

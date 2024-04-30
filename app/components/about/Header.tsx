@@ -19,7 +19,7 @@ const Header = () => {
                 <div className="site-wrapper relative">
                     <div className="absolute header-message p-10 rounded-md bg-[--primary-color] max-w-[550px] flex flex-col gap-6 bottom-[10%] right-[5%]">
                         <h4 className='text-white text-3xl font-bold'>What we believe in</h4>
-                        <p className='text-white text-base font-base'>Over the years at Builtflat, we&apos;ve put alot of thought into what makes us who we are.  We could write up a long list of things, but we think the key point that stands out to us is our commitment to our clients</p>
+                        <p className='text-white text-base font-base'>We could write up a long list of values we believe in but our main belief is our commitment to our clients. We&apos;re in your corner, not on the other side of the ring.</p>
                     </div>
                     <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-full">
                         <div className="header-text flex flex-col">

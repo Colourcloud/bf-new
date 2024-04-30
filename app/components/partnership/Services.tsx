@@ -22,27 +22,21 @@ const serviceCards: ServiceCard[] = [
   },
   {
     title: 'User Interface & Experience',
-    description: 'Beautiful interfaces are what we&apos;re good at, no matter the screen size. At Builtflat we only create crisp responsive designs tailored to your brands needs.',
+    description: 'Our top-notch graphic designers offer a wide range of services designed to help your brand. From websites, branding, marketing and more.',
     imageUrl: '/partnership/ui-ux-graphic.jpg', // Replace with actual image path
     serviceLink: '/uiux',
   },
   {
     title: 'Mobile Development',
-    description: 'Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.',
+    description: 'Builtflat can deliver the latest in app development. From Progressive Web Apps, Apple IOS, and Android. Find out here how we can add value to your application project.',
     imageUrl: '/path/to/ui-ux.jpg', // Replace with actual image path
-    serviceLink: '/',
+    serviceLink: '/mobile-development',
   },
   {
     title: 'Template Driven Design',
-    description: 'Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.',
+    description: 'Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.',
     imageUrl: '/path/to/ui-ux.jpg', // Replace with actual image path
     serviceLink: '/template-design',
-  },
-  {
-    title: 'Research & Marketing',
-    description: 'Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.',
-    imageUrl: '/path/to/ui-ux.jpg', // Replace with actual image path
-    serviceLink: '/',
   },
   // Add more service cards as needed
 ];

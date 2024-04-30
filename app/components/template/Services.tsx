@@ -70,7 +70,7 @@ const Services = () => {
                         <div className="text-block flex flex-col gap-6 min-h-[600px] justify-center">
                             <span id="block-1"></span>
                             <AnimatedText><h4 className='text-white text-5xl font-bold'>Build with designed & coded templates. Ready for production</h4></AnimatedText>
-                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                            <p className='text-white text-lg'>Just because they&apos;re pre-built does not mean you lose the freedom to make your website your own. Our template websites are still highly customisable to suit your brand and capture your uniqueness.</p>
                         </div>
                         <div className="text-block flex flex-col gap-6 min-h-[700px] justify-center">
                             <AnimatedText><h4 className='text-white text-5xl font-bold'>Tailor made design components for any project</h4></AnimatedText>
@@ -80,7 +80,7 @@ const Services = () => {
                         <div className="text-block flex flex-col gap-6 min-h-[700px] justify-center">
                         <span id="block-3"></span>
                             <AnimatedText><h4 className='text-white text-5xl font-bold'>Responsive in mind. Designed to work on any screen size</h4></AnimatedText>
-                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                            <p className='text-white text-lg'>We&apos;re constantly improving and upgrading our templates and components to make sure they stay up to date with the ever-evolving digital world.</p>
                         </div>
                     </div>
                     <div className="content-graphic-container w-2/3  h-full p-8"> {/* Image that scrolls down the page */}
@@ -98,7 +98,7 @@ const Services = () => {
                         <AnimateOnScroll><Image src={images[0]} alt="yes" className='w-full rounded-lg template-service-image' width="1200" height="1200"></Image></AnimateOnScroll>
                         <div className="content-text flex flex-col gap-6">
                             <AnimatedText><h4 className='text-white text-3xl font-bold'>Build with designed & coded templates. Ready for production</h4></AnimatedText>
-                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                            <p className='text-white text-lg'>Just because they&apos;re pre-built does not mean you lose the freedom to make your website your own. Our template websites are still highly customisable to suit your brand and capture your uniqueness.</p>
                         </div>
                     </div>
                     <div className="content-block flex flex-col gap-8">
@@ -112,7 +112,7 @@ const Services = () => {
                         <AnimateOnScroll><Image src={images[2]} alt="yes" className='w-full rounded-lg template-service-image' width="1200" height="1200"></Image></AnimateOnScroll>
                         <div className="content-text flex flex-col gap-6">
                             <AnimatedText><h4 className='text-white text-3xl font-bold'>Responsive in mind. Designed to work on any screen size</h4></AnimatedText>
-                            <p className='text-white text-lg'>We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects</p>
+                            <p className='text-white text-lg'>We&apos;re constantly improving and upgrading our templates and components to make sure they stay up to date with the ever-evolving digital world.</p>
                         </div>
                     </div>
                 </section>
