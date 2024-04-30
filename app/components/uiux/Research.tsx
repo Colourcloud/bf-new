@@ -14,7 +14,7 @@ const Research = () => {
             <div className="site-wrapper spaced-m spaced-p">
             <div className="section-text flex flex-col gap-8 w-full lg:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Design Research</span>
-                <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>Design research is key to your website's performance.</h4></AnimatedText>
+                <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>Design research is key to your website&apos;s performance.</h4></AnimatedText>
                 <p className='text-xl font-light'>Your brand has a deep bond to your customers, it&apos;s something every touch point communicates to them. We first research your brand, learn the language and then let it influence the design.</p>       
             </div>
             </div>

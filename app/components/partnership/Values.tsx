@@ -16,7 +16,7 @@ const Values = () => {
                     <div className="section-text w-full flex flex-col gap-8">
                         <AnimatedText><h2 className='text-4xl text-white md:text-6xl font-bold w-full md:w-2/3'>We pride ourselves on our companies core values</h2></AnimatedText>
                         <div className='flex flex-col md:flex-row justify-between items-start gap-6'>
-                            <p className='text-xl text-[--text-on-dark] font-light w-full md:w-2/3'>We don&apos;t have commitment issues, that's why we&apos;re deeply committed to our core values which we ingrain into every project we undertake. Straight up - No surprises.</p>
+                            <p className='text-xl text-[--text-on-dark] font-light w-full md:w-2/3'>We don&apos;t have commitment issues, that&apos;s why we&apos;re deeply committed to our core values which we ingrain into every project we undertake. Straight up - No surprises.</p>
                             <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Let&apos;s have a chat</Button>
                         </div>
                   </div>
