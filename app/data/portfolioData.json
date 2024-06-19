@@ -41,9 +41,9 @@
     },
     { 
         "id": 3, 
-        "title": "Chasnz - Construction Health & Safety",
+        "title": "CHASNZ - Construction Health & Safety",
         "logo": "/portfolio/chasnz/logo.svg",
-        "brief": "We were asked to redesign the current CSSBuy mobile application, to create a more modern, easy to use version that their users would love. CSSBuy wanted to keep their current colour scheme with a few adjustments, but wanted us to decide on new typography and icons to use through the website. We started by looking through all the pages their current app has and broke them down to their core functionally, which would later be used in the design decisions.",
+        "brief": "We were tasked to redesign and develop the new CHASNZ website in collaboration with portgroup.co.nz. The primary objective of this redesign was to enhance the user experience, enabling users to access resources more efficiently. Additionally, we aimed to clearly represent CHASNZ and its subsidiary brands throughout the website.",
         "link": "https://chasnz.org",
         "image": "/portfolio/chasnz/portfolio-banner.jpg", 
         "slug": "chasnz",
@@ -55,9 +55,9 @@
             "/portfolio/cssbuy/image-5.png",
             "/portfolio/cssbuy/image-6.png"
         ],
-        "discovered": "The first thing we noticed was their current use of colour and typography. We really liked their current colour palette which matched their branding, however there were a lot of inconsistencies with different shades of the brand colour for buttons, highlights and text. So we wanted to really focus on fixing this.",
-        "mobile_statement": "We were also tasked to redesign CSSBuy's mobile application to enhance the shopping experience for all their users. With a total of over 40+ pages, this was no small feat, but we were able to completely overhaul the design and deliver them a product not only they loved, but their customers aswell.",
-        "closing_statement": "Following comprehensive evaluations of both the website and mobile application, we have garnered highly favorable responses from CSSBuy's user community, specifically in relation to the user experience and the structure of information architecture. Users reported that finding relevent information was a lot easier and streamlined, making the service a lot more enjoyable and easy to understand. We're going to continue working with CSSBuy to monitor the websites user engagement to ensure our product is delivering what we promised.",
+        "discovered": "We began by evaluating the existing website to identify underperforming areas. It quickly became apparent that the site's navigation required significant improvement, as users had to click through multiple pages to reach their desired destinations. Additionally, we observed a lack of consistent branding in the imagery and color scheme. In response, Portgroup developed a new brand guideline aligned with CHASNZ's values and objectives. We then implemented this brand guideline throughout the site, streamlining the layout and enhancing overall usability.",
+        "mobile_statement": "Given that many CHASNZ users primarily access the website via mobile devices, we prioritized creating a mobile-friendly user experience that is both easy to navigate and visually appealing. Recognizing that the website hosts numerous links to various learning materials and resources, we ensured that these resources are easily accessible on both mobile and desktop platforms. The new website design prominently features image material to showcase CHASNZ's brand and objectives, so we also made certain that all images are visually appealing across all screen sizes.",
+        "closing_statement": "Following an in-depth assessment of both the website and mobile experience, we have received overwhelmingly positive feedback from the CHASNZ user community. Users have noted that navigating the site and finding relevant information is now significantly more intuitive and efficient, enhancing their overall experience. The improvements in the user interface and streamlined access to resources have been particularly well-received. Moreover, the visual representation of CHASNZ's brand and objectives through cohesive imagery and design has resonated with users across all devices. We remain committed to collaborating with CHASNZ to continuously monitor user engagement and feedback. This ongoing partnership ensures that we not only meet but exceed user expectations, delivering a digital experience that aligns with CHASNZ’s mission and values.",
         "servicesUsed": [
             {
               "name": "Website Development",
