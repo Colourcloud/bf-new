@@ -46,7 +46,7 @@ const MobileNav = () => {
                         <span className='text-gray-400 uppercase text-xs'>Solutions</span>
                         <li className='text-gray-200'><Link href="/application" onClick={() => closeSideNav()}>Website Development</Link></li>
                         <li className='text-gray-200'><Link href="/uiux" onClick={() => closeSideNav()}>UI/UX Design</Link></li>
-                        <li className='text-gray-200'>Mobile Development</li>
+                        <li className='text-gray-200'><Link href="/mobile-development" onClick={() => closeSideNav()}>Mobile Development</Link></li>
                         <li className='text-gray-200'><Link href="/template-design" onClick={() => closeSideNav()}>Template Driven Design</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
@@ -55,24 +55,23 @@ const MobileNav = () => {
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Partnership</span>
-                        <li className='text-gray-200'><Link href="/partnership onClick={() => closeSideNav()}">Collaboration</Link></li>
+                        <li className='text-gray-200'><Link href="/partnership" onClick={() => closeSideNav()}>Collaboration</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Why Builtflat</span>
-                        <li className='text-gray-200'>Meet The Team</li>
-                        <li className='text-gray-200'>Our Story</li>
-                        <li className='text-gray-200'>Our Design Mission</li>
+                        <li className='text-gray-200'><Link href="/about" onClick={() => closeSideNav()}>About us</Link></li>
+                        <li className='text-gray-200'><Link href="/about" onClick={() => closeSideNav()}>Meet the Team</Link></li>
                     </ul>
                     <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>News & Updates</span>
                         <li className='text-gray-200'><Link href="/blog" onClick={() => closeSideNav()}>Blog</Link></li>
                     </ul>
-                    <ul className='flex flex-col gap-4'>
+                    {/* <ul className='flex flex-col gap-4'>
                         <span className='text-gray-400 uppercase text-xs'>Builtflat</span>
                         <li className='text-gray-200'>Careers</li>
                         <li className='text-gray-200'>Terms & Conditions</li>
                         <li className='text-gray-200'>Privacy Policy</li>
-                    </ul>
+                    </ul> */}
                     <div className="sidenav-contact sticky bottom-2 w-full left-0 bg-[#212122]">
                         <Link href="/contact" className='bg-white text-black p-3 text-center text-sm w-full block rounded-md flex flex-row items-center justify-center gap-2'><span><IoSendSharp className="rotate-[-45deg] text-base"></IoSendSharp></span>Contact us Today</Link>
                     </div>
