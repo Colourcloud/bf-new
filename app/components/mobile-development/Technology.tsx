@@ -11,7 +11,7 @@ const Technology = () => {
                     <div className="section-text w-full flex flex-col gap-8">
                         <AnimatedText><h2 className='text-4xl text-[text-colour] md:text-6xl font-bold w-full md:w-2/3'>We cover a wide range of mobile development technologies</h2></AnimatedText>
                         <div className='flex flex-col md:flex-row justify-between items-start gap-6'>
-                            <p className='text-xl text-[--text-colour] font-light w-full md:w-2/3'>We are deeply committed to upholding our core values, ensuring they are intricately woven into every project we undertake and infused in every interaction we engage in.</p>
+                            <p className='text-xl text-[--text-colour] font-light w-full md:w-2/3'>Our team uses the most reliable and functional app technology out there so we can deliver &apos;not just a pretty interface&apos;, but a smart one as well.</p>
                             <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Let&apos;s have a chat</Button>
                         </div>
                   </div>
@@ -23,7 +23,7 @@ const Technology = () => {
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>iOS App Development</h4>
-                                <p className='text-base text-[--text-colour] font-light'>We have all the expertise you need to produce fully-fledged, stable, and scalable mobile applications, including:</p>
+                                <p className='text-base text-[--text-colour] font-light'>Need an application for IOS? Sweet as! We can build fully-fledged, stable and scalable IOS mobile app. This includes:</p>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <ul className='text-lg text-[--text-colour] flex flex-col gap-5 list-disc marker:text-[--primary-color] ml-5'>
@@ -62,7 +62,7 @@ const Technology = () => {
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>Android App Development</h4>
-                                <p className='text-base text-[--text-colour] font-light'>Using the latest technologies, we help businesses establish their presence on any modern device and platform, including:</p>
+                                <p className='text-base text-[--text-colour] font-light'>Want an application for Android? No problem! We help businesses get their ideas perfected on any modern android device . This includes:</p>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <ul className='text-lg text-[--text-colour] flex flex-col gap-5 list-disc marker:text-[--primary-color] ml-5'>
@@ -105,7 +105,7 @@ const Technology = () => {
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>Cross-platform App Development</h4>
-                                <p className='text-base text-[--text-colour] font-light'>Get top-notch mobile applications that run on multiple platforms, while providing your users with an app that fits their OS. Use this alternative to reduce costs and time-to-market and to reach more users  without loss of quality, including:</p>
+                                <p className='text-base text-[--text-colour] font-light'>Don&apos;t want to be specific and want a top-notch app that runs on multiple platforms that fits their operating system? Easy as! We can use the below development methods to reduce costs and time to market, reaching more users without any quality loss. This includes:</p>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <ul className='text-lg text-[--text-colour] flex flex-col gap-5 list-disc marker:text-[--primary-color] ml-5'>

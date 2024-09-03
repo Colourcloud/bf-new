@@ -15,7 +15,7 @@ const Services = () => {
               <div className="section-text w-full lg:w-3/5 flex flex-col gap-8">
                 <span className='text-[#7A4AFF] font-bold'>Services</span>
                 <AnimatedText><h2 className='text-4xl md:text-5xl font-bold'>Our experience covers a wide range of digital services to help your business grow.</h2></AnimatedText>
-                <p className='text-xl font-light'>We&apos;ve combined our wider range of services into four core website design & development offerings. Check them out below! If you&apos;re not sure what you&apos;re looking for, <Link href="/contact" className='text-[--primary-color]'>contact us here.</Link></p>
+                <p className='text-xl font-light'>And we&apos;ve combined them into 4 core website design & development offerings built to boost up your site. Unsure what you&apos;re looking for? <Link href="/contact" className='text-[--primary-color]'>Contact us here.</Link></p>
               </div>
               <div className="service-grid spaced-p">
 

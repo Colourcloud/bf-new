@@ -25,8 +25,8 @@ const Testimonials: React.FC = () => {
                 <div className="flex flex-col gap-8">
                     <div className="section-text flex flex-col gap-8 w-full px-4 xl:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                         <span className='highlighted-purple-text rounded-full text-sm font-medium'>Testimonials</span>
-                        <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-extrabold'>Not sure if this is right for you? Let us help</h4></AnimatedText>
-                        <p className='text-white text-xl font-light'>Get in touch with us today and speak to an expert about a project you have. Book a free consultation today and one of our experts will set up a meeting and discuss the best solution for your business.</p>
+                        <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-bold'>Not sure if this is right for you? Let us help</h4></AnimatedText>
+                        <p className='text-white text-xl font-light'>We value long lasting relationships with our clients, that&apos;s why it&apos;s our goal to deliver the best website service possible and earn your trust while doing it. Find out below why Builtflat is the best solution for your business!</p>
                         <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                         <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Book a free consultation </Button>
                         </div>
@@ -34,7 +34,7 @@ const Testimonials: React.FC = () => {
                 </div>
             </section>
             <div className="site-wrapper spaced-m spaced-p">
-                <h6 className='text-left lg:text-center text-2xl lg:text-4xl font-bold opacity-50 text-white'>Heres what other people had to say</h6>
+                <h6 className='text-left lg:text-center text-2xl lg:text-4xl font-bold opacity-50 text-white'>Don&apos;t just take our word for it, take our clients word</h6>
                 <section className="testimonial-cards flex flex-col xl:flex-row flex-wrap gap-6 mt-12">
                     {rows.map((row, rowIndex) => (
                     <div key={rowIndex} className="card-row flex flex-col xl:flex-row gap-6">

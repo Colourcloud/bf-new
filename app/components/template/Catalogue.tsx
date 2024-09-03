@@ -17,8 +17,8 @@ const Catalogue = () => {
                         <div className="flex flex-col gap-8">
                             <div className="section-text flex flex-col gap-8 w-full xl:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Design Catalogue</span>
-                                <AnimatedText><h4 className='text-black text-4xl md:text-7xl font-extrabold'>Get inspired. Browse our design catalog</h4></AnimatedText>
-                                <p className='text-black text-xl font-light'>We have loads of templates designed for multiple different industries. Have a look through and see if anything catches your eye! Liking odd &apos;bits and bobs&apos; from different options? Let us know, we&apos;re more than happy to piece templates together to create your ultimate website.</p>
+                                <AnimatedText><h4 className='text-black text-4xl md:text-7xl font-bold !leading-3'>Get inspired. Browse our design catalog</h4></AnimatedText>
+                                <p className='text-black text-xl font-light'>We have loads of templates designed for multiple different industries. We&apos;re also more than happy to piece templates or elements together from two or more different ones to create your ultimate website. Want to have a look? Let us know!</p>
                                 <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                                 <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/application" >Book a Viewing</Button>
                                 </div>

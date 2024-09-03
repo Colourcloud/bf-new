@@ -16,11 +16,11 @@ const Paralax = () => {
                     <AnimatedText><h4 className='text-5xl font-black text-white'>Beautiful interfaces are what we know.</h4></AnimatedText>
                     <div className="section-text-group flex flex-col gap-3">
                         <h6 className='font-bold text-lg text-white'>Researching your brand</h6>
-                        <p className='font-light text-base text-white'>When it comes to designing for your business, we make sure to do thorough research around your branding and users. We make sure our designs best represent your brand and its values.</p>
+                        <p className='font-light text-base text-white'>Every touch point your brand has communicates a &apos;likeness&apos; fitted to your customers. Why would a digital interface be any different? We first understand your brand and then forge it into a design like the digital blacksmiths we are.</p>
                     </div>
                     <div className="section-text-group flex flex-col gap-3">
                         <h6 className='font-bold text-lg text-white'>Collaborating with our clients</h6>
-                        <p className='font-light text-base text-white'>We love it when our clients have their say and encourage you to have your own input on every design deicision we make. You know your brand best, that’s why we listen to what you have to say.</p>
+                        <p className='font-light text-base text-white'>We love it when our clients have their say and encourage you to have your own input on every design deicision we make. You know your brand best, that&apos;s why we listen to what you have to say.</p>
                     </div>
                </div>
             </div>

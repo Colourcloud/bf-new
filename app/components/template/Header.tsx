@@ -23,8 +23,8 @@ const Header = () => {
             <div className="site-wrapper">
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
                 <div className="header-text flex flex-col">
-                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Give your project a headstart - <br/> Pre designed elements & templates for any industry</h1>
-                    <h4 className="text-xl text-white mt-6 lg:text-xl">We have a large collection of pre-designed elements & templates that have already been tried & tested for a large range of different industries. This allows our clients to save time & cost for their projects.</h4>
+                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Give your project a headstart with our pre-designed web templates and elements</h1>
+                    <h4 className="text-xl text-white mt-6 lg:text-xl">Builtflat&apos;s large collection of pre-designed templates and elements are made to save you money and shorten the delivery time with no compromise to quality. All are tried and tested across a huge range of industries.</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>

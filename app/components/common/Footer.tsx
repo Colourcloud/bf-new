@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -16,9 +17,10 @@ const Footer = () => {
                             <div className="socials flex flex-col gap-6">
                                 <h4 className='text-[#b0b0b0] font-bold text-lg'>Connect with us:</h4>
                                 <div className="social-icons flex flex-row gap-4">
-                                    <FaFacebook className="text-white text-2xl" />
-                                    <FaInstagram className="text-white text-2xl" />
-                                    <BsTwitterX className="text-white text-2xl" />
+                                    <a href="https://www.facebook.com/builtflat" target="_blank"><FaFacebook className="text-white text-2xl" /></a>
+                                    <a href="https://www.instagram.com/builtflat/" target="_blank"><FaInstagram className="text-white text-2xl" /></a>
+                                    <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><FaLinkedin className="text-white text-2xl" /></a>
+                                    <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><BsTwitterX className="text-white text-2xl" /></a>
                                 </div>
                             </div>
                         </div>
@@ -62,9 +64,8 @@ const Footer = () => {
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Builtflat</span>
-                                <li className='text-[#898989] text-base'>Careers</li>
-                                <li className='text-[#898989] text-base'>Terms &amp; Conditions</li>
-                                <li className='text-[#898989] text-base'>Privacy Policy</li>
+                                <li className='text-[--primary-color] text-base'>hello@builtflat.co.nz</li>
+                                <li className='text-[--primary-color] text-base'>+64 22 040 8464</li>
                             </ul>
                         </div>
                     </div>

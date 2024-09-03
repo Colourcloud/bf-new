@@ -77,7 +77,7 @@ const Services = () => {
                     <div className="content-text w-2/5 h-full flex flex-col gap-80">  {/* Text down the page */}
                         <div className="text-block flex flex-col gap-6 min-h-[600px] justify-center">
                             <span id="block-1"></span>
-                            <AnimatedText><h4 className='text-white text-5xl font-bold'>Build with designed & coded templates. Ready for production</h4></AnimatedText>
+                            <AnimatedText><h4 className='text-white text-5xl font-bold'>Build with customisable designs, already coded and ready for production</h4></AnimatedText>
                             <p className='text-white text-lg'>Just because they&apos;re pre-built does not mean you lose the freedom to make your website your own. Our template websites are still highly customisable to suit your brand and capture your uniqueness.</p>
                         </div>
                         <div className="text-block flex flex-col gap-6 min-h-[700px] justify-center">
@@ -88,7 +88,7 @@ const Services = () => {
                         <div className="text-block flex flex-col gap-6 min-h-[700px] justify-center">
                             <span id="block-3"></span>
                             <AnimatedText><h4 className='text-white text-5xl font-bold'>Responsive in mind. Designed to work on any screen size</h4></AnimatedText>
-                            <p className='text-white text-lg'>We&apos;re constantly improving and upgrading our templates and components to make sure they stay up to date with the ever-evolving digital world.</p>
+                            <p className='text-white text-lg'>We&apos;re always improving and upgrading our templates and components to make sure they stay up to date so you&apos;re getting the best from the beginning.</p>
                         </div>
                     </div>
                     <div className="content-graphic-container w-2/3  h-full p-8"> {/* Image that scrolls down the page */}

@@ -26,7 +26,7 @@ export default function RootLayout({
         <NextTopLoader showSpinner={false} color='#7a4aff'/>
         <ToggleContactListener />
         <ContactForm />
-        <CookiePolicyPrompt />
+        {/* <CookiePolicyPrompt /> */}
         {children}
         <Footer />
       </body>

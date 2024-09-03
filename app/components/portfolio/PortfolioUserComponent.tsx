@@ -54,7 +54,7 @@ interface PortfolioUserComponentProps {
               </div>
             <section className="content m-auto">
               <div className="content-photo w-full"> 
-                { data.images?.[0] && <Image src={data.images[0]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover"/> }
+                { data.images?.[0] && <Image src={data.images[0]} alt={data.title} loading="lazy" width={1600} height={800} className="object-cover bg-slate-300"/> }
               </div>
               <div className="flex flex-col gap-4 w-full lg:w-2/4 m-auto spaced-m spaced-p">
                 <h4 className="text-2xl font-bold">What we discovered</h4>

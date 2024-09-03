@@ -23,6 +23,46 @@ $x-large-desktop-screen: 2560px;
     background-repeat: no-repeat;
 }
 
+
+.nav-dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: 100ms ease;
+    position: absolute;
+    width: 450px;
+    top: 40px;
+    border-radius: 6px;
+    left: -24px;
+    background: white;
+    &::before {
+        content: '';
+        width: 400px;
+        height: 20px;
+        top: -20px;
+        position: absolute;
+    }
+}
+
+.toggle-dropdown {
+ &:hover {
+    .nav-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+ }
+}
+
+.nav-dropdown-item {
+    p {
+        transition: 100ms ease;
+    }
+    &:hover {
+        p {
+            color: black;
+        }
+    }
+}
+
 .sidenav.active {
     transform: translateX(0px);
 }

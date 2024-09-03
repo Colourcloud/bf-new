@@ -15,7 +15,7 @@ const Header = () => {
             <div className="header-content flex flex-col lg:flex-row gap-8">
                 <div className="header-text flex flex-col gap-6 w-full lg:w-3/5 items-start justify-center">
                     <AnimateOnScroll><span className='highlighted-purple-text rounded-full text-sm font-medium'>Development Services</span></AnimateOnScroll>
-                    <h1 className='text-4xl md:text-6xl font-extrabold'>Pushing your ideas into production ready solutions</h1>
+                    <h1 className='text-4xl md:text-6xl font-extrabold'>Building your ideas into effective developed solutions</h1>
                     <p className='text-xl font-light'>Our fully customisable websites are developed using the latest tech with scalability, security, and functionality in mind. We don&apos;t joke when we say you and your clients will love it.</p>
                     <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
                         <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>

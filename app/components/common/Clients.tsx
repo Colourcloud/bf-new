@@ -6,7 +6,7 @@ const Clients = () => {
         <>
         <div className="site-wrapper spaced-p spaced-m">
             <div className="client-list w-full md:w-3/5 mx-auto text-center">
-                <h4 className='text-2xl md:text-3xl font-medium'>Solving tough challenges for some leading brands</h4>
+                <h4 className='text-2xl md:text-3xl font-medium'>Some of the awesome clients we&apos;ve worked with</h4>
                 <div className="brand-container spaced-p flex flex-wrap justify-center items-center gap-6 lg:gap-0 md:justify-between ">
                    <Image src="/clients/kpmg.svg" alt="kpmg logo" width='100' height='44'></Image>
                    <Image src="/clients/mercedes.svg" alt="kpmg logo" width='100' height='44'></Image>

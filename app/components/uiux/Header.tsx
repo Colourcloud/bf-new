@@ -14,7 +14,7 @@ const Header = () => {
           <div className="site-wrapper">
             <div className="header-content flex flex-col spaced-m spaced-p w-full text-center items-center mx-auto lg:w-4/5">
               <div className="header-text flex flex-col">
-                <h1 className="text-4xl purple-gradient leading-tight font-bold text-center md:text-7xl pb-4">Interfaces that leave a memorable impact</h1>
+                <h1 className="text-4xl purple-gradient leading-tight font-bold text-center md:text-7xl pb-4">Interface designs that make a statement.</h1>
                 <h4 className="text-xl text-white text-center mt-6 lg:text-2xl">You need to be unique to stand out in a crowd, why wouldn&apos;t you do the same with your website? Our team pushes the boundaries of interface design to capture your brand and the eyes of your customers.</h4>
                 </div>
                 <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">

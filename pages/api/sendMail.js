@@ -74,7 +74,7 @@ export default function handler(req, res) {
               <tbody style="width:100%">
               <tr style="width:100%">
                 <p style="color:#706a7b; font-size:12px;line-height:1.5;margin:16px 0; text-align: center;">This is an automated message from Builtflat. Please note that this email address is not monitored. Replies to this email are not read and cannot be responded to. A member of our team will reach out to you directly in regards to your message.</p>
-                <p style="font-size:14px;line-height:24px;margin:16px 0;text-align:center;color:#706a7b">© 2023 Builtflat LTD, All Rights Reserved <br />Auckland, New Zealand</p>
+                <p style="font-size:14px;line-height:24px;margin:16px 0;text-align:center;color:#706a7b">© 2024 Builtflat LTD, All Rights Reserved <br />Auckland, New Zealand</p>
               </tr>
               </tbody>
             </table>

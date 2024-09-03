@@ -26,23 +26,23 @@
       "title": "Electron",
       "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
       "link": "http://link-to-tech-1.com",
-      "icon": "/application/technology/angular.jpg"
+      "icon": "/application/technology/electron.jpg"
     },
     {
       "id": 5,
       "title": "Python",
       "description": "An approachable, performant and versatile framework for building web user interfaces.",
       "link": "http://link-to-tech-1.com",
-      "icon": "/application/technology/angular.jpg"
+      "icon": "/application/technology/python.jpg"
     }
   ],
   "bottomRowData": [
     {
       "id": 6,
-      "title": "Laravel",
-      "description": "Laravel is a web application framework with expressive, elegant syntax.",
+      "title": "React",
+      "description": "Build user interfaces out of individual pieces called components written in JavaScript.",
       "link": "http://link-to-tech-1.com",
-      "icon": "/application/technology/laravel.jpg"
+      "icon": "/application/technology/react.jpg"
     },
     {
       "id": 6,
