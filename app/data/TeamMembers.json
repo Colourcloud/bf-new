@@ -15,34 +15,13 @@
     },
     {
         "id": 3,
-        "imageSrc": "/about/team/3.jpg",
+        "imageSrc": "/about/team/jonni.jpg",
         "altText": "Picture of ...",
-        "name": "Sam Jones",
-        "roles": ["Founder", "Cat-Lover"]
+        "name": "Jonni Nahar",
+        "roles": ["Developer", "Hosting Partner"]
     },
     {
         "id": 4,
-        "imageSrc": "/about/team/4.jpg",
-        "altText": "Picture of ...",
-        "name": "Sam Jones",
-        "roles": ["Founder", "Cat-Lover"]
-    },
-    {
-        "id": 5,
-        "imageSrc": "/about/team/5.jpg",
-        "altText": "Picture of ...",
-        "name": "Sam Jones",
-        "roles": ["Founder", "Cat-Lover"]
-    },
-    {
-        "id": 6,
-        "imageSrc": "/about/team/6.jpg",
-        "altText": "Picture of ...",
-        "name": "Sam Jones",
-        "roles": ["Founder", "Cat-Lover"]
-    },
-    {
-        "id": 7,
         "imageSrc": "/about/team/alaska.jpg",
         "altText": "Picture of Alaska",
         "name": "Alaska",

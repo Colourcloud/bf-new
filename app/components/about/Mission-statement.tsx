@@ -16,7 +16,7 @@ const MissionStatement = () => {
                         <AnimatedText><h4 className='text-white font-bold text-4xl md:text-5xl'>Powerful ideas designed & developed for your customers</h4></AnimatedText>
                     </div>
                     <div className="text-block w-full md:w-2/5">
-                        <p className='text-[--text-on-dark] text-lg'>At Builtflat we&apos;ve made it our mission to not only deliver visually stunning designs & development products to our clients, but we make it a priority that what we deliver is loved by your customers. We carefully research your customer base and put ourselves into their shoes to truly understand what their needs and wants are.</p>
+                        <p className='text-[--text-on-dark] text-lg'>We&apos;ve made it our mission to deliver not only stunning designs, but fully functioning developed products to our clients that are loved by their customers. What makes this possible? Research, experience, knowledge and understanding.</p>
                     </div>
                 </section>
             </div>
