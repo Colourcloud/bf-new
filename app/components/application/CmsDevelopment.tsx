@@ -26,7 +26,7 @@ const CmsDevelopment = () => {
                         </article>
                         <article className='flex flex-col gap-2'>
                             <h6 className='font-bold text-base flex flex-row items-center gap-1'><span><MdOutlineCheckCircleOutline className="text-[--primary-color] text-2xl" /></span> Media Management</h6>
-                            <p className='font-light'>Create and edit your website's assets such as images, videos, icons, text and more. If you need something to be editable, it can happen.</p>
+                            <p className='font-light'>Create and edit your website&apos;s assets such as images, videos, icons, text and more. If you need something to be editable, it can happen.</p>
                         </article>
                         <article className='flex flex-col gap-2'>
                             <h6 className='font-bold text-base flex flex-row items-center gap-1'><span><MdOutlineCheckCircleOutline className="text-[--primary-color] text-2xl" /></span> Theme Support</h6>
