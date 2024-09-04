@@ -611,7 +611,7 @@ grid-template-rows: repeat(12, 1fr);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
-    @media screen and (min-width: $medium-screen) {
+    @media screen and (min-width: $desktop-screen) {
         grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
     }
 }

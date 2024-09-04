@@ -36,7 +36,7 @@ const Header = () => {
                 </div>
             </header>
             <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">
-                Want a free website & competitor analysis valued at over $500+ for free? <Link href="/" className='font-bold'>Apply here</Link>
+                Want a free website & competitor analysis valued at over $500+? <Link href="/" className='font-bold'>Apply here</Link>
             </div>
         </>
     );
