@@ -275,3 +275,8 @@ textarea {
     grid-column: auto / span 1; /* Each card spans one column */
   }
 }
+
+.hidden-on-mobile {
+  opacity: 0;
+  visibility: 0;
+}
