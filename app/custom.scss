@@ -56,9 +56,19 @@ $x-large-desktop-screen: 2560px;
     p {
         transition: 100ms ease;
     }
+    .dropdown-arrow {
+        opacity: 0;
+        transform: translateX(-5px);
+        transition: 200ms ease;
+        font-size: 12px;
+    }
     &:hover {
         p {
             color: black;
+        }
+        .dropdown-arrow {
+            opacity: 0.5;
+            transform: translateX(0px);
         }
     }
 }

@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { IoSendSharp, IoMenuOutline } from "react-icons/io5";
 import MobileNav from './MobileNav';
 import Image from 'next/image';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Navbar = () => {
     
@@ -20,7 +21,7 @@ const Navbar = () => {
                                         <Link href="#">Solutions</Link>
                                         <div className="nav-dropdown-menu p-8 flex flex-col gap-8">
 
-                                            <Link href="/application/" className='nav-dropdown-item'>
+                                            <Link href="/application/" className='nav-dropdown-item relative'>
                                                 <div className='text-black flex flex-row gap-4'>
                                                     <Image src="/icons/navigation-development.svg" alt="" width={32} height={32} />
                                                     <div className='flex flex-col'>
@@ -28,9 +29,10 @@ const Navbar = () => {
                                                         <p className='text-sm font-light text-gray-400'>Development services help businesses.</p>
                                                     </div>
                                                 </div>
+                                                <span className='dropdown-arrow absolute right-[-2%] top-[40%]'><FaArrowRightLong className='text-black' /></span>
                                             </Link>
 
-                                            <Link href="/uiux/" className='nav-dropdown-item'>
+                                            <Link href="/uiux/" className='nav-dropdown-item relative'>
                                                 <div className='text-black flex flex-row gap-4'>
                                                     <Image src="/icons/navigation-ui.svg" alt="" width={32} height={32} />
                                                     <div className='flex flex-col'>
@@ -38,9 +40,10 @@ const Navbar = () => {
                                                         <p className='text-sm font-light text-gray-400'>A wide range of services designed to help your brand.</p>
                                                     </div>
                                                 </div>
+                                                <span className='dropdown-arrow absolute right-[-2%] top-[40%]'><FaArrowRightLong className='text-black' /></span>
                                             </Link>
 
-                                            <Link href="/mobile-development" className='nav-dropdown-item'>
+                                            <Link href="/mobile-development" className='nav-dropdown-item relative'>
                                                 <div className='text-black flex flex-row gap-4'>
                                                     <Image src="/icons/navigation-mobile.svg" alt="" width={32} height={32} />
                                                     <div className='flex flex-col'>
@@ -48,9 +51,10 @@ const Navbar = () => {
                                                         <p className='text-sm font-light text-gray-400'>From Progressive Web Apps, Apple IOS, and Android.</p>
                                                     </div>
                                                 </div>
+                                                <span className='dropdown-arrow absolute right-[-2%] top-[40%]'><FaArrowRightLong className='text-black' /></span>
                                             </Link>
 
-                                            <Link href="/template-design/" className='nav-dropdown-item'>
+                                            <Link href="/template-design/" className='nav-dropdown-item relative'>
                                                 <div className='text-black flex flex-row gap-4'>
                                                     <Image src="/icons/navigation-template.svg" alt="" width={32} height={32} />
                                                     <div className='flex flex-col'>
@@ -58,6 +62,7 @@ const Navbar = () => {
                                                         <p className='text-sm font-light text-gray-400'>Help businesses get online quickly.</p>
                                                     </div>
                                                 </div>
+                                                <span className='dropdown-arrow absolute right-[-2%] top-[40%]'><FaArrowRightLong className='text-black' /></span>
                                             </Link>
 
                                         </div>
