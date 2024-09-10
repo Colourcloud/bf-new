@@ -11,6 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: 'Builtflat - Digital Agency, New Zealand',
   description: 'Builtflat is a digital agency in New Zealand. We help build digital destinations for businesses, to help them connect and grow with their customers.',
+  keywords: 'Digital, Agency, Builtflat, New Zealand, Design, Development, Auckland, Graphics, Website, templates, seo, ecommerce, api, prototyping, cms, business',
 };
 
 export default function RootLayout({

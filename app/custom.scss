@@ -384,9 +384,11 @@ $x-large-desktop-screen: 2560px;
     transition: 200ms ease;
     visibility: hidden;
     overflow-y: scroll;
+    opacity: 0;
     &.active {
         transform: translateX(0);
         visibility: visible;
+        opacity: 1;
     }
 }
 .contact-container-image::before {
