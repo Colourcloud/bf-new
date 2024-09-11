@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Button from '../common/Button';
 import AnimateOnScroll from '../common/AnimateOnScroll';
 import AnimatedText from '../common/AnimateText';
-import headerImage from '../../../public/template-design/header-graphic.jpg';
+import headerImage from '../../../public/template-design/style-graphic.jpg';
 
 
 const Styles = () => {
