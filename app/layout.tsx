@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Builtflat - Digital Agency, New Zealand',
     description: 'We build digital destinations for businesses to connect and grow with their customers.',
-    url: 'https://www.builtflat.com', // Replace with your actual URL
+    url: 'https://www.builtflat.co.nz', // Replace with your actual URL
     siteName: 'Builtflat',
     images: [
       {
-        url: 'https://www.builtflat.com/social-banner.jpg.jpg', // Replace with your actual image URL
+        url: 'https://www.builtflat.co.nz/social-banner.jpg.jpg', // Replace with your actual image URL
         width: 1200,
         height: 630,
         alt: 'Builtflat - Digital Agency',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Builtflat - Digital Agency, New Zealand',
     description: 'We build digital destinations for businesses to connect and grow with their customers.',
-    images: ['https://www.builtflat.com/social-banner.jpg.jpg'], // Replace with your actual image URL
+    images: ['https://www.builtflat.co.nz/social-banner.jpg'], // Replace with your actual image URL
   },
 };
 
