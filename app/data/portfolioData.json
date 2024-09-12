@@ -70,12 +70,10 @@
         "image": "/portfolio/chasnz/portfolio-banner.jpg", 
         "slug": "chasnz",
         "images": [
-            "/portfolio/cssbuy/test.png",
-            "/portfolio/cssbuy/image-2.png",
-            "/portfolio/cssbuy/image-3.png",
-            "/portfolio/cssbuy/image-4.png",
-            "/portfolio/cssbuy/image-5.png",
-            "/portfolio/cssbuy/image-6.png"
+            "/portfolio/chasnz/image-1.jpg",
+            "/portfolio/chasnz/image-2.jpg",
+            "/portfolio/chasnz/image-3.jpg",
+            "/portfolio/chasnz/image-mobile-1.jpg"
         ],
         "discovered": "We began by evaluating the existing website to identify underperforming areas. It quickly became apparent that the site's navigation required significant improvement, as users had to click through multiple pages to reach their desired destinations. Additionally, we observed a lack of consistent branding in the imagery and color scheme. In response, Portgroup developed a new brand guideline aligned with CHASNZ's values and objectives. We then implemented this brand guideline throughout the site, streamlining the layout and enhancing overall usability.",
         "mobile_statement": "Given that many CHASNZ users primarily access the website via mobile devices, we prioritized creating a mobile-friendly user experience that is both easy to navigate and visually appealing. Recognizing that the website hosts numerous links to various learning materials and resources, we ensured that these resources are easily accessible on both mobile and desktop platforms. The new website design prominently features image material to showcase CHASNZ's brand and objectives, so we also made certain that all images are visually appealing across all screen sizes.",

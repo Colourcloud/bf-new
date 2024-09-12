@@ -28,7 +28,7 @@ const Header = () => {
             <div className="site-wrapper showreel-wrapper relative z-40">
                 <div className="showreel w-full rounded-md shadow-md bg-white">
                 <video autoPlay loop muted className="rounded-md" poster='/uiux/uiux-video-thumbnail.jpg'>
-                    <source src="/uiux-video.mp4" type="video/mp4" />
+                    <source src="/home/home-header.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 </div>
