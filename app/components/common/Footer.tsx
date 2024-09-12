@@ -64,8 +64,7 @@ const Footer = () => {
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Builtflat</span>
-                                <li className='text-[--primary-color] text-base'>hello@builtflat.co.nz</li>
-                                <li className='text-[--primary-color] text-base'>+64 22 040 8464</li>
+                                <a href="mailto:hello@builtflat.co.nz" className='text-[--primary-color] text-base'>hello@builtflat.co.nz</a>
                             </ul>
                         </div>
                     </div>
