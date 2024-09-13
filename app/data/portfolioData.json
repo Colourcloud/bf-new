@@ -97,8 +97,30 @@
     },
     { 
         "id": 5, 
-        "title": "Doofy - The Marketplace for Creatives", 
+        "title": "Doofy - The design & development platform",
+        "logo": "/portfolio/doofy/logo.svg",
+        "brief": "Blank Canvas, a real estate photography, videography and marketing agency in Auckland, New Zealand asked us to design & develop a new website as their current one wasn’t hitting the mark. It was a tad outdated, had a few broken parts and wasn’t communicating their offers as well as it could have. They also wanted to include a booking system for their current or new clients. Our designer immediately saw a new vision for their site, using the full website spacing to show off the large images and videos they had for their portfolio.",
+        "link": "https://doofy.io",
         "image": "/portfolio/doofy/portfolio-banner.jpg", 
-        "slug": "doofy" 
+        "slug": "doofy", 
+        "images": [
+            "/portfolio/blankcanvas/image-1.jpg",
+            "/portfolio/blankcanvas/image-2.jpg",
+            "/portfolio/blankcanvas/image-3.jpg",
+            "/portfolio/blankcanvas/image-mobile-1.jpg"
+        ],
+        "discovered": "On our inspection of the website we noticed a lot of broken links, missing pages and information. It looked as if they had tried to build in a booking system previously as it was present on the site but it wasn’t working. Their portfolio was hosted on a separate platform but this also wasn’t connected to the website. We intended to fix these things immediately, as well as cleaning up the design and user experience across the board.",
+        "mobile_statement": "We redesigned their mobile design, aiming to streamline the user experience and better showcase their stunning real estate photography and films. We focused on creating a sleek, intuitive design that highlights their visual content, making it easier for clients to explore and engage with their portfolio. The result was a modern, user-friendly app that perfectly reflects the high-quality services Blank Canvas Production offers.",
+        "closing_statement": "After thoroughly evaluating the new website and mobile app, Blank Canvas Production received overwhelmingly positive feedback from their clients, particularly regarding the improved user experience and streamlined navigation. Clients found it much easier to access relevant information, enhancing their overall interaction with the studio's services. We're committed to ongoing collaboration with Blank Canvas Production, monitoring user engagement to ensure the app continues to meet and exceed expectations.",
+        "servicesUsed": [
+            {
+              "name": "Website Development",
+              "link": "/application"
+            },
+            {
+              "name": "UI/UX Design",
+              "link": "/uiux"
+            }
+          ]
     }
 ]

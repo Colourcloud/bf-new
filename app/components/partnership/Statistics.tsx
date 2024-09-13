@@ -30,7 +30,7 @@ const Statistics = () => {
                             <p className='text-[--text-on-dark] font-medium text-lg'>Combined hours of experience</p>
                         </div>
                         <div className="statistic-block flex flex-col gap-3 w-full lg:w-1/4">
-                            <CountUp target={23} className='purple-gradient font-extrabold text-6xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
+                            <CountUp target={11} className='purple-gradient font-extrabold text-6xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
                             <p className='text-[--text-on-dark] font-medium text-lg'>Countries serviced by us</p>
                         </div>
                     </div>
