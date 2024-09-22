@@ -34,6 +34,7 @@ $x-large-desktop-screen: 2560px;
     border-radius: 6px;
     left: -24px;
     background: white;
+    z-index: 99999999;
     &::before {
         content: '';
         width: 400px;
