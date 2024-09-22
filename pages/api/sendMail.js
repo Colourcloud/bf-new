@@ -8,8 +8,8 @@ export default function handler(req, res) {
       port: 587, // Common ports are 587, 465 (SSL required), or 25
       secure: false, // true for 465, false for other ports
       auth: {
-        user: "contact@builtflat.co.nz", // Your SMTP username
-        pass: "HQREaHawdw0c", // Your SMTP password
+        user: process.env.SMTP_USER, // SMTP username from env file
+        pass: process.env.SMTP_PASS, // SMTP password from env file
       },
       tls: {
         // This is necessary only if your server uses self-signed certificates
