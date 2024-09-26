@@ -29,13 +29,13 @@ const serviceCards: ServiceCard[] = [
   {
     title: 'Mobile Development',
     description: 'Builtflat can deliver the latest in app development. From Progressive Web Apps, Apple IOS, and Android. Find out here how we can add value to your application project.',
-    imageUrl: '/path/to/ui-ux.jpg',
+    imageUrl: '/partnership/mobile-graphic.jpg',
     serviceLink: '/mobile-development',
   },
   {
     title: 'Template Driven Design',
     description: 'Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.',
-    imageUrl: '/path/to/ui-ux.jpg',
+    imageUrl: '/partnership/template-graphic.jpg',
     serviceLink: '/template-design',
   },
   // Add more service cards as needed
