@@ -724,7 +724,23 @@ grid-template-rows: repeat(12, 1fr);
 
 }
 
-.wp-block-heading {
+.wp-block-list {
+    margin: 16px 0px 24px 24px;
+    list-style: disc;
+    li {
+        margin-bottom: 12px;
+    }
+}
+
+h3.wp-block-heading {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    margin-top: 36px;
+    font-weight: bold;
+}
+
+h2.wp-block-heading {
         font-size: 32px;
         line-height: 1.5;
         color: white;

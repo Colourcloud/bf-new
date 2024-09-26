@@ -25,7 +25,7 @@ const Sidebar = ({ content }) => {
         <ul className='flex flex-col gap-6'>
           {h2Tags.map(h2 => (
             <li key={h2.id}>
-              <a href={`#${h2.id}`} className='side-menu-links text-[--text-on-dark] font-medium text-base border-l border-[--border-colour-dark] px-3 py-4'>{h2.text}</a>
+              <a href={`#${h2.id}`} className='side-menu-links text-[--text-on-dark] font-medium text-base py-4'>{h2.text}</a>
             </li>
           ))}
         </ul>

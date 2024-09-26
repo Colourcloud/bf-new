@@ -9,17 +9,18 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.builtflat.co.nz'),
   title: 'Builtflat - Digital Agency, New Zealand',
   description: 'Builtflat is a digital agency in New Zealand. We help build digital destinations for businesses, to help them connect and grow with their customers.',
   keywords: 'Digital, Agency, Builtflat, New Zealand, Design, Development, Auckland, Graphics, Website, templates, seo, ecommerce, api, prototyping, cms, business',
   openGraph: {
     title: 'Builtflat - Digital Agency, New Zealand',
     description: 'We build digital destinations for businesses to connect and grow with their customers.',
-    url: 'https://www.builtflat.co.nz', // Replace with your actual URL
+    url: 'https://www.builtflat.co.nz',
     siteName: 'Builtflat',
     images: [
       {
-        url: 'https://www.builtflat.co.nz/social-banner.jpg.jpg', // Replace with your actual image URL
+        url: '/social-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'Builtflat - Digital Agency',
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Builtflat - Digital Agency, New Zealand',
     description: 'We build digital destinations for businesses to connect and grow with their customers.',
-    images: ['https://www.builtflat.co.nz/social-banner.jpg'], // Replace with your actual image URL
+    images: ['/social-banner.jpg'],
   },
 };
 
