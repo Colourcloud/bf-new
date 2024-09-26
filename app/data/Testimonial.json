@@ -3,16 +3,16 @@
         "id": 1,
         "imageSrc": "/template-design/testimonials/1.jpg",
         "altText": "yes",
-        "name": "Marilyn Wood",
-        "company": "Velocienta",
-        "testimonial": "The design service I received was top-notch! The team was incredibly talented and helped me bring my vision to life in a way that exceeded my expectations."
+        "name": "Tua",
+        "company": "CVCompton",
+        "testimonial": "Awesome job, they were very helpful and made us feel like we were included right the way through"
     },
     {
         "id": 2,
-        "imageSrc": "/template-design/testimonials/2.jpg",
+        "imageSrc": "/template-design/testimonials/default.jpg",
         "altText": "yes",
-        "name": "Ronald Bailey",
-        "company": "Velocienta",
+        "name": "Lisa Compton",
+        "company": "CVCompton",
         "testimonial": "I was blown away by the quality of the design work I received from this service."
     },
     {
