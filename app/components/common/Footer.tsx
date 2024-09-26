@@ -20,45 +20,45 @@ const Footer = () => {
                                     <a href="https://www.facebook.com/builtflat" target="_blank"><FaFacebook className="text-white text-2xl" /></a>
                                     <a href="https://www.instagram.com/builtflat/" target="_blank"><FaInstagram className="text-white text-2xl" /></a>
                                     <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><FaLinkedin className="text-white text-2xl" /></a>
-                                    <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><BsTwitterX className="text-white text-2xl" /></a>
+                                    {/* <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><BsTwitterX className="text-white text-2xl" /></a> */}
                                 </div>
                             </div>
                         </div>
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Solutions</span>
-                                <li className='text-[#898989] text-base'>Website Development</li>
-                                <li className='text-[#898989] text-base'>UI/UX Design</li>
-                                <li className='text-[#898989] text-base'>Mobile Development</li>
-                                <li className='text-[#898989] text-base'>Template Driven Design</li>
+                                <li className='text-[#898989] text-base'><Link href="/application">Website Development</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/uiux">UI/UX Design</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/mobile-development">Mobile Development</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/template">Template Driven Design</Link></li>
                             </ul>
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Our Work</span>
-                                <li className='text-[#898989] text-base'>Case Studies</li>
+                                <li className='text-[#898989] text-base'><Link href="/portfolio">Case Studies</Link></li>
                             </ul>
                         </div>
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Partnership</span>
-                                <li className='text-[#898989] text-base'>Colaboration</li>
-                                <li className='text-[#898989] text-base'>How we work</li>
-                                <li className='text-[#898989] text-base'>Contracting</li>
-                                <li className='text-[#898989] text-base'>Partner with us</li>
+                                <li className='text-[#898989] text-base'><Link href="/partnership">Colaboration</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/partnership">How we work</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/partnership">Contracting</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/partnership">Partner with us</Link></li>
                             </ul>
                         </div>
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>About us</span>
-                                <li className='text-[#898989] text-base'>Meet The Team</li>
-                                <li className='text-[#898989] text-base'>Our Story</li>
-                                <li className='text-[#898989] text-base'>Our Design Mission</li>
+                                <li className='text-[#898989] text-base'><Link href="/about">Meet The Team</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/about">Our Story</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/about">Our Design Mission</Link></li>
                             </ul>
                         </div>
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>News &amp; Updates</span>
-                                <li className='text-[#898989] text-base'>Blog</li>
-                                <li className='text-[#898989] text-base'>Business News</li>
+                                <li className='text-[#898989] text-base'><Link href="/blog">Blog</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/blog">Business News</Link></li>
                             </ul>
                         </div>
                         <div className="footer-col flex flex-col gap-6">
