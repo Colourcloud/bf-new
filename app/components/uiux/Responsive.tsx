@@ -19,15 +19,23 @@ const Responsive = () => {
                 </div>
             </div>
             <div className="site-wrapper spaced-m responsive-wrapper">
-               <div className="responsive-showcase flex flex-col lg:flex-row gap-6 mx-auto">
+               <div className="responsive-showcase flex-col lg:flex-row gap-6 mx-auto hidden invisible lg:visible lg:flex">
                     <div className="responsive-card w-[720px] shadow-md rounded-md bg-white">
-                        <Image src="/uiux/responsive-group1-1.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>
+                        <Image src="/uiux/responsive-group1-1.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-fit' width="1200" height="800"></Image>
                     </div>
                     <div className="responsive-card w-[480px] shadow-md rounded-md bg-white">
-                        <Image src="/uiux/responsive-group1-2.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>
+                        <Image src="/uiux/responsive-group1-2.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-fit' width="1200" height="800"></Image>
                     </div>
                     <div className="responsive-card w-[340px] shadow-md rounded-md bg-white">
-                        <Image src="/uiux/responsive-group1-3.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-cover' width="1200" height="800"></Image>
+                        <Image src="/uiux/responsive-group1-3.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-fit' width="1200" height="800"></Image>
+                    </div>
+                </div>
+                <div className="flex flex-row md:flex-row gap-6 mx-auto lg:hidden lg:invisible">
+                    <div className="responsive-card w-full md:w-full shadow-md rounded-md bg-white">
+                        <Image src="/uiux/responsive-group1-2.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-fit' width="1200" height="800"></Image>
+                    </div>
+                    <div className="responsive-card w-2/4 shadow-md rounded-md bg-white flex self-start">
+                        <Image src="/uiux/responsive-group1-3.jpg" alt="dashboard ui for suit shop" className='rounded-lg max-w-none w-full object-fit' width="1200" height="800"></Image>
                     </div>
                 </div>
             </div>

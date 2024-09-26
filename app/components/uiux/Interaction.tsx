@@ -20,8 +20,12 @@ const Interaction = () => {
             </div>
             <div className="site-wrapper spaced-m">
                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div className="w-full min-h-[450px] rounded-lg bg-slate-400"></div>
-                    <div className="w-full min-h-[450px] rounded-lg bg-slate-400"></div>
+                    <div className="w-full min-h-[450px] rounded-lg bg-slate-400">
+                        <Image src="/uiux/interaction-graphic-1.jpg" alt="popup modal ui" className='rounded-lg max-w-none w-full object-cover h-full' width="1200" height="800"></Image>
+                    </div>
+                    <div className="w-full min-h-[450px] rounded-lg bg-slate-400">
+                        <Image src="/uiux/interaction-graphic-2.jpg" alt="popup modal ui" className='rounded-lg max-w-none w-full object-cover h-full' width="1200" height="800"></Image>
+                    </div>
                </div>
             </div>
         </section>
