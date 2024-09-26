@@ -35,9 +35,9 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">
+            {/* <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">
                 Want a free website & competitor analysis valued at over $500+? <Link href="/" className='font-bold'>Apply here</Link>
-            </div>
+            </div> */}
         </>
     );
 };
