@@ -30,7 +30,7 @@ const Footer = () => {
                                 <li className='text-[#898989] text-base'><Link href="/application">Website Development</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/uiux">UI/UX Design</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/mobile-development">Mobile Development</Link></li>
-                                <li className='text-[#898989] text-base'><Link href="/template">Template Driven Design</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/template-design">Template Driven Design</Link></li>
                             </ul>
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Our Work</span>
