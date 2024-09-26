@@ -12,7 +12,7 @@ const Partnership: React.FC = () => {
         <div className='bg-[--dark-background-color]'>
             <Header />
             <Partners />
-            <TestimonialVideo />
+            {/* <TestimonialVideo /> */}
             <Values />
             <Statistics />
             <Services />
