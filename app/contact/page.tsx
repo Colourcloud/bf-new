@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'Builtflat - Contact us',
+    description: 'Start your digital journey today. Contact us for any questions or concerns',
   }
  
 const Contact: React.FC = () => {

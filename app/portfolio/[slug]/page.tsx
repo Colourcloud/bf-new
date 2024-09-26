@@ -1,5 +1,6 @@
 import getPortfolioData from "@/app/lib/getPortfolioData";
 import PortfolioUserComponent from "@/app/components/portfolio/PortfolioUserComponent";
+import { Metadata } from 'next';
 
 //This is a server component which performs two tasks-
 // 1. fetch data 
@@ -11,6 +12,35 @@ type Params = {
     slug: string;
   };
 };
+
+// This function generates dynamic metadata for each portfolio page
+export async function generateMetadata({ params: { slug } }: Params): Promise<Metadata> {
+  const portfolioData = await getPortfolioData();
+  const selectedData = portfolioData.find((e) => e.slug === slug);
+
+  if (selectedData) {
+    return {
+      title: selectedData.title, // Set the title from the selected project's title
+      description: selectedData.brief, // Set the description from the brief field
+      openGraph: {
+        title: selectedData.title,
+        description: selectedData.brief,
+        url: selectedData.link,
+        images: [
+          {
+            url: selectedData.image,
+            alt: `${selectedData.title} Banner`,
+          },
+        ],
+      },
+    };
+  }
+
+  return {
+    title: 'Portfolio Project',
+    description: 'Check out this portfolio project.',
+  };
+}
 
 
 

@@ -7,10 +7,15 @@ import CmsSoftware from '../components/application/CmsSoftware';
 import Ecommerce from '../components/application/Ecommerce';
 import Technology from '../components/application/Technology';
 import Portfolio from '../components/common/Portfolio';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Builtflat - Website & Application development',
+    description: "Our fully customisable websites are developed using the latest tech with scalability, security, and functionality in mind. We don't joke when we say you and your clients will love it.",
+};
 
 const Application: React.FC = () => {
     
-
     return (
         <>
             <NavbarWhite />
