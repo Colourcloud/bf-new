@@ -12,7 +12,7 @@ const config = async () => {
   const dynamicPaths = await fetchBlogSlugs();
 
   return {
-    siteUrl: 'https://builtflat.co.nz',  // Replace with your actual site URL
+    siteUrl: 'https://www.builtflat.co.nz',  // Replace with your actual site URL
     generateRobotsTxt: true,             // Generates a robots.txt file
     changefreq: 'daily',
     priority: 1,
