@@ -8,6 +8,7 @@ import NextTopLoader from 'nextjs-toploader';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from 'next/script';  // Import Script from next/script
+import GoogleAnalytics from './components/common/GoogleAnalytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.builtflat.co.nz'),
@@ -45,19 +46,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics Script */}
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-QG5F5FN0L1');
-          `}
-        </Script>
-      </head>
       <body className="_next" >
+        <GoogleAnalytics />
         <SpeedInsights />
         <Analytics/>
         <NextTopLoader showSpinner={false} color='#7a4aff'/>
