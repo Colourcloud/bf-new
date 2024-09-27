@@ -586,19 +586,103 @@ $x-large-desktop-screen: 2560px;
   .catalogue-showcase {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-grid-template-rows: repeat(12, 1fr); 
+    grid-template-rows: repeat(12, 1fr);
     gap: 24px;
-    height: 800px;
-    div {
-        background: #D9D9D9;
-        border-radius: 8px;
+    height: auto;
+    @media screen and (min-width: 1024px) {
+        height: 800px;
     }
-    .div1 { grid-area: 1 / 5 / 6 / 9; }
-.div2 { grid-area: 1 / 1 / 8 / 5; }
-.div3 { grid-area: 8 / 1 / 13 / 5; }
-.div4 { grid-area: 6 / 5 / 13 / 7; }
-.div5 { grid-area: 6 / 7 / 13 / 9; } 
+  }
+  
+  .catalogue-showcase div {
+    background: #d9d9d9;
+    border-radius: 8px;
+  }
+  
+  .catalogue-showcase .div1 {
+    grid-area: 1 / 5 / 6 / 9;
+  }
+  
+  .catalogue-showcase .div2 {
+    grid-area: 1 / 1 / 8 / 5;
+  }
+  
+  .catalogue-showcase .div3 {
+    grid-area: 8 / 1 / 13 / 5;
+  }
+  
+  .catalogue-showcase .div4 {
+    grid-area: 6 / 5 / 13 / 7;
+  }
+  
+  .catalogue-showcase .div5 {
+    grid-area: 6 / 7 / 13 / 9;
+  }
+  
+  /* For tablets and medium-sized screens */
+  @media (max-width: 1024px) {
+    .catalogue-showcase {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(12, 1fr);
     }
+  
+    .catalogue-showcase .div1 {
+      grid-area: 1 / 3 / 6 / 5;
+    }
+  
+    .catalogue-showcase .div2 {
+      grid-area: 1 / 1 / 8 / 3;
+    }
+  
+    .catalogue-showcase .div3 {
+      grid-area: 8 / 1 / 13 / 3;
+    }
+  
+    .catalogue-showcase .div4 {
+      grid-area: 6 / 3 / 13 / 4;
+    }
+  
+    .catalogue-showcase .div5 {
+      grid-area: 6 / 4 / 13 / 5;
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 768px) {
+    .catalogue-showcase {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+  
+    .catalogue-showcase .div1,
+    .catalogue-showcase .div2,
+    .catalogue-showcase .div3,
+    .catalogue-showcase .div4,
+    .catalogue-showcase .div5 {
+      grid-area: auto;
+    }
+  
+    .catalogue-showcase .div1 {
+      grid-column: 1 / span 2;
+    }
+  
+    .catalogue-showcase .div2 {
+      grid-column: 1 / span 2;
+    }
+  
+    .catalogue-showcase .div3 {
+      grid-column: 1 / span 2;
+    }
+  
+    .catalogue-showcase .div4 {
+      grid-column: 1 / span 2;
+    }
+  
+    .catalogue-showcase .div5 {
+      grid-column: 1 / span 2;
+    }
+  }
+  
 
 
     @keyframes flickerAnimation {

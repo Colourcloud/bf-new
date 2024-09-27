@@ -27,19 +27,19 @@ const Catalogue = () => {
                     </section>
                     <section className='catalogue-showcase mt-[100px]'>
                         <div className='div1 overflow-hidden'>
-                            <Image src="/template-design/catalogue-2.png" alt="" width="1200" height="500" className='object-fit h-full'></Image>
+                            <Image src="/template-design/catalogue-2.png" alt="e-commerce store selling furniture" width="1200" height="500" className='object-fit h-full'></Image>
                         </div>
                         <div className='div2 overflow-hidden'>
-                            <Image src="/template-design/catalogue-1.png" alt="" width="1200" height="500" className='object-cover h-full'></Image>
+                            <Image src="/template-design/catalogue-1.png" alt="portfolio website ui" width="1200" height="500" className='object-cover h-full'></Image>
                         </div>
                         <div className='div3 overflow-hidden'>
-                            <Image src="/template-design/catalogue-3.png" alt="" width="1200" height="500" className='object-fit h-full'></Image>
+                            <Image src="/template-design/catalogue-3.png" alt="e-commerce store selling furniture" width="1200" height="500" className='object-fit h-full'></Image>
                         </div>
                         <div className='div4 overflow-hidden'>
-                            <Image src="/template-design/catalogue-4.png" alt="" width="1200" height="500" className='object-fit h-full'></Image>
+                            <Image src="/template-design/catalogue-4.png" alt="tablet landing page ui" width="1200" height="500" className='object-fit h-full'></Image>
                         </div>
                         <div className='div5 overflow-hidden'>
-                            <Image src="/template-design/catalogue-5.png" alt="" width="1200" height="500" className='object-fit h-full'></Image>
+                            <Image src="/template-design/catalogue-5.png" alt="ios phone screen with ecommerce ui" width="1200" height="500" className='object-fit h-full'></Image>
                         </div>
                     </section>
                     </div>

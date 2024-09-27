@@ -61,8 +61,8 @@ const Services = () => {
               </AnimatedText>
             </div>
           </div>
-          <div className="flex flex-row gap-10 mt-24">
-            <div className='flex flex-row gap-8 w-1/3'>
+          <div className="flex flex-col lg:flex-row gap-10 mt-24">
+            <div className='flex flex-row gap-8 w-full lg:w-1/3'>
               <ul className='flex flex-col'>
                 {serviceCards.map((card, index) => (
                   <li
