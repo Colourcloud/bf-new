@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/sendMail.js", "app/components/partnership/TestimonialVideo.js", "pages/blog/page.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/sendMail.js", "app/components/partnership/TestimonialVideo.js", "pages/blog/page.js", "app/components/common/LottieAnimation.js"],
   "exclude": ["node_modules"]
 }
