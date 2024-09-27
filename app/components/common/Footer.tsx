@@ -40,7 +40,7 @@ const Footer = () => {
                         <div className="footer-col flex flex-col gap-6">
                             <ul className='flex flex-col gap-4'>
                                 <span className='text-white font-medium text-lg'>Partnership</span>
-                                <li className='text-[#898989] text-base'><Link href="/partnership">Colaboration</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/partnership">Collaboration</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/partnership">How we work</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/partnership">Contracting</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/partnership">Partner with us</Link></li>
