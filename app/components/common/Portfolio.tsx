@@ -21,7 +21,7 @@ const Portfolio = () => {
                     <Link href="/portfolio/chasnz"><Image src="/portfolio/chasnz/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
                 </div>
                 <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
-                    <Link href="/portfolio/blank-canvas-studios"><Image src="/portfolio/blankcanvas/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
+                    <Link href="/portfolio/blankcanvas"><Image src="/portfolio/blankcanvas/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
                 </div>
                 <div className="recent-work_card h-80 w-full md:w-72 bg-white rounded-md overflow-hidden">
                     <Link href="/portfolio/doofy"><Image src="/portfolio/doofy/portfolio-banner.jpg" className='h-full object-cover transition hover:scale-105' alt="" height="600" width="600"></Image></Link>
