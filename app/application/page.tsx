@@ -26,7 +26,7 @@ const Application: React.FC = () => {
             <CmsSoftware />
             <Ecommerce />
             <Technology />
-            {/* <Faq /> */}
+            <Faq />
             <Portfolio />
         </>
     );

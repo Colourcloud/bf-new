@@ -4,35 +4,35 @@
       "id": 1,
       "title": "AngularJS",
       "description": "The web development framework for building the future",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://angular.dev/",
       "icon": "/application/technology/angular.jpg"
     },
     {
       "id": 2,
       "title": "Laravel",
       "description": "Laravel is a web application framework with expressive, elegant syntax.",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://laravel.com/",
       "icon": "/application/technology/laravel.jpg"
     },
     {
       "id": 3,
       "title": "VueJS",
       "description": "An approachable, performant and versatile framework for building web user interfaces.",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://vuejs.org/",
       "icon": "/application/technology/vue.jpg"
     },
     {
       "id": 4,
       "title": "Electron",
       "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://www.electronjs.org/",
       "icon": "/application/technology/electron.jpg"
     },
     {
       "id": 5,
       "title": "Python",
       "description": "An approachable, performant and versatile framework for building web user interfaces.",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://www.python.org/",
       "icon": "/application/technology/python.jpg"
     }
   ],
@@ -41,14 +41,14 @@
       "id": 6,
       "title": "React",
       "description": "Build user interfaces out of individual pieces called components written in JavaScript.",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://react.dev/",
       "icon": "/application/technology/react.jpg"
     },
     {
       "id": 6,
       "title": "VueJS",
       "description": "An approachable, performant and versatile framework for building web user interfaces.",
-      "link": "http://link-to-tech-1.com",
+      "link": "https://vuejs.org/",
       "icon": "/application/technology/vue.jpg"
     }
   ]
