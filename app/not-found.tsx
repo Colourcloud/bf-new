@@ -13,7 +13,7 @@ export default function NotFound() {
         <h1 className="text-4xl font-bold mb-4">We couldn&apos;t find what you were looking for</h1>
         <p className="text-xl mb-8">The page you&apos;re looking for doesn&apos;t exist</p>
         <Link href="/" passHref className='flex justify-center'>
-            <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact">Return Home</Button>
+            <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/">Return Home</Button>
         </Link>
       </div>
     </div>
