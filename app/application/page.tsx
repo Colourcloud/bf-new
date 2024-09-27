@@ -7,6 +7,7 @@ import CmsSoftware from '../components/application/CmsSoftware';
 import Ecommerce from '../components/application/Ecommerce';
 import Technology from '../components/application/Technology';
 import Portfolio from '../components/common/Portfolio';
+import Faq from '../components/application/Faq';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ const Application: React.FC = () => {
             <CmsSoftware />
             <Ecommerce />
             <Technology />
+            {/* <Faq /> */}
             <Portfolio />
         </>
     );

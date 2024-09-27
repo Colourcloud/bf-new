@@ -4,6 +4,12 @@ import { GetStaticProps } from 'next';
 import Card from './SoftwareCard';
 import softwareData from '../../data/SoftwareData.json';
 import { useEffect, useRef } from 'react';
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "@/components/ui/accordion"
 
 const Technology = () => { 
 
