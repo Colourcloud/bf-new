@@ -8,6 +8,7 @@ import Services from '../components/template/Services';
 import Styles from '../components/template/Styles';
 import Catalogue from '../components/template/Catalogue';
 import Testimonials from '../components/common/Testimonials';
+import Faq from '../components/template/Faq';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ const Template: React.FC = () => {
             <Services />
             <Styles />
             <Catalogue />
+            <Faq />
             <Testimonials />
             <Portfolio />
         </>

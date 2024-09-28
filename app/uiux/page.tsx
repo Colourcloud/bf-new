@@ -7,6 +7,7 @@ import Responsive from '../components/uiux/Responsive';
 import Paralax from '../components/uiux/Paralax';
 import Research from '../components/uiux/Research';
 import Interaction from '../components/uiux/Interaction';
+import Faq from '../components/uiux/Faq';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ const Application: React.FC = () => {
             <Paralax />
             <Research />
             <Interaction />
+            <Faq />
             <Portfolio />
         </>
     );

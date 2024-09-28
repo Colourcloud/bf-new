@@ -5,6 +5,7 @@ import Services from '../components/mobile-development/Services'
 import Technology from '../components/mobile-development/Technology'
 import Testimonials from '../components/common/Testimonials'
 import Portfolio from '../components/common/Portfolio'
+import Faq from '../components/mobile-development/Faq'
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ const page = () => {
     <Partners />
     <Services />
     <Technology />
+    <Faq />
     <Testimonials />
     <Portfolio />
     </div>
