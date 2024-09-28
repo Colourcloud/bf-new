@@ -2,6 +2,12 @@ import Navbar from '../../../app/components/common/Navbar';
 import Link from 'next/link';
 import Image from 'next/image';
 import Sidebar from '../../components/blog/Sidebar';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2'
 
@@ -62,6 +68,28 @@ export default async function BlogPost({ params }) {
               </div>
               <div className='blog-body flex flex-col items-center mt-9'>
                 <div className='text-white w-full lg:w-[80%] flex flex-col gap-6' dangerouslySetInnerHTML={{ __html: posts.content.rendered }}></div>
+
+                <div className='blog-faq w-full lg:w-4/5 mt-12'>
+                  <div className="faq-container w-full mx-auto text-left flex flex-col gap-3 text-white">
+                    <h2 className='text-4xl md:text-3xl font-bold'>Frequently Asked Questions</h2>
+                    <p className='text-base font-light'>Below are some frequently asked questions relating to this blog post.</p>
+                  </div>
+                  <Accordion type="single" collapsible>
+                    {Array.isArray(posts.acf.faq) ? (
+                      posts.acf.faq.map((faqItem, index) => (
+                        <AccordionItem key={index} value={`item-${index}`}>
+                          <AccordionTrigger className='text-white'>{faqItem.question}</AccordionTrigger>
+                          <AccordionContent className='text-white'>
+                            {faqItem.answer}
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))
+                    ) : (
+                      <div className='text-white'>No FAQ available</div>
+                    )}
+                  </Accordion>
+                </div>
+
               </div>
             </div>
           </div>
