@@ -27,7 +27,7 @@ const Faq = () => {
                 <AccordionItem value="item-2">
                     <AccordionTrigger>Can I still customise a template-based website to match my brand?</AccordionTrigger>
                     <AccordionContent>
-                    Yes, while templates come with predefined layouts they can still be customised to reflect your brand's identity. We adjust the colour schemes, typography, images, and content to match your brand guidelines. Although template-based websites are less flexible in terms of layout changes, we ensure the site looks unique and professional to fit your business needs.
+                    Yes, while templates come with predefined layouts they can still be customised to reflect your brand&apos;s identity. We adjust the colour schemes, typography, images, and content to match your brand guidelines. Although template-based websites are less flexible in terms of layout changes, we ensure the site looks unique and professional to fit your business needs.
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
