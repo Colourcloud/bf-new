@@ -39,7 +39,7 @@ const Testimonials: React.FC = () => {
                     {rows.map((row, rowIndex) => (
                     <div key={rowIndex} className="card-row flex flex-col xl:flex-row gap-6">
                     {row.map((item) => (
-                        <div key={item.id} className="quote-card w-full 2xl:w-[450px] p-6 rounded-md bg-[#010112] border border-[#222] flex flex-col gap-6">
+                        <div key={item.id} className="quote-card w-full 2xl:w-[450px] p-6 rounded-md border border-[#222] flex flex-col gap-6">
                             <div className="top-section flex flex-row gap-3">
                                 <Image src={item.imageSrc} alt={item.altText} className="rounded-full w-11 h-11" width="120" height="120" />
                                 <div className="test-name">

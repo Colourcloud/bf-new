@@ -17,8 +17,8 @@ const Collaboration = () => {
                         <div className="flex flex-col gap-8">
                             <div className="section-text flex flex-col gap-8 w-full md:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Collaboration</span>
-                                <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>A collaborative experience to speed up those busy workflows</h4></AnimatedText>
-                                <p className='text-xl font-light'>We work closely with other design & development agencies, to help them meet their client deadlines. Leveraging workloads can greatly increase the productivity of a team, to deliver a more polished project.</p>
+                                <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>Want to expand out your offers and speed up projects? Let&apos;s collaborate!</h4></AnimatedText>
+                                <p className='text-xl font-light'>Builtflat works closely with other design and development agencies in New Zealand, Australia, and internationally to help them meet their project needs. We boost the productivity, capacity, and knowledge of a team to help deliver a more polished, timely project for your clients.</p>
                                 <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/partnership" >Let&apos;s work together</Button>
                                 <div className="user-icons flex flex-row justify-start">
                                     <AnimateOnScroll><Image src="/home/avatars/avatar-1.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-10'></Image></AnimateOnScroll>

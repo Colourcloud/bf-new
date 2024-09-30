@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const Contact: React.FC = () => {
     return (
         <>
-        {/* <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">We&apos;re currently offering a complimentary website &amp; competitor analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-bold'>Apply Here</Link></div> */}
+        <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">We&apos;re currently offering a complimentary website analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-bold'>Apply Here</Link></div>
             <div className='bg-[--dark-background-color]'>
                 <Navbar></Navbar>
                 <ContactForm />

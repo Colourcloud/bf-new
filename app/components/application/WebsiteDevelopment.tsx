@@ -25,7 +25,7 @@ const WebsiteDevelopment = () => {
                         </div>
                     </div>
                     <div className="section-graphic">
-                        <Image src="/application/web-dev.jpg" alt="website code and graphic" className='rounded-t-lg' width="2000" height="800"></Image>
+                        <Image src="/application/web-dev.jpg" alt="Website development code besides a travel guide website graphic" className='rounded-t-lg' width="2000" height="800"></Image>
                     </div>
                 </div>
             </div>

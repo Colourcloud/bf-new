@@ -26,7 +26,7 @@ const Navbar = () => {
                                                     <Image src="/icons/navigation-development.svg" alt="" width={32} height={32} />
                                                     <div className='flex flex-col'>
                                                         <h4 className='text-base font-semibold'>Website Development</h4>
-                                                        <p className='text-sm font-light text-gray-400'>Development services help businesses.</p>
+                                                        <p className='text-sm font-light text-gray-400'>Development services that help businesses get online</p>
                                                     </div>
                                                 </div>
                                                 <span className='dropdown-arrow absolute right-[-2%] top-[40%]'><FaArrowRightLong className='text-black' /></span>
@@ -59,7 +59,7 @@ const Navbar = () => {
                                                     <Image src="/icons/navigation-template.svg" alt="" width={32} height={32} />
                                                     <div className='flex flex-col'>
                                                         <h4 className='text-base font-semibold'>Template Driven Design</h4>
-                                                        <p className='text-sm font-light text-gray-400'>Help businesses get online quickly.</p>
+                                                        <p className='text-sm font-light text-gray-400'>The quickest and easiest way to get a new application.</p>
                                                     </div>
                                                 </div>
                                                 <span className='dropdown-arrow absolute right-[-2%] top-[40%]'><FaArrowRightLong className='text-black' /></span>

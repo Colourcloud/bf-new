@@ -70,24 +70,27 @@ export default async function BlogPost({ params }) {
                 <div className='text-white w-full lg:w-[80%] flex flex-col gap-6' dangerouslySetInnerHTML={{ __html: posts.content.rendered }}></div>
 
                 <div className='blog-faq w-full lg:w-4/5 mt-12'>
-                  <div className="faq-container w-full mx-auto text-left flex flex-col gap-3 text-white">
-                    <h2 className='text-4xl md:text-3xl font-bold'>Frequently Asked Questions</h2>
-                    <p className='text-base font-light'>Below are some frequently asked questions relating to this blog post.</p>
-                  </div>
-                  <Accordion type="single" collapsible>
-                    {Array.isArray(posts.acf.faq) ? (
-                      posts.acf.faq.map((faqItem, index) => (
-                        <AccordionItem key={index} value={`item-${index}`}>
-                          <AccordionTrigger className='text-white'>{faqItem.question}</AccordionTrigger>
-                          <AccordionContent className='text-white'>
-                            {faqItem.answer}
-                          </AccordionContent>
-                        </AccordionItem>
-                      ))
-                    ) : (
-                      <div className='text-white'>No FAQ available</div>
-                    )}
-                  </Accordion>
+                  {Array.isArray(posts.acf.faq) && posts.acf.faq.some(faqItem => faqItem.question.trim() !== '' || faqItem.answer.trim() !== '') && (
+                    <>
+                      <div className="faq-container w-full mx-auto text-left flex flex-col gap-3 text-white">
+                        <h2 className='text-4xl md:text-3xl font-bold'>Frequently Asked Questions</h2>
+                        <p className='text-base font-light'>Below are some frequently asked questions relating to this blog post.</p>
+                      </div>
+                      <Accordion type="single" collapsible>
+                        {posts.acf.faq
+                          .filter(faqItem => faqItem.question.trim() !== '' || faqItem.answer.trim() !== '')
+                          .map((faqItem, index) => (
+                            <AccordionItem key={index} value={`item-${index}`}>
+                              <AccordionTrigger className='text-white'>{faqItem.question}</AccordionTrigger>
+                              <AccordionContent className='text-white'>
+                                {faqItem.answer}
+                              </AccordionContent>
+                            </AccordionItem>
+                          ))
+                        }
+                      </Accordion>
+                    </>
+                  )}
                 </div>
 
               </div>

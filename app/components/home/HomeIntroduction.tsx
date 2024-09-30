@@ -21,7 +21,7 @@ const HomeIntroduction = () => {
                 </div>
               </div>
               <div className="section-graphic">
-                <Image src={IntroductionImage} alt="landing page graphic" width="800" placeholder='blur' priority height="500" className='rounded-lg'></Image>
+                <Image src={IntroductionImage} alt="Example template web design of a image gallery" width="800" placeholder='blur' priority height="500" className='rounded-lg'></Image>
               </div>
         </section>
       </div>

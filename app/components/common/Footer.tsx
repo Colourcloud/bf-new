@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -20,7 +21,7 @@ const Footer = () => {
                                     <a href="https://www.facebook.com/builtflat" target="_blank"><FaFacebook className="text-white text-2xl" /></a>
                                     <a href="https://www.instagram.com/builtflat/" target="_blank"><FaInstagram className="text-white text-2xl" /></a>
                                     <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><FaLinkedin className="text-white text-2xl" /></a>
-                                    {/* <a href="https://nz.linkedin.com/company/builtflat" target="_blank"><BsTwitterX className="text-white text-2xl" /></a> */}
+                                    <a href="https://nz.pinterest.com/05p38dfptjii275117stlie5l8li7u/" target="_blank"><FaPinterest className="text-white text-2xl" /></a>
                                 </div>
                             </div>
                         </div>

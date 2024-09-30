@@ -12,8 +12,8 @@ const Clients = () => {
                    <Image src="/clients/cvcompton.svg" alt="cvcompton logo" width='100' height='44'></Image>
                    <Image src="/clients/wrks.svg" alt="wrks logo" width='100' height='44'></Image>
                    <Image src="/clients/blankcanvas.png" alt="blankcanvas logo" width='100' height='44'></Image>
-                   <Image src="/clients/chasnz.svg" alt="chasnz logo" width='125' height='44'></Image>
-                   <Image src="/clients/doofy.svg" alt="kpmg logo" width='100' height='44'></Image>
+                   <Image src="/clients/chasnz.svg" alt="chasnz logo" width='150' height='44'></Image>
+                   <Image src="/clients/doofy.svg" alt="kpmg logo" width='125' height='44'></Image>
                 </div>
             </div>
         </div>

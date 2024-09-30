@@ -25,7 +25,7 @@ const Header = () => {
                 <div className="site-wrapper relative z-10 flex flex-col justify-center h-[calc(100vh-10rem)]">
                     <div className="header-content flex flex-col w-full text-center items-center mx-auto lg:w-4/5">
                         <div className="header-text flex flex-col">
-                            <h1 className="text-4xl text-white leading-tight font-semibold text-center md:text-7xl pb-4">Drive Business Growth with Cutting-Edge Digital Solutions</h1>
+                            <h1 className="text-4xl text-white leading-tight font-semibold text-center md:text-7xl pb-4">Drive Business Growth with Cutting-Edge Digital Development</h1>
                             {/* <h4 className="text-xl text-white text-center mt-6 lg:text-2xl">In a world driven by technology, it&apos;s important for your customers that your brand has a digital space on the web. Our team can make this happen.</h4> */}
                         </div>
                         <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
@@ -35,9 +35,9 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            {/* <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">
-                Want a free website & competitor analysis valued at over $500+? <Link href="/" className='font-bold'>Apply here</Link>
-            </div> */}
+            <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">
+                We&apos;re currently offering a complimentary website analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-bold'>Apply Here</Link>
+            </div>
         </>
     );
 };
