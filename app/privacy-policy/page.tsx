@@ -21,9 +21,9 @@ const page = () => {
                     <p className='text-lg font-light'>The following private data is collected:</p>
                     <ul className='list-disc ml-6 font-light'>
                         <li>The IP address, user agent, and requested url of all clients accessing the site, used for logging and tracking of actions on the site.</li>
-                        <li>A person's email address and username, used for user account authentication and identification on the site.</li>
+                        <li>A person&apos;s email address and username, used for user account authentication and identification on the site.</li>
                         <li>Contact and social media information, freely given by the user during updates to their public user profile, and not necessary for the function of the site nor their user account.</li>
-                        <li>A person's name and contact number, freely given during the contact form.</li>
+                        <li>A person&apos;s name and contact number, freely given during the contact form.</li>
                     </ul>
                 </div>
 
