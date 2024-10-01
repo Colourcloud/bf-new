@@ -2,28 +2,28 @@
     {
         "id": 1,
         "imageSrc": "/about/team/jaromme.jpg",
-        "altText": "Picture of jaromme lawn",
+        "altText": "Portrait image of jaromme lawn",
         "name": "Jaromme Lawn",
         "roles": ["Founder", "Cat-Lover"]
     },
     {
         "id": 2,
         "imageSrc": "/about/team/sam.jpg",
-        "altText": "Picture of ...",
+        "altText": "Portrait image of sam jones",
         "name": "Sam Jones",
         "roles": ["Founder", "Cat-Lover"]
     },
     {
         "id": 3,
         "imageSrc": "/about/team/jonni.jpg",
-        "altText": "Picture of ...",
+        "altText": "Portrait image of jonni",
         "name": "Jonni Nahar",
         "roles": ["Developer", "Hosting Partner"]
     },
     {
         "id": 4,
         "imageSrc": "/about/team/alaska.jpg",
-        "altText": "Picture of Alaska",
+        "altText": "Portrait image of Alaska",
         "name": "Alaska",
         "roles": ["'Meoow Meow'", "Security"]
     }

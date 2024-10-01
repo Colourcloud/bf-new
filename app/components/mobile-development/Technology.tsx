@@ -34,7 +34,7 @@ const Technology = () => {
                                 </ul>
                             </div>
                             <div className='flex flex-col gap-4'>
-                                <h6 className='text-base font-medium text-gray-400'>Developed with moderm technologies:</h6>
+                                <h6 className='text-base font-medium text-gray-400'>Developed with modern technologies:</h6>
                                 <div className="flex flex-row">
                                     <div className='flex flex-col items-center'>
                                         <Image src="/mobile-development/software/swift.png" alt='swift logo' width='100' height='100' className='w-full' />
@@ -53,7 +53,7 @@ const Technology = () => {
                         </div>
                         <div className="container-right w-full lg:w-[50%] flex">
                             <div className='h-full flex flex-col justify-end'>
-                                <Image src="/mobile-development/ios.png" width='1200' height='1200' alt="ios app design" className='w-full object-contain'></Image>
+                                <Image src="/mobile-development/ios.png" width='1200' height='1200' alt="User interface design of a real estate website and mobile app" className='w-full object-contain'></Image>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const Technology = () => {
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>Android App Development</h4>
-                                <p className='text-base text-[--text-colour] font-light'>Want an application for Android? No problem! We help businesses get their ideas perfected on any modern android device . This includes:</p>
+                                <p className='text-base text-[--text-colour] font-light'>Want an application for Android? No problem! We help businesses get their ideas perfected on any modern android device. This includes:</p>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <ul className='text-lg text-[--text-colour] flex flex-col gap-5 list-disc marker:text-[--primary-color] ml-5'>
@@ -73,7 +73,7 @@ const Technology = () => {
                                 </ul>
                             </div>
                             <div className='flex flex-col gap-4'>
-                                <h6 className='text-base font-medium text-gray-400'>Developed with moderm technologies:</h6>
+                                <h6 className='text-base font-medium text-gray-400'>Developed with modern technologies:</h6>
                                 <div className="flex flex-row">
                                     <div className='flex flex-col items-center'>
                                         <Image src="/mobile-development/software/kotlin.png" alt='kotlin logo' width='100' height='100' className='w-full' />
@@ -96,7 +96,7 @@ const Technology = () => {
                         </div>
                         <div className="container-right w-full lg:w-[50%] flex">
                             <div className='h-full flex flex-col justify-end'>
-                                <Image src="/mobile-development/android-graphic.png" width='1200' height='1200' alt="android grahpic ui" className='w-full object-contain'></Image>
+                                <Image src="/mobile-development/android-graphic.png" width='1200' height='1200' alt="UI design for an events mobile application" className='w-full object-contain'></Image>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ const Technology = () => {
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>Cross-platform App Development</h4>
-                                <p className='text-base text-[--text-colour] font-light'>Don&apos;t want to be specific and want a top-notch app that runs on multiple platforms that fits their operating system? Easy as! We can use the below development methods to reduce costs and time to market, reaching more users without any quality loss. This includes:</p>
+                                <p className='text-base text-[--text-colour] font-light'>Want a top-notch app that runs on multiple platforms and fits all operating systems? Easy as! We can reach more users without any quality loss. This includes:</p>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <ul className='text-lg text-[--text-colour] flex flex-col gap-5 list-disc marker:text-[--primary-color] ml-5'>
@@ -116,7 +116,7 @@ const Technology = () => {
                                 </ul>
                             </div>
                             <div className='flex flex-col gap-4'>
-                                <h6 className='text-base font-medium text-gray-400'>Developed with moderm technologies:</h6>
+                                <h6 className='text-base font-medium text-gray-400'>Developed with modern technologies:</h6>
                                 <div className="flex flex-row">
                                     <div className='flex flex-col items-center'>
                                         <Image src="/mobile-development/software/react.png" alt='react logo' width='100' height='100' className='w-full' />
@@ -143,7 +143,7 @@ const Technology = () => {
                         </div>
                         <div className="container-right w-full lg:w-[50%] flex">
                             <div className='h-full flex flex-col justify-end'>
-                                <Image src="/mobile-development/custom-graphic.png" width='1200' height='1200' alt="cross-platform ui" className='w-full object-contain'></Image>
+                                <Image src="/mobile-development/custom-graphic.png" width='1200' height='1200' alt="Mobile App Interface for an online ecommerce clothing store" className='w-full object-contain'></Image>
                             </div>
                         </div>
                     </div>

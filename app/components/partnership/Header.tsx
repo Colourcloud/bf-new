@@ -17,13 +17,13 @@ const Header = () => {
                 <div className="header-content flex flex-col lg:flex-row gap-20">
                     <div className="header-text flex flex-col gap-6 w-full lg:w-2/5 items-start justify-center">
                         <span className='highlighted-purple-text rounded-full text-sm font-medium'>Partnership</span>
-                        <h1 className='text-white text-4xl md:text-5xl md:leading-[1.1] font-bold'>We collaborate with other creatives to help them hit their targets.</h1>
+                        <h1 className='text-white text-4xl md:text-5xl md:leading-[1.1] font-bold'>We collaborate with other creatives to help them hit their targets</h1>
                         <p className='text-[--text-on-dark] text-xl font-light'>Your clients projects are important to your business, but sometimes workloads and capacity can be limited. We work closely with other design & development agencies who trust us to help enhance, grow and boost their capabilities.</p>
                         <div className="header-buttons flex flex-col sm:flex-row gap-6 mt-8">
                             <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Let&apos;s have a chat</Button>
                         </div>
                         <div className="partner-faces flex flex-col gap-6">
-                            <p className='text-[--text-on-dark] text-sm'>We already work alongside 50+ designers throughout the New Zealand</p>
+                            <p className='text-[--text-on-dark] text-sm'>We already work with 15+ designers in New Zealand alone</p>
                             <div className="user-icons flex flex-row justify-start">
                                     <Image src="/home/avatars/avatar-1.jpg" alt="face avatar" width="200" height="200" className='w-[50px] h-[50px] border-2 border-[--primary-color] rounded-full mr-[-20px] relative z-10'></Image>
                                     <Image src="/home/avatars/avatar-2.jpg" alt="face avatar" width="200" height="200" className='w-[50px] h-[50px] border-2 border-[--primary-color] rounded-full mr-[-20px] relative z-20'></Image>
@@ -36,7 +36,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="header-graphic w-full lg:w-2/4">
-                        <Image src="/partnership/header.jpg" className='w-[120%] lg:w-[100%] rounded-lg max-w-none' alt="blank image" width="1800" height="800"></Image>
+                        <Image src="/partnership/header.jpg" className='w-[120%] lg:w-[100%] rounded-lg max-w-none' alt="Three web designers working in an office with different expressions looking at the camera" width="1800" height="800"></Image>
                     </div> 
                 </div>
             </div>

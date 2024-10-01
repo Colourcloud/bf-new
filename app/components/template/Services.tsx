@@ -95,7 +95,7 @@ const Services = () => {
                         <div className='sticky top-8 flex justify-center items-center'>
                             <span id="trigger" className='w-2 h-2'></span>
                             <AnimateOnScroll>
-                                <Image src={currentImage} alt="yes" className={`w-full rounded-lg template-service-image scale ${flicker ? 'flicker' : ''}`} width="1200" height="1200" priority={true}></Image>
+                                <Image src={currentImage} alt="ui design" className={`w-full rounded-lg template-service-image scale ${flicker ? 'flicker' : ''}`} width="1200" height="1200" priority={true}></Image>
                             </AnimateOnScroll>
                         </div>
                     </div>

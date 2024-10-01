@@ -23,7 +23,7 @@ const Styles = () => {
                             </div>
                         </div>
                         <div className="section-graphic mt-[100px]">
-                            <AnimateOnScroll><Image src={headerImage} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen' width='2000' height='1400' priority /></AnimateOnScroll>
+                            <AnimateOnScroll><Image src={headerImage} alt="A web clients brand guidelines detailing their websites branding shown on Figma" className='relative z-20 rounded-t-md header-image figma-screen' width='2000' height='1400' priority /></AnimateOnScroll>
                         </div>
                     </section>
                     </div>

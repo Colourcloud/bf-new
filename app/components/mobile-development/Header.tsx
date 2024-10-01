@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="flex flex-row justify-center relative">
-                <Image src="/mobile-development/header-graphic.png" alt="mobile development" width="1800" height="1200" className='w-full lg:w-[60%]' priority></Image>
+                <Image src="/mobile-development/header-graphic.png" alt="Mobile application UI designs for three different businesses (A Ecommerce clothing website, a digital creatives website, and a health & fitness tracker website)" width="1800" height="1200" className='w-full lg:w-[60%]' priority></Image>
               </div>
           </div>
         </header>

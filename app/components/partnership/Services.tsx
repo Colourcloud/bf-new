@@ -11,6 +11,7 @@ interface ServiceCard {
   description: string;
   imageUrl: string;
   serviceLink: string;
+  alttext: string;
 }
 
 const serviceCards: ServiceCard[] = [
@@ -19,24 +20,28 @@ const serviceCards: ServiceCard[] = [
     description: 'Our development services help businesses create custom platforms, to simple online stores. All suited for your customers, no matter the technology.',
     imageUrl: '/application/header-image.jpg',
     serviceLink: '/application',
+    alttext: "Login page for Doofy, a online digital marketplace website for creatives selling products"
   },
   {
     title: 'User Interface & Experience',
     description: 'Our top-notch graphic designers offer a wide range of services designed to help your brand. From websites, branding, marketing and more.',
     imageUrl: '/partnership/ui-ux-graphic.jpg',
     serviceLink: '/uiux',
+    alttext: "Four different desktop layout views of the WRKS recruitment website who hire for the trades industry in New Zealand"
   },
   {
     title: 'Mobile Development',
     description: 'Builtflat can deliver the latest in app development. From Progressive Web Apps, Apple IOS, and Android. Find out here how we can add value to your application project.',
     imageUrl: '/partnership/mobile-graphic.jpg',
     serviceLink: '/mobile-development',
+    alttext: "Mobile application UI designs for three different businesses (A Ecommerce clothing website, a digital creatives website, and a health & fitness tracker website)"
   },
   {
     title: 'Template Driven Design',
     description: 'Our template driven design scheme helps businesses get online quickly. With our pre-made templates, we can easily craft the perfect website for your business.',
     imageUrl: '/partnership/template-graphic.jpg',
     serviceLink: '/template-design',
+    alttext: "collection of different websites ui using templates"
   },
   // Add more service cards as needed
 ];
@@ -55,7 +60,7 @@ const Services = () => {
           <div className="section-block">
             <div className="section-text w-full flex flex-col gap-8 md:w-3/4">
               <AnimatedText>
-                <h2 className='text-4xl text-white md:text-7xl font-bold'>
+                <h2 className='text-4xl text-white md:text-6xl font-bold'>
                   Our team covers a wider range of services on all areas of design & development
                 </h2>
               </AnimatedText>
@@ -87,7 +92,7 @@ const Services = () => {
                   key={index}
                   src={card.imageUrl}
                   className={`w-[120%] rounded-lg max-w-none ${activeService.title === card.title ? 'block' : 'hidden'}`}
-                  alt={card.title}
+                  alt={card.alttext}
                   priority={true}
                   width={1800}
                   height={800}

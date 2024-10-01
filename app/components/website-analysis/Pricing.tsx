@@ -8,15 +8,17 @@ import Link from "next/link"
 export default function Pricing() {
   const tiers = [
     {
-      name: "Basic Report",
+      name: "High-level Report",
       price: "$49.99",
+      oldprice: "$69.99",
       description: "For those who want a deeper understand of their websites issues and where to fix them.",
       features: ["1 Website", "5 projects", "Basic analytics", "Community support"],
       link: "https://buy.stripe.com/cN26rZaRHceq2HKeUV"
     },
     {
-      name: "Full Report",
+      name: "High-Level Report Plus Competitor Analysis",
       price: "$129.99",
+      oldprice: "$199.99",
       description: "For those who want a deeper understanding of their websites issues, the fixes, and their competitors performance and strategy.",
       features: ["1 Website", "1 Competitor Website", "Advanced analytics", "Priority support", "Custom domains"],
       link: "https://buy.stripe.com/5kA3fN0d34LY4PS6oq"
@@ -34,11 +36,11 @@ export default function Pricing() {
   ]
 
   return (
-    <div className="bg-[#FCFCFC] py-16 lg:py-32 max-w-7xl mx-auto">
+    <div className="bg-[#FCFCFC] py-16 lg:py-32 max-w-7xl mx-auto" id="offer-pricing">
       <div className="site-wrapper">
         <div className="flex flex-col gap-6 mb-16">
-          <h2 className="text-3xl font-bold text-center w-full md:w-4/5 mx-auto lg:text-5xl">Get started with a website analysis report to see how your website currently performs</h2>
-          <p className="text-lg font-light w-full md:w-4/5 mx-auto text-center">We offer two levels of reporting. A simple report that shows basic metrics for your websites health and performance, and a full report which generates a comprehensive report on all metrics relating to SEO</p>
+          <h2 className="text-3xl font-bold text-center w-full md:w-4/5 mx-auto lg:text-4xl">Arm yourself with one of the best reports available in the market for powerful insights and solutions on your own website, and your competitors</h2>
+          <p className="text-lg font-light w-full md:w-4/5 mx-auto text-center">We&apos;ve cut our prices on our two analysis deals so you can get insanely valuable insights on your website and your competitors. Our first offer gives a high-level run down of your website health, performance, and specific issue locations for fixing. Our second offer adds on a competitor analysis for three competing websites to the high-level run down so you can see what you need to do to get ahead of the pack.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
         {tiers.map((tier) => (
@@ -48,7 +50,7 @@ export default function Pricing() {
               <CardDescription>{tier.description}</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow">
-              <p className="text-4xl font-bold mb-4">{tier.price}<span className="text-xs font-light text-gray-500">/ NZD</span></p>
+              <p className="text-4xl font-bold mb-4">{tier.price} <span className="text-xl line-through text-gray-500 font-light">{tier.oldprice}</span> <span className="text-xs font-light text-gray-500">/ NZD</span></p>
               <ul className="space-y-2">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-center">

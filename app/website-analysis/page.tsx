@@ -11,6 +11,7 @@ import LottieAnimation from '../components/common/LottieAnimation'
 import { toast } from "sonner"
 import { Toaster } from "@/components/ui/sonner"
 
+
 interface FormData {
   name: string;
   email: string;
@@ -136,7 +137,7 @@ const MarketingUserForm: React.FC = () => {
   
       // Wait 3 seconds before redirecting
       setTimeout(() => {
-        window.location.href = "/website-seo"; // Redirect to the "thank you" page
+        window.location.href = "/website-analysis-offer"; // Redirect to the "thank you" page
       }, 3000); // 3000ms = 3 seconds
   
     } catch (error) {
@@ -151,6 +152,10 @@ const MarketingUserForm: React.FC = () => {
 
   return (
     <>
+    <head>
+      <title>BuiltFlat - Free Website Analysis</title>
+      <meta name="description" content="free basic website analysis valued at over $250 that checks your websites health and performance. Get in quick, limited time!" />
+    </head>
       <Toaster />
       <NavbarWhite />
       <div className="min-h-screen bg-[#FCFCFC] text-foreground flex flex-col items-center justify-center py-12">

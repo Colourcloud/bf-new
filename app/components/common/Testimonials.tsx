@@ -34,7 +34,7 @@ const Testimonials: React.FC = () => {
                 </div>
             </section>
             <div className="site-wrapper spaced-m spaced-p">
-                <h6 className='text-left lg:text-center text-xl lg:text-4xl font-semibold opacity-50 text-white'>Don&apos;t just take our word for it, take our clients word</h6>
+                <h6 className='text-left lg:text-center text-xl lg:text-4xl font-semibold opacity-50 text-white'>Hear it from our clients!</h6>
                 <section className="testimonial-cards flex flex-col xl:flex-row flex-wrap gap-6 mt-12">
                     {rows.map((row, rowIndex) => (
                     <div key={rowIndex} className="card-row flex flex-col xl:flex-row gap-6">

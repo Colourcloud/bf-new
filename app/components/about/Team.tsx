@@ -15,7 +15,7 @@ const Team = () => {
                 <div className="section-text w-full md:w-2/3 flex flex-col gap-8 items-start">
                     <span className='highlighted-purple-text rounded-full text-sm font-medium'>Meet the Team</span>
                     <h4 className='text-4xl md:text-5xl font-bold'>Meet our team of creators, designers, developers &amp; world class problem solvers</h4>
-                    <p className='text-2xl font-light text-[#7d7d7d]'>To meet the goals your business needs, it takes a team of passionate people to overcome tough challenges. Meet the team who can make that happen</p>
+                    <p className='text-2xl font-light text-[#7d7d7d]'>It takes a team of passionate people to overcome tough challenges, meet your business needs, and achieve your goals. Meet the team &#40;And the animals that back them&#41; who can make that happen.</p>
                 </div>
 
                 <section className="team-members mt-16">

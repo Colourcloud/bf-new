@@ -34,18 +34,18 @@ const Header = () => {
                 </div>
 
             <div className="header-graphic max-w-[1920px] mx-auto template-design-header relative w-full hidden xl:flex invisible xl:visible justify-center">
-                <AnimateOnScroll><Image src={headerImage} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
-                <AnimateOnScroll><Image src={headerImage2} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='550' height='400' priority /></AnimateOnScroll>
-                <AnimateOnScroll><Image src={headerImage3} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='450' height='600' priority  /></AnimateOnScroll>
-                <AnimateOnScroll><Image src={headerImage4} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='300' height='400' priority  /></AnimateOnScroll>
-                <AnimateOnScroll><Image src={headerImage5} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='225' height='400' priority  /></AnimateOnScroll>
-                <AnimateOnScroll><Image src={headerImage6} alt="An example image" className='absolute z-20 rounded-t-md floating-header-image' width='400' height='400' priority  /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={headerImage} alt="The user interface on Figma, a designing program, showing different website elements" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={headerImage2} alt="The user interface on Figma, a designing program, showing different website elements" className='absolute z-20 rounded-t-md floating-header-image' width='550' height='400' priority /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={headerImage3} alt="The user interface on Figma, a designing program, showing different website elements" className='absolute z-20 rounded-t-md floating-header-image' width='450' height='600' priority  /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={headerImage4} alt="The user interface on Figma, a designing program, showing different website elements" className='absolute z-20 rounded-t-md floating-header-image' width='300' height='400' priority  /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={headerImage5} alt="The user interface on Figma, a designing program, showing different website elements" className='absolute z-20 rounded-t-md floating-header-image' width='225' height='400' priority  /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={headerImage6} alt="The user interface on Figma, a designing program, showing different website elements" className='absolute z-20 rounded-t-md floating-header-image' width='400' height='400' priority  /></AnimateOnScroll>
             </div>
             <div className="header-graphic-tablet template-design-header relative w-full justify-center hidden tablet:flex tablet:visible md:flex xl:hidden invisible xl:invisible">
-                <AnimateOnScroll><Image src={HeaderImageTablet} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none tablet:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={HeaderImageTablet} alt="The user interface on Figma, a designing program, showing different website elements" className='relative z-20 rounded-t-md header-image figma-screen max-w-none tablet:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
             </div>
             <div className="header-graphic-mobile template-design-header relative w-full justify-center flex tablet:hidden md:hidden lg:hidden xl:hidden visible md:invisible lg:invisible xl:invisible">
-                <AnimateOnScroll><Image src={HeaderImageMobile} alt="An example image" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
+                <AnimateOnScroll><Image src={HeaderImageMobile} alt="The user interface on Figma, a designing program, showing different website elements" className='relative z-20 rounded-t-md header-image figma-screen max-w-none md:max-w-full' width='2000' height='1400' priority /></AnimateOnScroll>
             </div>
             </header>
         </div>
