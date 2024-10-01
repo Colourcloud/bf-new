@@ -163,7 +163,7 @@ const MarketingUserForm: React.FC = () => {
             Free Website Analysis
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
-            Discover how to optimize your website&apos;s performance and boost your online presence.
+            We&apos;re giving away a free basic website analysis valued at over $250 that checks your websites health and performance. Get in quick, limited time!
           </p>
           <form onSubmit={handleSubmit} className="space-y-5">
           <Input
@@ -217,13 +217,15 @@ const MarketingUserForm: React.FC = () => {
           <span className='text-sm text-gray-500 font-light italic block'>Website analysis can take up to 1-3 business days to complete</span>
         </form>
         <div className="text-left flex flex-col gap-3 font-light py-12 text-xs">
-            <p>The website analysis provided by Builtflat Limited is intended for informational purposes only. While we strive to deliver accurate and insightful evaluations of your website&apos;s performance, usability, and SEO optimization, the results of our analysis are not guaranteed to reflect your website&apos;s overall effectiveness or success.</p>
+            <p>The website analysis provided by Builtflat Limited is intended for informational purposes only. While we strive to deliver accurate and insightful evaluations of your websites performance, usability, and SEO optimisation, the results of our analysis are not guaranteed to reflect your website&apos;s overall effectiveness or success.</p>
             <ul className='list-decimal px-4 flex flex-col gap-3'>
-                <li>No Guarantees: The analysis results are based on automated tools and subjective assessments, and we cannot guarantee any specific outcomes or improvements based on our recommendations.</li>
-                <li>Third-Party Tools: Our analysis may utilize third-party tools and metrics. We do not endorse these tools, and their availability, accuracy, and reliability may vary. Any data or insights obtained from these tools are subject to change without notice.</li>
-                <li>Personalized Consultation: The free website analysis does not constitute professional advice. For personalized guidance tailored to your unique business needs, we recommend scheduling a consultation with one of our experts.</li>
+                <li>No Guarantees: The analysis results are based on automated tools and subjective assessments, and we cannot guarantee any specific outcomes or improvements based on these recommendations.</li>
+                <li>Third-Party Tools: Our Analysis may utilise third-party tools and metrics. We do not endorse these tools, and their availability, accuracy, and reliability may vary. Any data or insights obtained from these tools are subject to change without notice.</li>
+                <li>Personalised consultation: The free website analysis does not constitute professional advice. For personalised guidance tailored to your unique business needs, we recommend scheduling a consultation with one of our experts.</li>
                 <li>Confidentiality: We respect your privacy. Any information you provide will be kept confidential and will only be used for the purpose of conducting the website analysis.</li>
-                <li>We collect information such as your name, business name, email address and website url, to use for future marketing. You may opt out of this marketing at any time</li>
+                <li>Limitations: This website analysis will only cover up to 50 total pages on your site. The automation tool will focus on the main pages but may select pages at random. Due to this limit the analysis may miss issues on unanalysed pages. If you have more than 50 website pages and/or have an e-commerce website and want to analyse more web pages, contact us to arrange this.</li>
+                <li>Contacting: By accepting these terms you give Builtflat Limited permission to contact you through the provided contact email or any other contact channels related to your business.</li>
+                <li>We collect information such as your name, business name, email address, and website url to use for future marketing. You may opt out of this marketing at any time by contacting us.</li>
                 <li>Acceptance of Terms: By requesting a free website analysis, you acknowledge and accept this disclaimer. If you do not agree with any part of this disclaimer, we kindly ask that you refrain from using our analysis services.</li>
             </ul>
             <p>If you have any questions or require further clarification regarding our services, please feel free to <Link href="/contact" className='text-[--primary-color]'>contact us.</Link></p>

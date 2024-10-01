@@ -36,7 +36,7 @@ const Header = () => {
                 </div>
             </header>
             <div className="header-notice p-4 text-center w-full bg-[--primary-color] text-sm text-white">
-                We&apos;re currently offering a complimentary website analysis for a limited time.&nbsp;<Link href='/website-analysis/' className='font-bold'>Apply Here</Link>
+            Want a free website analysis valued at over $250? <Link href='/website-analysis/' className='font-bold'>Apply Here</Link>
             </div>
         </>
     );

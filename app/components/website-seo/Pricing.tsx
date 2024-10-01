@@ -19,7 +19,7 @@ export default function Pricing() {
       price: "$129.99",
       description: "For professionals and small teams",
       features: ["5 users", "Unlimited projects", "Advanced analytics", "Priority support", "Custom domains"],
-      link: "/full-report"
+      link: "https://buy.stripe.com/5kA3fN0d34LY4PS6oq"
     },
   ]
 

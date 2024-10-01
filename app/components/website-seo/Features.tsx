@@ -15,7 +15,7 @@ const Features = () => {
                             <p className='text-gray-600 font-light'>We seamlessly connect your mobile application directly into your existing CMS, allowing you to manage all your content in one place, for web and mobile.</p>
                         </div>
                         <div className="card-image rounded-xl pt-6 px-6 bg-gray-100 border flex-grow">
-                            <div className="relative w-full h-full">
+                            <div className="relative w-full h-full min-h-[300px]">
                                 <Image src="/seo/website-views.svg" alt="Timeline" layout="fill" objectFit="contain" className='rounded-t-lg' />
                             </div>
                         </div>
@@ -27,7 +27,7 @@ const Features = () => {
                             <p className='text-gray-600 font-light'>We seamlessly connect your mobile application directly into your existing CMS, allowing you to manage all your content in one place, for web and mobile.</p>
                         </div>
                         <div className="card-image rounded-xl pt-6 px-6 bg-gray-100 border flex-grow">
-                            <div className="relative w-full h-full">
+                            <div className="relative w-full h-full min-h-[300px]">
                                 <Image src="/seo/timeline.svg" alt="Timeline" layout="fill" objectFit="contain" className='rounded-t-lg' />
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const Features = () => {
                             <p className='text-gray-600 font-light'>We seamlessly connect your mobile application directly into your existing CMS, allowing you to manage all your content in one place, for web and mobile.</p>
                         </div>
                         <div className="card-image rounded-xl pt-6 px-6 bg-gray-100 border flex-grow">
-                            <div className="relative w-full h-full">
+                            <div className="relative w-full h-full min-h-[300px]">
                                 <Image src="/seo/search-results.svg" alt="Timeline" layout="fill" objectFit="contain" className='rounded-t-lg' />
                             </div>
                         </div>
