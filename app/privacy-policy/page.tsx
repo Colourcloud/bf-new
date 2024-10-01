@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import NavbarWhite from '../components/common/NavbarWhite'
+import Image from 'next/image'
 
 const page = () => {
   return (
@@ -10,7 +11,6 @@ const page = () => {
     <div className='py-16 lg:py-32'>
         <div className="site-wrapper">
             <div className="flex flex-col gap-6 max-w-4xl mx-auto">
-
                 <div className='flex flex-col gap-3'>
                     <h1 className='text-4xl lg:text-5xl font-bold'>Privacy Policy</h1>
                     <p className='text-lg font-light'>Builtflat&apos;s privacy policy is designed to help you understand how we collect, use, and protect your personal information.</p>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import Link from "next/link"
 
 export default function Pricing() {
   const tiers = [
@@ -11,12 +12,14 @@ export default function Pricing() {
       price: "$49.99",
       description: "For personal projects and hobby developers",
       features: ["1 user", "5 projects", "Basic analytics", "Community support"],
+      link: "https://buy.stripe.com/cN26rZaRHceq2HKeUV"
     },
     {
       name: "Full Report",
       price: "$129.99",
       description: "For professionals and small teams",
       features: ["5 users", "Unlimited projects", "Advanced analytics", "Priority support", "Custom domains"],
+      link: "/full-report"
     },
   ]
 
@@ -37,7 +40,7 @@ export default function Pricing() {
           <h2 className="text-3xl font-bold text-center w-full md:w-4/5 mx-auto lg:text-5xl">Get started with a website analysis report to see how your website currently performs</h2>
           <p className="text-lg font-light w-full md:w-4/5 mx-auto text-center">We offer two levels of reporting. A simple report that shows basic metrics for your websites health and performance, and a full report which generates a comprehensive report on all metrics relating to SEO</p>
         </div>
-      <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
         {tiers.map((tier) => (
           <Card key={tier.name} className="flex flex-col shadow-none">
             <CardHeader>
@@ -56,7 +59,9 @@ export default function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">{tier.name === "Hobby" ? "Get Started" : "Get Started"}</Button>
+              <Link href={tier.link} passHref className="w-full">
+                <Button className="w-full">Get Started</Button>
+              </Link>
             </CardFooter>
           </Card>
         ))}

@@ -19,7 +19,7 @@ const Technology = () => {
 
 
                 <div className="mobile-technology-cards mt-20 flex flex-col gap-10 md:gap-14">
-                    <div className="software-container w-full lg:w-4/5 rounded-2xl border border-gray-300 px-12 pt-12 flex flex-col lg:flex-row justify-between mx-auto">
+                    <div className="software-container w-full lg:w-4/5 rounded-2xl border border-gray-300 bg-white px-12 pt-12 flex flex-col lg:flex-row justify-between mx-auto">
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>iOS App Development</h4>
@@ -58,7 +58,7 @@ const Technology = () => {
                         </div>
                     </div>
 
-                    <div className="software-container w-full lg:w-4/5 rounded-2xl border border-gray-300 px-12 pt-12 flex flex-col lg:flex-row justify-between mx-auto">
+                    <div className="software-container w-full lg:w-4/5 rounded-2xl border border-gray-300 bg-white px-12 pt-12 flex flex-col lg:flex-row justify-between mx-auto">
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>Android App Development</h4>
@@ -101,7 +101,7 @@ const Technology = () => {
                         </div>
                     </div>
 
-                    <div className="software-container w-full lg:w-4/5 rounded-2xl border border-gray-300 px-12 pt-12 flex flex-col lg:flex-row justify-between mx-auto">
+                    <div className="software-container w-full lg:w-4/5 rounded-2xl border border-gray-300 bg-white px-12 pt-12 flex flex-col lg:flex-row justify-between mx-auto">
                         <div className="container-left w-full lg:w-[70%] flex flex-col gap-12 pb-12">
                             <div className='flex flex-col gap-5'>
                                 <h4 className='text-4xl md:text-5xl lg:text-5xl text-[--text-colour] font-bold'>Cross-platform App Development</h4>

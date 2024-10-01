@@ -121,7 +121,7 @@ body {
   background-color: #FCFCFC;
   overflow-x: hidden;
   color: #0D0C22;
-  background-image: url('/home/header-bg-grid.svg');
+  // background-image: url('/home/header-bg-grid.svg');
   background-repeat: no-repeat;
   font-family: 'SF Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
 }
@@ -141,7 +141,7 @@ body {
 .home-page {
   background-color: var(--dark-background-color);
   position: relative;
-  background-image: url('/bg-grid.svg');
+  // background-image: url('/bg-grid.svg');
   background-repeat: no-repeat;
   overflow: hidden;
 }
