@@ -153,7 +153,7 @@ const MarketingUserForm: React.FC = () => {
   return (
     <>
     <head>
-      <title>BuiltFlat - Free Website Analysis</title>
+      <title>Builtflat - Free Website Analysis</title>
       <meta name="description" content="free basic website analysis valued at over $250 that checks your websites health and performance. Get in quick, limited time!" />
     </head>
       <Toaster />
