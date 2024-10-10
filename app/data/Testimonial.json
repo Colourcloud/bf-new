@@ -17,19 +17,19 @@
     },
     {
         "id": 3,
-        "imageSrc": "/template-design/testimonials/3.jpg",
-        "altText": "yes",
-        "name": "Elizabeth Hayes",
-        "company": "Velocienta",
-        "testimonial": "I had a great experience working with this design service. They were able to take my vague ideas and turn them into a stunning final product that really captured the essence of my brand."
+        "imageSrc": "/template-design/testimonials/richard_kerby.jpg",
+        "altText": "Richard Kerby",
+        "name": "Richard Kerby",
+        "company": "PORTGroup",
+        "testimonial": "Builtflat are a true asset to our business. Their knowledge, communication and proficiency is second to none. Easy to work with, always proactive with great ideas - they add a huge amount of value to us and our clients."
     },
     {
         "id": 4,
-        "imageSrc": "/template-design/testimonials/4.jpg",
-        "altText": "yes",
-        "name": "Marilyn Wood",
-        "company": "Velocienta",
-        "testimonial": "If you're looking for a design service that can deliver quality work on time and within budget, look no further! I was blown away by the professionalism and creativity of this team."
+        "imageSrc": "/template-design/testimonials/default.jpg",
+        "altText": "Phil Tidswell",
+        "name": "Phil Tidswell",
+        "company": "PORTGroup",
+        "testimonial": "I wanted someone who would respond with ideas, with energy and with a commitment to delivering excellence but also to delivering on time, BuiltFlat easily accomplished these tasks."
     },
     {
         "id": 5,
