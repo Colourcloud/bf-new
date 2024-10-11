@@ -73,8 +73,6 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics/>
         <NextTopLoader showSpinner={false} color='#7a4aff'/>
-        <ToggleContactListener />
-        <ContactForm />
         {/* <CookiePolicyPrompt /> */}
         {children}
         <Footer />
