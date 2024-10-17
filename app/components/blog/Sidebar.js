@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState, useEffect } from 'react';
 
 const Sidebar = ({ content }) => {
@@ -11,12 +10,18 @@ const Sidebar = ({ content }) => {
       const h2Array = [...content.matchAll(regex)];
       const extractedH2Tags = h2Array.map(match => ({
         id: match[1],
-        text: match[2]
+        text: decodeHTMLEntities(match[2])
       }));
-
       setH2Tags(extractedH2Tags);
     }
   }, [content]);
+
+  // Function to decode HTML entities
+  const decodeHTMLEntities = (text) => {
+    const textArea = document.createElement('textarea');
+    textArea.innerHTML = text;
+    return textArea.value;
+  };
 
   return (
     <div className="sidebar w-full lg:w-[60%] flex flex-col gap-6 relative lg:sticky top-6 max-h-[400px]">
@@ -37,4 +42,3 @@ const Sidebar = ({ content }) => {
 };
 
 export default Sidebar;
-
