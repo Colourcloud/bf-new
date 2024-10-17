@@ -6,7 +6,7 @@ import Link from 'next/link';
 import BlogCard from '../components/blog/BlogCard';
 import BlogCardSkeleton from '../components/common/BlogCardSkeleton';
 
-const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2/posts?_embed';
+const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2/posts?_embed&per_page=100';
 
 const BlogPost = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -45,7 +45,7 @@ const BlogPost = () => {
             <h4 className='text-[--text-on-dark] text-3xl py-12'>Builtflat News &amp; Updates:</h4>
             <div className="blog-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {isLoading
-                  ? Array(10).fill().map((_, index) => <BlogCardSkeleton key={index} />)
+                  ? Array(20).fill().map((_, index) => <BlogCardSkeleton key={index} />)
                   : blogPosts.map(post => (
                       <BlogCard 
                       key={post.id} 
