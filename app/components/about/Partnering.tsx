@@ -20,7 +20,7 @@ const Partnering = () => {
                             <div className="section-text flex flex-col gap-8 w-full xl:w-3/5 md:mx-auto text-left md:text-center items-start md:items-center">
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Partnership</span>
                                 <AnimatedText><h4 className='text-white text-4xl md:text-7xl font-bold'>Partnering with other talented teams</h4></AnimatedText>
-                                <p className='text-[--text-on-dark] text-xl font-light'>Change to: Maybe you&apos;re expanding without all the pieces to the puzzle or have tight deadlines or capacity that are cutting it a little too close? We work closely with other design and development agencies like yourself all the time. Find out more about how you can leverage Builtflat&apos;s team on your projects below!</p>
+                                <p className='text-[--text-on-dark] text-xl font-light'>Maybe you&apos;re expanding without all the pieces to the puzzle or have tight deadlines or capacity that are cutting it a little too close? We work closely with other design and development agencies like yourself all the time. Find out more about how you can leverage Builtflat&apos;s team on your projects below!</p>
                                 <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                                 <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/partnership" >Learn about Partnerships</Button>
                                 </div>
