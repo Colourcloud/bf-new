@@ -8,39 +8,67 @@ import Link from "next/link"
 export default function Pricing() {
   const tiers = [
     {
-      name: "High-level Report",
+      name: "Basic Report",
       price: "$49.99",
       oldprice: "$69.99",
-      description: "For those who want a deeper understand of their websites issues and where to fix them.",
-      features: ["1 Website", "5 projects", "Basic analytics", "Community support"],
-      link: "https://buy.stripe.com/cN26rZaRHceq2HKeUV"
+      description: "For those who want an overview of their website's performance with key insights.",
+      features: [
+        "Site Health Overview",
+        "SEO Errors",
+        "Backlink Overview",
+        "Top Keywords (Up to 10)",
+        "Traffic Overview",
+        "Mobile Usability",
+        "Page Speed Insights",
+      ],
+      link: "https://buy.stripe.com/cN26rZaRHceq2HKeUV",
     },
     {
-      name: "High-Level Report Plus Competitor Analysis",
+      name: "Pro Report",
       price: "$129.99",
       oldprice: "$199.99",
-      description: "For those who want a deeper understanding of their websites issues, the fixes, and their competitors performance and strategy.",
-      features: ["1 Website", "1 Competitor Website", "Advanced analytics", "Priority support", "Custom domains"],
-      link: "https://buy.stripe.com/5kA3fN0d34LY4PS6oq"
+      description:
+        "For those who want a comprehensive analysis of their website's performance and competitive strategy.",
+      features: [
+        "Detailed Site Health Overview",
+        "Comprehensive SEO Errors and Warnings",
+        "Full Keyword Analysis",
+        "Backlink Audit",
+        "x3 Competitor Analysis",
+        "Traffic Breakdown",
+        "Mobile Usability Full Report",
+        "Advanced Page Speed Insights",
+        "Core Web Vitals Insights",
+        "On-Page SEO Suggestions (All Pages)",
+      ],
+      link: "https://buy.stripe.com/5kA3fN0d34LY4PS6oq",
     },
-  ]
+  ];
 
   const featureComparison = [
-    { feature: "Users", hobby: "1", pro: "5" },
-    { feature: "Projects", hobby: "5", pro: "Unlimited" },
-    { feature: "Analytics", hobby: "Basic", pro: "Advanced" },
-    { feature: "Support", hobby: "Community", pro: "Priority" },
-    { feature: "Custom Domains", hobby: false, pro: true },
-    { feature: "Collaboration Tools", hobby: false, pro: true },
-    { feature: "API Access", hobby: false, pro: true },
-  ]
+    { feature: "Site Health Overview", basic: true, pro: "Detailed breakdown" },
+    { feature: "SEO Errors", basic: true, pro: "Comprehensive with solutions" },
+    { feature: "Top Keywords", basic: "10 Keywords", pro: "Full analysis" },
+    { feature: "Keyword Intent", basic: true, pro: "Full analysis" },
+    { feature: "Backlink Overview", basic: true, pro: "In-depth audit" },
+    { feature: "Competitor Analysis", basic: false, pro: "3 Competitors" },
+    { feature: "Traffic Overview", basic: true, pro: "Detailed breakdown" },
+    { feature: "Mobile Usability", basic: true, pro: "Comprehensive report" },
+    { feature: "Page Speed Insights", basic: true, pro: "Advanced with suggestions" },
+    { feature: "Core Web Vitals Insights", basic: false, pro: true },
+    { feature: "Advanced Keyword Gap Analysis", basic: false, pro: true },
+    { feature: "Position Tracking", basic: false, pro: true },
+    { feature: "Technical SEO Recommendations", basic: false, pro: true },
+    { feature: "Content Audit", basic: false, pro: true },
+    { feature: "Backlink Growth Trends", basic: false, pro: true },
+  ];
 
   return (
     <div className="bg-[#FCFCFC] py-16 lg:py-32 max-w-7xl mx-auto" id="offer-pricing">
       <div className="site-wrapper">
         <div className="flex flex-col gap-6 mb-16">
-          <h2 className="text-3xl font-bold text-center w-full md:w-4/5 mx-auto lg:text-4xl">Arm yourself with one of the best reports available in the market for powerful insights and solutions on your own website, and your competitors</h2>
-          <p className="text-lg font-light w-full md:w-4/5 mx-auto text-center">We&apos;ve cut our prices on our two analysis deals so you can get insanely valuable insights on your website and your competitors. Our first offer gives a high-level run down of your website health, performance, and specific issue locations for fixing. Our second offer adds on a competitor analysis for three competing websites to the high-level run down so you can see what you need to do to get ahead of the pack.</p>
+          <h2 className="text-3xl font-bold text-center w-full md:w-4/5 mx-auto lg:text-4xl">Equip yourself with one of the industry&apos;s top reports,  delivering powerful insights and solutions for your website  - and your competitors!</h2>
+          <p className="text-lg font-light w-full md:w-4/5 mx-auto text-center">We&apos;ve slashed our prices on two powerful analysis deals, giving you unbeatable insights into your website and your competitors. The first offer provides a high-level overview of your website&apos;s health, performance, and pinpointed areas for improvement. The second offer adds a competitor analysis of three  rival sites, showing you exactly what it takes to surge ahead.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
         {tiers.map((tier) => (
@@ -97,14 +125,14 @@ export default function Pricing() {
                   )}
                 </TableCell>
                 <TableCell>
-                  {typeof row.hobby === "boolean" ? (
-                    row.hobby ? (
+                  {typeof row.basic === "boolean" ? (
+                    row.basic ? (
                       <Check className="h-5 w-5 text-green-500" />
                     ) : (
                       <Minus className="h-5 w-5 text-gray-300" />
                     )
                   ) : (
-                    row.hobby
+                    row.basic
                   )}
                 </TableCell>
                 <TableCell>

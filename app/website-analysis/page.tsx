@@ -10,6 +10,7 @@ import Link from 'next/link'
 import LottieAnimation from '../components/common/LottieAnimation'
 import { toast } from "sonner"
 import { Toaster } from "@/components/ui/sonner"
+import Header from '../components/website-analysis/Header'
 
 
 interface FormData {
@@ -238,6 +239,7 @@ const MarketingUserForm: React.FC = () => {
       </div>
       </div>
     </div>
+    
     </>
     
   )
