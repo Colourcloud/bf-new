@@ -21,10 +21,10 @@ export async function generateMetadata({ params }) {
   const posts = post[0];
 
   return {
-    title: posts.title.rendered,
+    title: `Builtflat - ${posts.title.rendered}`,
     description: posts.excerpt.rendered.replace(/<[^>]+>/g, ''),
     openGraph: {
-      title: posts.title.rendered,
+      title: `Builtflat - ${posts.title.rendered}`,
       description: posts.excerpt.rendered.replace(/<[^>]+>/g, ''),
       images: [posts._embedded?.['wp:featuredmedia']?.[0]?.source_url],
     },
