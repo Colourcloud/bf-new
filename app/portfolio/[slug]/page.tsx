@@ -91,6 +91,18 @@ export async function generateMetadata({ params: { slug } }: { params: { slug: s
   };
 }
 
+// Generate static paths
+export async function generateStaticParams() {
+  const res = await fetch('https://blog.builtflat.co.nz/wp-json/wp/v2/portfolio', {
+    next: { revalidate: 3600 }
+  });
+  const portfolios: WordPressPortfolio[] = await res.json();
+  
+  return portfolios.map((portfolio) => ({
+    slug: portfolio.slug,
+  }));
+}
+
 // Main page component with caching
 async function PortfolioPage({ params: { slug } }: { params: { slug: string } }) {
   const portfolioData = await getPortfolioBySlug(slug);
