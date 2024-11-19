@@ -20,8 +20,9 @@ interface MediaData {
 }
 
 async function Portfolio() {
-    // Fetch only 5 most recent portfolio items
-    const portfolioItems: WordPressPortfolio[] = await getPortfolioItems(5);
+    // Fetch portfolio items and take only the first 5
+    const allPortfolioItems: WordPressPortfolio[] = await getPortfolioItems();
+    const portfolioItems = allPortfolioItems.slice(0, 5);
     
     // Fetch all media items in parallel
     const mediaIds = portfolioItems
