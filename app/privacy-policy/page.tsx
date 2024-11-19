@@ -2,6 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import NavbarWhite from '../components/common/NavbarWhite'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Builtflat - Privacy Policy",
+    description: "Builtflat's privacy policy is designed to help you understand how we collect, use, and protect your personal information.",
+}
 
 const page = () => {
   return (
