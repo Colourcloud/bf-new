@@ -10,7 +10,7 @@ import { GoMirror } from "react-icons/go";
 const Values = () => {
   return (
     <div className=''>
-        <div className="values-intro border-b border-[--border-colour-dark] py-10 md:py-20">
+        <div className="values-intro border-b border-t border-[--border-colour-dark] py-10 md:py-20">
             <div className="site-wrapper">
                 <div className="section-block">
                     <div className="section-text w-full flex flex-col gap-8">

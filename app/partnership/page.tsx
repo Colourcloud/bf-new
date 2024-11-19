@@ -17,7 +17,6 @@ const Partnership: React.FC = () => {
     return (
         <div className='bg-[--dark-background-color]'>
             <Header />
-            <Partners />
             {/* <TestimonialVideo /> */}
             <Values />
             <Statistics />
