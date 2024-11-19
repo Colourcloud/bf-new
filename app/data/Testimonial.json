@@ -33,43 +33,35 @@
     },
     {
         "id": 5,
-        "imageSrc": "/template-design/testimonials/5.jpg",
-        "altText": "yes",
-        "name": "Marilyn Wood",
-        "company": "Velocienta",
-        "testimonial": "The team at this design service is simply amazing. They were able to create a unique, eye-catching design."
+        "imageSrc": "/template-design/testimonials/warwick.webp",
+        "altText": "Warwick Russell",
+        "name": "Warwick Russell",
+        "company": "Greenmetrics",
+        "testimonial": "We are very happy with the website and have some great feedback on it and have enjoyed working with you and Jerry"
     },
     {
         "id": 6,
-        "imageSrc": "/template-design/testimonials/6.jpg",
-        "altText": "yes",
-        "name": "Marilyn Wood",
-        "company": "Velocienta",
-        "testimonial": "I would highly recommend this design service to anyone looking for a team that can deliver quality work on time and within budget. They truly exceeded my expectations in every way."
+        "imageSrc": "/template-design/testimonials/default.jpg",
+        "altText": "Sara powers",
+        "name": "Sara Powers",
+        "company": "PORTGroup",
+        "testimonial": "Builtflat really are masters of their craft. If you're like me and sometimes struggle to keep up with all things technical, Sam and Jaromme somehow manage to demystify the jargon into a language that I can understand."
     },
     {
         "id": 7,
-        "imageSrc": "/template-design/testimonials/7.jpg",
-        "altText": "yes",
-        "name": "Marilyn Wood",
-        "company": "Velocienta",
-        "testimonial": "The design service I received was top-notch! The team was incredibly talented and helped me bring my vision to life in a way that exceeded my expectations."
+        "imageSrc": "/template-design/testimonials/default.jpg",
+        "altText": "Daniell Ledge",
+        "name": "Daniell Ledge",
+        "company": "Ledge Photography",
+        "testimonial": "The Builtflat team seriously transformed my existing portfolio into something I'm more than happy with and communication was perfect right the way through."
     },
     {
         "id": 8,
         "imageSrc": "/template-design/testimonials/8.jpg",
         "altText": "yes",
-        "name": "Marilyn Wood",
+        "name": "Marcus Piero",
         "company": "Velocienta",
         "testimonial": "unique, eye-catching design for my business that really helped me stand out from the competition."
-    },
-    {
-        "id": 9,
-        "imageSrc": "/template-design/testimonials/8.jpg",
-        "altText": "yes",
-        "name": "Marilyn Wood",
-        "company": "Velocienta",
-        "testimonial": "The designers at this service are true professionals. They took the time to understand my needs and preferences and delivered a final product that was beyond my wildest dreams."
     }
 
 ]

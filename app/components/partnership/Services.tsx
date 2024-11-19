@@ -91,7 +91,7 @@ const Services = () => {
                 <Image
                   key={index}
                   src={card.imageUrl}
-                  className={`w-[120%] rounded-lg max-w-none ${activeService.title === card.title ? 'block' : 'hidden'}`}
+                  className={`w-full md:w-[120%] rounded-lg max-w-none ${activeService.title === card.title ? 'block' : 'hidden'}`}
                   alt={card.alttext}
                   priority={true}
                   width={1800}
