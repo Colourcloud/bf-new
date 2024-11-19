@@ -64,12 +64,13 @@ async function getMediaUrl(mediaId: number): Promise<string> {
 export async function generateMetadata({ params: { slug } }: { params: { slug: string } }): Promise<Metadata> {
   const portfolioData = await getPortfolioBySlug(slug);
   const project = portfolioData[0];
+  const pageTitle = `${project.acf.title || project.title.rendered} - Case Study`;
 
   if (project) {
     const mediaUrl = await getMediaUrl(project.featured_media);
 
     return {
-      title: project.acf.title || project.title.rendered,
+      title: pageTitle,
       description: project.acf.blurp,
       openGraph: {
         title: project.acf.title || project.title.rendered,

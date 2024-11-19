@@ -30,10 +30,6 @@ const BlogPost = () => {
 
   return (
     <>
-    <head>
-        <title>Builtflat - News & Updates</title>
-        <meta name="description" content="Keep up to date with latest news from Builtflat, and other design & development related content" />
-    </head>
       <div className='bg-[--dark-background-color]'>
         <Navbar></Navbar>
         <div className='blog-wrapper py-20 md:py-40'>

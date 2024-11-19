@@ -11,6 +11,7 @@ import LottieAnimation from '../components/common/LottieAnimation'
 import { toast } from "sonner"
 import { Toaster } from "@/components/ui/sonner"
 import Header from '../components/website-analysis/Header'
+import Head from 'next/head'
 
 
 interface FormData {
@@ -153,10 +154,6 @@ const MarketingUserForm: React.FC = () => {
 
   return (
     <>
-    <head>
-      <title>Builtflat - Free Website Analysis</title>
-      <meta name="description" content="free basic website analysis valued at over $250 that checks your websites health and performance. Get in quick, limited time!" />
-    </head>
       <Toaster />
       <NavbarWhite />
       <div className="min-h-screen bg-[#FCFCFC] text-foreground flex flex-col items-center justify-center py-12">
