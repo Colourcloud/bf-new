@@ -62,7 +62,7 @@ const ContactForm = () => {
             <div className="contact-form p-6 md:p-0 max-w-xl md:ml-24 flex flex-col gap-6 justify-center">
                     <div className="logo"></div>
                     <div>
-                        <h2 className="text-4xl text-white leading-tight font-bold md:text-6xl pb-4">Let us know how we can help you</h2>
+                        <h1 className="text-4xl text-white leading-tight font-bold md:text-6xl pb-4">Let us know how we can help you</h1>
                     </div>
                     <form onSubmit={handleSubmit}>
                         <div className="form-fields flex flex-col gap-6">
