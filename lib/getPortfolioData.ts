@@ -1,6 +1,6 @@
 // lib/api.ts
 export async function getPortfolioItems() {
-  const res = await fetch('https://blog.builtflat.co.nz/wp-json/wp/v2/portfolio', {
+  const res = await fetch('https://blog.builtflat.co.nz/wp-json/wp/v2/portfolio?per_page=50', {
     next: {
       revalidate: 3600 // Cache for 1 hour
     }
