@@ -5,6 +5,8 @@ import Header from '../components/website-analysis/Header'
 import Navbar from '../components/common/NavbarWhite'
 import Pricing from '../components/website-analysis/Pricing'
 import Features from '../components/website-analysis/Features'
+import Faq from '../components/website-analysis/Faq'
+import Whyseo from '../components/website-analysis/Whyseo'
 
 export const metadata: Metadata = {
     title: "Builtflat - Website Analysis Offer",
@@ -17,6 +19,8 @@ const page = () => {
     <Header />
     <Features />
     <Pricing />
+    <Whyseo />
+    <Faq />
     </>
   )
 }
