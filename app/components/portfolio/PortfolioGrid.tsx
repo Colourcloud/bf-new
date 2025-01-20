@@ -43,7 +43,7 @@ async function PortfolioGrid() {
   return (
     <section className='portfolio-page bg-[--dark-background-color] spaced-p'>
       <div className="max-w-[1600px] m-auto px-4">
-        <div className="portfolio-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="portfolio-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item) => (
             <div key={item.id} className='flex flex-col gap-4 portfolio-card-container'>
               <Link href={`/portfolio/${encodeURIComponent(item.slug)}`}>
