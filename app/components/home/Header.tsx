@@ -16,6 +16,8 @@ const Header = () => {
                         loop
                         muted
                         playsInline
+                        preload="metadata"
+                        poster="/home/header-poster.jpg"
                         className="absolute inset-0 w-full h-full object-cover"
                     >
                         <source src="/home/home-header.mp4" type="video/mp4" />
