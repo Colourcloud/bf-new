@@ -2,5 +2,5 @@
 <rect width="134" height="134" rx="10" fill="#F1F1F1"/>
 <circle cx="81" cy="85" r="31" fill="#F64AFF"/>
 <circle cx="86" cy="34" r="17" fill="#F64AFF"/>
-<circle cx="60" cy="60" r="38" fill="#7A4AFF" fill-opacity="0.8"/>
+<circle cx="60" cy="60" r="38" fill="#7A4AFF" fillOpacity="0.8"/>
 </svg>
