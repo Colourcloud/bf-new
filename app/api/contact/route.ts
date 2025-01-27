@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { sanitizeHtml } from '@/lib/sanitize';
 
 interface ContactFormData {
   name: string;
@@ -13,6 +14,15 @@ export async function POST(request: NextRequest) {
   try {
     const body: ContactFormData = await request.json();
 
+    // Sanitize all inputs
+    const sanitizedData = {
+      name: sanitizeHtml(body.name),
+      email: sanitizeHtml(body.email),
+      phoneNumber: sanitizeHtml(body.phoneNumber),
+      websiteLink: sanitizeHtml(body.websiteLink),
+      message: sanitizeHtml(body.message)
+    };
+
     // Validate required environment variables
     if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
       console.error('Missing required SMTP environment variables');
@@ -25,14 +35,11 @@ export async function POST(request: NextRequest) {
     // Create a transporter
     let transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: 587,
-      secure: false,
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
-      },
-      tls: {
-        rejectUnauthorized: false,
       },
     });
 
@@ -70,11 +77,11 @@ export async function POST(request: NextRequest) {
                 <tr>
                   <td>
                     <p style="font-size:14px;line-height:1.5;margin:16px 0">Thank you for contacting Builtflat. We've received your message and will get back to you as soon as possible. If you are not the intended recipient of this email, please ignore and delete this email.</p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Name: ${body.name}</p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Email Address: <a href="mailto:${body.email}" style="color:#067df7;text-decoration:underline" target="_blank">${body.email}</a></p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Phone Number: ${body.phoneNumber}</p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Website URL: <a href="${body.websiteLink}" style="color:#067df7;text-decoration:underline" target="_blank">${body.websiteLink}</a></p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Message: ${body.message}</p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Name: ${sanitizedData.name}</p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Email Address: <a href="mailto:${sanitizedData.email}" style="color:#067df7;text-decoration:underline" target="_blank">${sanitizedData.email}</a></p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Phone Number: ${sanitizedData.phoneNumber}</p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Website URL: <a href="${sanitizedData.websiteLink}" style="color:#067df7;text-decoration:underline" target="_blank">${sanitizedData.websiteLink}</a></p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Message: ${sanitizedData.message}</p>
                     <p style="font-size:14px;line-height:1.5;margin:16px 0">Thanks,<br />The Builtflat Team</p>
                   </td>
                 </tr>
@@ -107,8 +114,8 @@ export async function POST(request: NextRequest) {
     const mailData = {
       from: '"Builtflat Contact Submission" <email@builtflat.co.nz>',
       to: `hello@builtflat.co.nz`,
-      subject: `Message From ${body.name}`,
-      text: body.message + " | Sent from: " + body.email,
+      subject: `Message From ${sanitizedData.name}`,
+      text: sanitizedData.message + " | Sent from: " + sanitizedData.email,
       html: htmlContent
     };
 
