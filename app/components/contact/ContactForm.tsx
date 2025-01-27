@@ -19,6 +19,8 @@ const ContactForm = () => {
     const [charsLeft, setCharsLeft] = useState(maxLength);
     const [isValid, setIsValid] = useState(false);
     const [isLoading, setIsLoading] = useState(false); // New state for loading indication
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState(false);
 
     useEffect(() => {
         setCharsLeft(maxLength - text.length);
@@ -34,22 +36,37 @@ const ContactForm = () => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setIsLoading(true); // Start loading indication
+        setIsLoading(true);
+        setError('');
 
-        const response = await fetch('/api/sendMail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ name, email, phoneNumber, websiteLink, message: text }),
-        });
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, phoneNumber, websiteLink, message: text }),
+            });
 
-        setIsLoading(false); // Stop loading indication
+            const data = await response.json();
 
-        if (response.ok) {
-            window.location.href = '/';
-        } else {
-            console.error('Failed to send message');
+            if (response.ok) {
+                setSuccess(true);
+                setText('');
+                setName('');
+                setEmail('');
+                setPhoneNumber('');
+                setWebsiteLink('');
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000);
+            } else {
+                setError(data.error || 'Failed to send message. Please try again.');
+            }
+        } catch (err) {
+            setError('Failed to send message. Please try again.');
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -132,12 +149,14 @@ const ContactForm = () => {
                                 <span className="absolute text-xs text-white bottom-2 right-3">{charsLeft} characters left</span>
                             </fieldset>
                             <fieldset className='flex flex-col gap-1'>
-                            <input 
-                                type="submit" 
-                                value={isLoading ? "Sending..." : (isValid ? "Let's get to work" : "Please fill out the rest of the form")} 
-                                disabled={!isValid || isLoading} // Disable the button when not valid or loading
-                                className={`p-3 text-sm mt-6 submit-button text-white rounded-md ${isValid && !isLoading ? 'bg-[#7A4AFF] cursor-pointer' : 'bg-gray-500 opacity-50'}`}
-                            />
+                                {error && <div className="text-red-500 mb-4">{error}</div>}
+                                {success && <div className="text-green-500 mb-4">Message sent successfully! Redirecting...</div>}
+                                <input 
+                                    type="submit" 
+                                    value={isLoading ? "Sending..." : (isValid ? "Let's get to work" : "Please fill out the rest of the form")} 
+                                    disabled={!isValid || isLoading}
+                                    className={`p-3 text-sm mt-6 submit-button text-white rounded-md ${isValid && !isLoading ? 'bg-[#7A4AFF] cursor-pointer' : 'bg-gray-500 opacity-50'}`}
+                                />
                                 {isLoading && <div className="loading-indicator">{loadingIndicator}</div>} {/* Show loading indicator when isLoading is true */}
                             </fieldset>
                         </div>

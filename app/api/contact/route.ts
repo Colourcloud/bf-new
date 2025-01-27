@@ -1,18 +1,37 @@
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export default function handler(req, res) {
-  if (req.method === 'POST') {
+interface ContactFormData {
+  name: string;
+  email: string;
+  phoneNumber: string;
+  websiteLink: string;
+  message: string;
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    const body: ContactFormData = await request.json();
+
+    // Validate required environment variables
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error('Missing required SMTP environment variables');
+      return NextResponse.json(
+        { error: "Email service is not properly configured" },
+        { status: 500 }
+      );
+    }
+
     // Create a transporter
     let transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST, // Replace with your SMTP host
-      port: 587, // Common ports are 587, 465 (SSL required), or 25
-      secure: false, // true for 465, false for other ports
+      host: process.env.SMTP_HOST,
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.SMTP_USER, // SMTP username from env file
-        pass: process.env.SMTP_PASS, // SMTP password from env file
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
       tls: {
-        // This is necessary only if your server uses self-signed certificates
         rejectUnauthorized: false,
       },
     });
@@ -51,11 +70,11 @@ export default function handler(req, res) {
                 <tr>
                   <td>
                     <p style="font-size:14px;line-height:1.5;margin:16px 0">Thank you for contacting Builtflat. We've received your message and will get back to you as soon as possible. If you are not the intended recipient of this email, please ignore and delete this email.</p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Name: ${req.body.name}</p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Email Address: <a href="mailto:${req.body.email}" style="color:#067df7;text-decoration:underline" target="_blank">${req.body.email}</a></p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Phone Number: ${req.body.phoneNumber}</p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Website URL: <a href="${req.body.websiteLink}" style="color:#067df7;text-decoration:underline" target="_blank">${req.body.websiteLink}</a></p>
-                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Message: ${req.body.message}</p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Name: ${body.name}</p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Contact Email Address: <a href="mailto:${body.email}" style="color:#067df7;text-decoration:underline" target="_blank">${body.email}</a></p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Phone Number: ${body.phoneNumber}</p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Website URL: <a href="${body.websiteLink}" style="color:#067df7;text-decoration:underline" target="_blank">${body.websiteLink}</a></p>
+                    <p style="font-size:14px;line-height:1.5;margin:16px 0">Message: ${body.message}</p>
                     <p style="font-size:14px;line-height:1.5;margin:16px 0">Thanks,<br />The Builtflat Team</p>
                   </td>
                 </tr>
@@ -69,7 +88,6 @@ export default function handler(req, res) {
       <tbody>
         <tr>
           <td>
-            
             <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation">
               <tbody style="width:100%">
               <tr style="width:100%">
@@ -88,24 +106,30 @@ export default function handler(req, res) {
     // Set email data
     const mailData = {
       from: '"Builtflat Contact Submission" <email@builtflat.co.nz>',
-      to: `hello@builtflat.co.nz, ${req.body.email}`,
-      subject: `Message From ${req.body.name}`,
-      text: req.body.message + " | Sent from: " + req.body.email,
-      html: htmlContent // Updated to use the new HTML template
+      to: `hello@builtflat.co.nz`,
+      subject: `Message From ${body.name}`,
+      text: body.message + " | Sent from: " + body.email,
+      html: htmlContent
     };
 
     // Send email
-    transporter.sendMail(mailData, function (err, info) {
-        if(err) {
-            console.error(err);
-            res.status(500).json({ error: "Error sending email", details: err.message });
-          } else {
-            res.status(200).json({ status: "Email successfully sent" });
-          }
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+          console.error(err);
+          reject(err);
+        } else {
+          resolve(info);
+        }
+      });
     });
-  } else {
-    res.setHeader('Allow', ['POST']);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
-  }
-};
 
+    return NextResponse.json({ status: "Email successfully sent" }, { status: 200 });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return NextResponse.json(
+      { error: "Error sending email", details: error instanceof Error ? error.message : 'Unknown error' },
+      { status: 500 }
+    );
+  }
+}

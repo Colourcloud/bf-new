@@ -7,11 +7,14 @@ export async function POST(request: NextRequest) {
   // Create a transporter
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST, // Replace with your SMTP host
-    port: 465, // Common ports are 587, 465 (SSL required), or 25
-    secure: true, // true for 465, false for other ports
+    port: 587, // Common ports are 587, 465 (SSL required), or 25
+    secure: false, // true for 465, false for other ports
     auth: {
       user: process.env.SMTP_USER, // SMTP username from env file
       pass: process.env.SMTP_PASS, // SMTP password from env file
+    },
+    tls: {
+      rejectUnauthorized: false, // This is necessary only if your server uses self-signed certificates
     },
   });
 
@@ -85,7 +88,7 @@ export async function POST(request: NextRequest) {
   // Set email data
   const mailData = {
     from: '"Builtflat Website Analysis Submission" <email@builtflat.co.nz>',
-    to: `hello@builtflat.co.nz, ${formData.email}`, // You might want to sanitize this email input
+    to: `hello@builtflat.co.nz`, // You might want to sanitize this email input
     subject: `Message From ${formData.name}`,
     text: `${formData.message} | Sent from: ${formData.email}`,
     html: htmlContent
