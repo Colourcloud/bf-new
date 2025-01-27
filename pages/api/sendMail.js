@@ -4,7 +4,7 @@ export default function handler(req, res) {
   if (req.method === 'POST') {
     // Create a transporter
     let transporter = nodemailer.createTransport({
-      host: "server01.eu", // Replace with your SMTP host
+      host: process.env.SMTP_HOST, // Replace with your SMTP host
       port: 587, // Common ports are 587, 465 (SSL required), or 25
       secure: false, // true for 465, false for other ports
       auth: {
