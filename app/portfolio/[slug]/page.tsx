@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from "next/image";
+import { notFound } from 'next/navigation';
 import NavbarWhite from '@/app/components/common/NavbarWhite';
 import Button from '@/app/components/common/Button';
 
@@ -63,6 +64,11 @@ async function getMediaUrl(mediaId: number): Promise<string> {
 // Generate metadata function with caching
 export async function generateMetadata({ params: { slug } }: { params: { slug: string } }): Promise<Metadata> {
   const portfolioData = await getPortfolioBySlug(slug);
+  
+  if (!portfolioData || portfolioData.length === 0) {
+    notFound();
+  }
+  
   const project = portfolioData[0];
   const pageTitle = `${project.acf.title || project.title.rendered} - Case Study`;
 
@@ -107,11 +113,12 @@ export async function generateStaticParams() {
 // Main page component with caching
 async function PortfolioPage({ params: { slug } }: { params: { slug: string } }) {
   const portfolioData = await getPortfolioBySlug(slug);
-  const project = portfolioData[0];
-
-  if (!project) {
-    return <div>Project not found</div>;
+  
+  if (!portfolioData || portfolioData.length === 0) {
+    notFound();
   }
+  
+  const project = portfolioData[0];
 
   // Fetch logo and introduction image media with caching
   const logoUrl = project.acf.logo ? await getMediaUrl(project.acf.logo) : null;

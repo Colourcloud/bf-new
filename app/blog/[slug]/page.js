@@ -1,6 +1,7 @@
 import Navbar from '../../../app/components/common/Navbar';
 import Link from 'next/link';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import Sidebar from '../../components/blog/Sidebar';
 import {
   Accordion,
@@ -18,6 +19,11 @@ export async function generateMetadata({ params }) {
     }
   });
   const post = await req.json();
+  
+  if (!post || post.length === 0) {
+    notFound();
+  }
+  
   const posts = post[0];
 
   return {
@@ -42,6 +48,11 @@ export default async function BlogPost({ params }) {
     }
   });
   const post = await req.json();
+  
+  if (!post || post.length === 0) {
+    notFound();
+  }
+  
   const posts = post[0];
   const readableDate = new Date(posts.date).toLocaleDateString('en-US', {
     weekday: 'long',
