@@ -6,6 +6,7 @@ import Button from '../common/Button';
 import AnimateOnScroll from '../common/AnimateOnScroll';
 import AnimatedText from '../common/AnimateText';
 import React, { useState, useEffect, FormEvent } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 const loadingIndicator = <span>Loading...</span>;
 
 
@@ -21,21 +22,26 @@ const ContactForm = () => {
     const [isLoading, setIsLoading] = useState(false); // New state for loading indication
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
+    const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
 
     useEffect(() => {
         setCharsLeft(maxLength - text.length);
     }, [text]);
 
     useEffect(() => {
-        if (text !== '' && text.length <= maxLength && name && email) {
+        if (text !== '' && text.length <= maxLength && name && email && recaptchaValue) {
             setIsValid(true);
         } else {
             setIsValid(false);
         }
-    }, [text, name, email]);
+    }, [text, name, email, recaptchaValue]);
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        if (!recaptchaValue) {
+            setError('Please complete the reCAPTCHA verification');
+            return;
+        }
         setIsLoading(true);
         setError('');
 
@@ -45,7 +51,14 @@ const ContactForm = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ name, email, phoneNumber, websiteLink, message: text }),
+                body: JSON.stringify({ 
+                    name, 
+                    email, 
+                    phoneNumber, 
+                    websiteLink, 
+                    message: text,
+                    recaptchaToken: recaptchaValue 
+                }),
             });
 
             const data = await response.json();
@@ -151,6 +164,13 @@ const ContactForm = () => {
                             <fieldset className='flex flex-col gap-1'>
                                 {error && <div className="text-red-500 mb-4">{error}</div>}
                                 {success && <div className="text-green-500 mb-4">Message sent successfully! Redirecting...</div>}
+                                <div className="mb-4">
+                                    <ReCAPTCHA
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+                                        onChange={(value) => setRecaptchaValue(value)}
+                                        theme="dark"
+                                    />
+                                </div>
                                 <input 
                                     type="submit" 
                                     value={isLoading ? "Sending..." : (isValid ? "Let's get to work" : "Please fill out the rest of the form")} 
