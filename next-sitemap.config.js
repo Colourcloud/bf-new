@@ -12,7 +12,7 @@ const fetchBlogSlugs = async () => {
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://builtflat.co.nz',
+  siteUrl: 'https://www.builtflat.co.nz',
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 1,
