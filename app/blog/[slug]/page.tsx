@@ -9,22 +9,62 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Metadata } from 'next';
 
-const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2'
+interface WPPost {
+  id: number;
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+  excerpt: {
+    rendered: string;
+  };
+  date: string;
+  _embedded?: {
+    'wp:featuredmedia'?: Array<{
+      source_url: string;
+    }>;
+    author?: Array<{
+      name: string;
+      avatar_urls?: {
+        [key: string]: string;
+      };
+    }>;
+  };
+  acf: {
+    faq: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
 
-export async function generateMetadata({ params }) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2';
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const req = await fetch(`${reqUrl}/posts?_embed&slug=${params.slug}`, {
-    next: {
-      revalidate: 60 //seconds to cache
-    }
+    next: { 
+      revalidate: 3600 // Cache for 1 hour
+    },
+    cache: 'no-store' // Disable browser caching
   });
+  
   const post = await req.json();
   
   if (!post || post.length === 0) {
     notFound();
   }
   
-  const posts = post[0];
+  const posts = post[0] as WPPost;
 
   return {
     title: `Builtflat - ${posts.title.rendered}`,
@@ -32,7 +72,11 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `Builtflat - ${posts.title.rendered}`,
       description: posts.excerpt.rendered.replace(/<[^>]+>/g, ''),
-      images: [posts._embedded?.['wp:featuredmedia']?.[0]?.source_url],
+      images: posts._embedded?.['wp:featuredmedia']?.[0]?.source_url ? [
+        {
+          url: posts._embedded?.['wp:featuredmedia']?.[0]?.source_url,
+        }
+      ] : [],
     },
     robots: {
       index: true,
@@ -41,19 +85,21 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function BlogPost({ params }) {
+export default async function BlogPost({ params }: PageProps) {
   const req = await fetch(`${reqUrl}/posts?_embed&slug=${params.slug}`, {
-    next: {
-      revalidate: 60 //seconds to cache
-    }
+    next: { 
+      revalidate: 3600 // Cache for 1 hour
+    },
+    cache: 'no-store' // Disable browser caching
   });
+  
   const post = await req.json();
   
   if (!post || post.length === 0) {
     notFound();
   }
   
-  const posts = post[0];
+  const posts = post[0] as WPPost;
   const readableDate = new Date(posts.date).toLocaleDateString('en-US', {
     weekday: 'long',
     day: '2-digit',
@@ -95,7 +141,13 @@ export default async function BlogPost({ params }) {
                 )}
 
                 <div className=''>
-                  <Image src={posts._embedded?.['wp:featuredmedia']?.[0]?.source_url} alt="" width='1000' height='400' className='border border-[--border-colour-dark]'></Image>
+                  <Image 
+                    src={posts._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/default-blog-image.jpg'} 
+                    alt={`Featured image for ${posts.title.rendered}`}
+                    width={1000} 
+                    height={400} 
+                    className='border border-[--border-colour-dark]'
+                  />
                 </div>
               </div>
               <div className='blog-body flex flex-col items-center mt-9'>
@@ -131,4 +183,4 @@ export default async function BlogPost({ params }) {
       </div>
     </>
   );
-}
+} 
