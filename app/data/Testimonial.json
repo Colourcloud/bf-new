@@ -54,6 +54,14 @@
         "name": "Daniell Ledge",
         "company": "Ledge Photography",
         "testimonial": "The Builtflat team seriously transformed my existing portfolio into something I'm more than happy with and communication was perfect right the way through."
+    },
+    {
+        "id": 8,
+        "imageSrc": "/template-design/testimonials/cssbuy.jpg",
+        "altText": "Zoop",
+        "name": "Zoop",
+        "company": "CSSBuy",
+        "testimonial": "New website and app design look great and the team were very helpful and responsive throughout the process."
     }
 
 ]
