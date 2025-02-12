@@ -119,7 +119,7 @@ export default async function BlogPost({ params }: PageProps) {
             {posts && <Sidebar content={posts.content.rendered} />}
             <div>
               <div className='blog-intro flex flex-col gap-6 w-full lg:w-[80%] m-auto'>
-                <h1 className='text-white text-5xl font-bold'>{posts.title.rendered}</h1>
+                <h1 className='text-white text-3xl lg:text-5xl font-bold'>{posts.title.rendered}</h1>
                 <span className='text-[--text-on-dark] text-xl' dangerouslySetInnerHTML={{ __html: posts.excerpt.rendered }}></span>
                 
                 {/* Author information */}
