@@ -10,6 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from 'next/script';  // Import Script from next/script
 import GoogleAnalytics from './components/common/GoogleAnalytics';
 import MetaPixel from './components/common/MetaPixel';
+import Hotjar from './components/common/Hotjar';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.builtflat.co.nz'),
@@ -72,6 +73,7 @@ export default function RootLayout({
 
         <GoogleAnalytics />
         <MetaPixel />
+        <Hotjar />
         <SpeedInsights />
         <Analytics/>
         <NextTopLoader showSpinner={false} color='#7a4aff'/>
