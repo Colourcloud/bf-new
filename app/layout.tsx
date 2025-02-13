@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <Script strategy="beforeInteractive">
+        <Script id="hotjar-script" strategy="afterInteractive">
           {`
           (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
