@@ -10,7 +10,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from 'next/script';  // Import Script from next/script
 import GoogleAnalytics from './components/common/GoogleAnalytics';
 import MetaPixel from './components/common/MetaPixel';
-import Hotjar from './components/common/Hotjar';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.builtflat.co.nz'),
@@ -49,6 +48,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <Script strategy="beforeInteractive">
+          {`
+          (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5302963,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `}
+        </Script>
         {/* Google Tag Manager Script */}
       <Script id="gtm-script" strategy="afterInteractive">
         {`
@@ -73,7 +84,6 @@ export default function RootLayout({
 
         <GoogleAnalytics />
         <MetaPixel />
-        <Hotjar />
         <SpeedInsights />
         <Analytics/>
         <NextTopLoader showSpinner={false} color='#7a4aff'/>
