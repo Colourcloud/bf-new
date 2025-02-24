@@ -8,7 +8,7 @@ import NextTopLoader from 'nextjs-toploader';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from 'next/script';
-// import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 import MetaPixel from './components/common/MetaPixel';
 
 export const metadata: Metadata = {
@@ -62,8 +62,8 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="_next">
-        {/* <GoogleTagManager gtmId="GTM-W4BL8W2F" />
-        <GoogleAnalytics gaId="G-QG5F5FN0L1" /> */}
+        <GoogleTagManager gtmId="GTM-W4BL8W2F" />
+        <GoogleAnalytics gaId="G-QG5F5FN0L1" />
         <MetaPixel />
         <SpeedInsights />
         <Analytics/>
