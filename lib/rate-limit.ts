@@ -18,7 +18,7 @@ export function rateLimit(options?: RateLimitOptions): RateLimiter {
 
   return {
     check: async (request: NextRequest, limit: number, token: string) => {
-      const ip = request.ip ?? '127.0.0.1';
+      const ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1';
       const tokenKey = `${token}:${ip}`;
       const tokenCount = (tokenCache.get(tokenKey) as number[]) || [0];
       
