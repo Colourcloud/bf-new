@@ -7,8 +7,8 @@ import Footer from './components/common/Footer';
 import NextTopLoader from 'nextjs-toploader';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import Script from 'next/script';  // Import Script from next/script
-import GoogleAnalytics from './components/common/GoogleAnalytics';
+import Script from 'next/script';
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 import MetaPixel from './components/common/MetaPixel';
 
 export const metadata: Metadata = {
@@ -60,29 +60,10 @@ export default function RootLayout({
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
-        {/* Google Tag Manager Script */}
-      <Script id="gtm-script" strategy="afterInteractive">
-        {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-W4BL8W2F');
-        `}
-      </Script>
       </head>
-      <body className="_next" >
-        {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-W4BL8W2F"
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        ></iframe>
-      </noscript>
-
-        <GoogleAnalytics />
+      <body className="_next">
+        <GoogleTagManager gtmId="GTM-W4BL8W2F" />
+        <GoogleAnalytics gaId="G-QG5F5FN0L1" />
         <MetaPixel />
         <SpeedInsights />
         <Analytics/>
