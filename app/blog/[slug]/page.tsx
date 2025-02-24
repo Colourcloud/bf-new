@@ -9,10 +9,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 
 interface WPPost {
   id: number;
+  slug: string;
   title: {
     rendered: string;
   };
@@ -42,21 +43,29 @@ interface WPPost {
   };
 }
 
-type PageProps = {
-  params: { slug: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2';
 
+export async function generateStaticParams() {
+  const posts = await fetch(`${reqUrl}/posts?_embed`).then(res => res.json());
+  return posts.map((post: WPPost) => ({
+    slug: post.slug,
+  }));
+}
+
 export async function generateMetadata(
-  { params, searchParams }: PageProps
+  props: Props,
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
+  const params = await props.params;
   const req = await fetch(`${reqUrl}/posts?_embed&slug=${params.slug}`, {
     next: { 
       revalidate: 3600 // Cache for 1 hour
-    },
-    cache: 'no-store' // Disable browser caching
+    }
   });
   
   const post = await req.json();
@@ -86,14 +95,12 @@ export async function generateMetadata(
   }
 }
 
-export default async function BlogPost(
-  { params, searchParams }: PageProps
-) {
+export default async function BlogPost(props: Props) {
+  const params = await props.params;
   const req = await fetch(`${reqUrl}/posts?_embed&slug=${params.slug}`, {
     next: { 
       revalidate: 3600 // Cache for 1 hour
-    },
-    cache: 'no-store' // Disable browser caching
+    }
   });
   
   const post = await req.json();
