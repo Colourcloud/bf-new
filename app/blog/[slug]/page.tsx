@@ -42,15 +42,16 @@ interface WPPost {
   };
 }
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
+type PageProps = {
+  params: { slug: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 const reqUrl = 'https://blog.builtflat.co.nz/wp-json/wp/v2';
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata(
+  { params, searchParams }: PageProps
+): Promise<Metadata> {
   const req = await fetch(`${reqUrl}/posts?_embed&slug=${params.slug}`, {
     next: { 
       revalidate: 3600 // Cache for 1 hour
@@ -85,7 +86,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default async function BlogPost({ params }: PageProps) {
+export default async function BlogPost(
+  { params, searchParams }: PageProps
+) {
   const req = await fetch(`${reqUrl}/posts?_embed&slug=${params.slug}`, {
     next: { 
       revalidate: 3600 // Cache for 1 hour
