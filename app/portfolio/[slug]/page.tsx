@@ -61,9 +61,17 @@ async function getMediaUrl(mediaId: number): Promise<string> {
   }
 }
 
-// Generate metadata function with caching
-export async function generateMetadata({ params: { slug } }: { params: { slug: string } }): Promise<Metadata> {
-  const portfolioData = await getPortfolioBySlug(slug);
+// Update the interface definition
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
+
+// Update the metadata function
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const portfolioData = await getPortfolioBySlug(resolvedParams.slug);
   
   if (!portfolioData || portfolioData.length === 0) {
     notFound();
@@ -110,9 +118,10 @@ export async function generateStaticParams() {
   }));
 }
 
-// Main page component with caching
-async function PortfolioPage({ params: { slug } }: { params: { slug: string } }) {
-  const portfolioData = await getPortfolioBySlug(slug);
+// Update the default export
+export default async function PortfolioPost({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const portfolioData = await getPortfolioBySlug(resolvedParams.slug);
   
   if (!portfolioData || portfolioData.length === 0) {
     notFound();
@@ -283,5 +292,3 @@ async function PortfolioPage({ params: { slug } }: { params: { slug: string } })
     </>
   );
 }
-
-export default PortfolioPage;
