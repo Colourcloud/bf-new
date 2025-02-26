@@ -11,7 +11,7 @@ const Header = () => {
             <div className="site-wrapper">
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
                 <div className="header-text flex flex-col">
-                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Providing Full Stack Website Services To The Whole Of New Zealand</h1>
+                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Providing Full Stack Website Services To The Whole Of New Zealand.</h1>
                     <h4 className="text-xl text-white mt-6 lg:text-xl">Experience seamless, full-stack website solutions tailored for lots of different industries. From custom designs to advanced development, we deliver cutting-edge results. Find out why we&apos;re a fast growing web agency below!</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
