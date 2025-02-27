@@ -6,6 +6,7 @@ import Header from '../components/locations/Header'
 import Introduction from '../components/locations/Introduction'
 import Statistics from '../components/locations/Statistics'
 import LocationList from '../components/locations/LocationList'
+import Portfolio from '../components/common/Portfolio'
 
 export const metadata: Metadata = {
   title: 'Providing Full Stack Website Services To The Whole Of New Zealand | Builtflat',
@@ -19,6 +20,7 @@ const page = () => {
         <Introduction />
         <Statistics />
         <LocationList />
+        <Portfolio />
     </section>
   )
 }

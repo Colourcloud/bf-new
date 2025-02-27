@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import AnimatedText from '../common/AnimateText';
+import Link from 'next/link';
 
 interface Location {
     id: number;
+    slug: string;
     title: {
         rendered: string;
     };
@@ -91,7 +93,8 @@ const LocationList = async () => {
                 {locationsWithMedia.map((location) => {
                     console.log('Rendering location:', location); // Debug log
                     return (
-                        <div key={location.id} className="location-card border-t border-[#222222] group hover:bg-[#111111] [transition:background-color_0.3s]">
+                        <Link href={`/locations/${location.slug}`}>
+                            <div key={location.id} className="location-card border-t border-[#222222] group hover:bg-[#111111] [transition:background-color_0.3s]">
                             <div className="flex flex-col lg:flex-row max-w-[1440px] mx-auto px-4 gap-8 lg:gap-24">
                                 <div className="flex flex-col gap-4 w-full lg:w-1/2 py-12">
                                     <h6 className='text-2xl md:text-3xl lg:text-4xl font-bold text-[#888888] group-hover:text-white group-hover:scale-105 origin-left [transition:transform_0.5s,color_0.5s]'>
@@ -120,6 +123,7 @@ const LocationList = async () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     );
                 })}
             </div>

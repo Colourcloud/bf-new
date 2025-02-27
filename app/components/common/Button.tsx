@@ -25,7 +25,7 @@ const Button: React.FC<CustomButtonProps> = ({
   };
 
   return (
-    <Link href={href}>
+    <Link href={href} className='self-start'>
       <div
         className={`px-7 py-3 text-sm font-medium rounded-md button-behaviour ${
           className || ''

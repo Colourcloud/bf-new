@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Header = () => {
   return (
     <div>
-            <header className='home-page'>
+        <header className='home-page'>
             <Navbar></Navbar>
             <div className="site-wrapper">
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
@@ -25,8 +25,8 @@ const Header = () => {
                 <Image src="/locations/wellington.jpg" alt="Auckland, New Zealand" className='w-full h-full object-cover' width='2000' height='1400' priority />
                 <Image src="/locations/queenstown.jpg" alt="Auckland, New Zealand" className='w-full h-full object-cover' width='2000' height='1400' priority />
             </div>
-            </header>
-        </div>
+        </header>
+    </div>
   )
 }
 
