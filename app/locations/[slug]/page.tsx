@@ -233,7 +233,10 @@ export default async function LocationPage({
                                 <h6 className='text-2xl md:text-3xl lg:text-3xl font-bold text-white'>{service.service_title}</h6>
                             </div>
                             <div className="w-full md:w-1/2">
-                                <p className='text-[--text-on-dark] text-base'>{service.service_description}</p>
+                                <div 
+                                    className='service-info-card_description text-[--text-on-dark] text-base'
+                                    dangerouslySetInnerHTML={{ __html: service.service_description || '' }}
+                                />
                             </div>
                         </div>
                     </div>
