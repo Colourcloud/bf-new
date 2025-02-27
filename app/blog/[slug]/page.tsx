@@ -135,9 +135,11 @@ function AuthorSection({ author, date }: { author: WPAuthor, date: string }) {
   );
 }
 
-function FAQSection({ faqItems }: { faqItems: FAQItem[] }) {
+function FAQSection({ faqItems }: { faqItems?: FAQItem[] }) {
+  if (!faqItems) return null;
+  
   const validFAQs = faqItems.filter(item => 
-    item.question.trim() !== '' || item.answer.trim() !== ''
+    item.question?.trim() !== '' && item.answer?.trim() !== ''
   );
 
   if (validFAQs.length === 0) return null;
@@ -200,7 +202,7 @@ export default async function BlogPost({ params }: { params: Promise<PageProps['
                 className='text-white w-full lg:w-[80%] flex flex-col gap-6' 
                 dangerouslySetInnerHTML={{ __html: post.content.rendered }}
               />
-              <FAQSection faqItems={post.acf.faq} />
+              <FAQSection faqItems={post.acf?.faq} />
             </div>
           </div>
         </div>
