@@ -21,26 +21,26 @@ type Location = {
   id: number
   title: { rendered: string }
   acf: {
-    location_name: string
-    maori_name: string
-    location_description: string
-    location_image: number
-    more_information: {
-      introduction_text: string
-      introduction_description: string
-      introduction_images: number[]
-      more_information_heading: string
-      more_information_text: string
+    location_name?: string
+    maori_name?: string
+    location_description?: string
+    location_image?: number
+    more_information?: {
+      introduction_text?: string
+      introduction_description?: string
+      introduction_images?: number[]
+      more_information_heading?: string
+      more_information_text?: string
     }
-    service_list: {
-      services: Array<{
-        service_title: string
-        service_description: string
+    service_list?: {
+      services?: Array<{
+        service_title?: string
+        service_description?: string
       }>
     }
-    faq: Array<{
-      question: string
-      answer: string
+    faq?: Array<{
+      question?: string
+      answer?: string
     }>
   }
 }
@@ -94,9 +94,14 @@ async function getLocation(slug: string): Promise<Location & { mediaDetails: Rec
   
   // Collect all media IDs that need to be fetched
   const mediaIds = [
-    location.acf.location_image,
-    ...location.acf.more_information.introduction_images
+    location.acf?.location_image,
+    ...(location.acf?.more_information?.introduction_images || [])
   ].filter(Boolean) // Remove any null/undefined values
+  
+  // If no media IDs, return early with empty mediaDetails
+  if (mediaIds.length === 0) {
+    return { ...location, mediaDetails: {} }
+  }
   
   // Fetch all media details in one call
   const mediaRes = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/media?include=${mediaIds.join(',')}`, {
@@ -145,8 +150,8 @@ export default async function LocationPage({
   const location = await getLocation(validatedParams.slug)
   const { acf, mediaDetails } = location
 
-  // Get introduction images from the mediaDetails map
-  const introductionImages = acf.more_information.introduction_images.map(id => mediaDetails[id])
+  // Get introduction images from the mediaDetails map with proper fallback for undefined arrays
+  const introductionImages = (acf.more_information?.introduction_images || []).map(id => mediaDetails[id] || null).filter(Boolean)
 
   return (
         <>
@@ -156,8 +161,8 @@ export default async function LocationPage({
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
                 <Link href="/locations" className='text-white font-medium flex flex-row gap-2 items-center'><FaArrowLeftLong /> Back to locations</Link>
                 <div className="header-text flex flex-col">
-                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Providing Full Stack Website Services To the {acf.location_name} Area.</h1>
-                    <h4 className="text-xl text-white mt-6 lg:text-xl">{acf.location_description}</h4>
+                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Providing Full Stack Website Services To the {acf.location_name || 'Local'} Area.</h1>
+                    <h4 className="text-xl text-white mt-6 lg:text-xl">{acf.location_description || 'Contact us to learn more about our services.'}</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>
@@ -184,22 +189,24 @@ export default async function LocationPage({
         <div className="site-wrapper">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-24 justify-between items-center">
                 <div className="flex flex-col gap-6 w-full lg:w-1/2">
-                    <AnimatedText><h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">{acf.more_information.introduction_text}</h2></AnimatedText>
-                    {acf.more_information.introduction_description.split('\r\n\r\n').map((paragraph, index) => (
+                    <AnimatedText><h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">{acf.more_information?.introduction_text || 'Welcome'}</h2></AnimatedText>
+                    {(acf.more_information?.introduction_description || '').split('\r\n\r\n').map((paragraph, index) => (
                         <p key={index} className="text-[--text-on-dark] text-base md:text-lg">
                             {paragraph}
                         </p>
                     ))}
                 </div>
                 <div className="w-full lg:w-1/2 rounded-lg overflow-hidden">
-                    <Image 
-                        src={mediaDetails[acf.location_image].url}
-                        alt={mediaDetails[acf.location_image].alt}
-                        className='w-full h-full object-cover'
-                        width={2000}
-                        height={1400}
-                        priority
-                    />
+                    {acf.location_image && mediaDetails[acf.location_image] && (
+                        <Image 
+                            src={mediaDetails[acf.location_image].url}
+                            alt={mediaDetails[acf.location_image].alt}
+                            className='w-full h-full object-cover'
+                            width={2000}
+                            height={1400}
+                            priority
+                        />
+                    )}
                 </div>
             </div>
         </div>
@@ -219,7 +226,7 @@ export default async function LocationPage({
         </section>
 
             <div className="flex flex-col bg-[--dark-background-color]">
-                {acf.service_list.services.map((service, index) => (
+                {acf.service_list?.services?.map((service, index) => (
                     <div key={index} className="service-info-card border-b border-[#222222] group hover:bg-[#111111] [transition:background-color_0.3s]">
                         <div className="flex flex-col px-4 md:flex-row gap-6 md:gap-20 justify-between py-12 md:py-16 max-w-[1440px] mx-auto">
                             <div className="w-full md:w-1/2">
@@ -242,7 +249,7 @@ export default async function LocationPage({
                 <p className='text-base font-light'>Below are some frequently asked questions relating to our services in {acf.location_name}.</p>
             </div>
             <Accordion type="single" collapsible className='mt-12'>
-                {acf.faq.map((faqItem, index: number) => (
+                {(acf.faq || []).map((faqItem, index: number) => (
                 <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className='text-white'>{faqItem.question}</AccordionTrigger>
                     <AccordionContent className='text-white'>

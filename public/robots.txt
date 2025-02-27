@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://builtflat.co.nz
+Host: https://www.builtflat.co.nz
 
 # Sitemaps
-Sitemap: https://builtflat.co.nz/sitemap.xml
+Sitemap: https://www.builtflat.co.nz/sitemap.xml

@@ -1,7 +1,7 @@
 // next-sitemap.config.js
 const fetchBlogSlugs = async () => {
   try {
-    const response = await fetch('https://blog.builtflat.co.nz/wp-json/wp/v2/posts');
+    const response = await fetch('https://blog.builtflat.co.nz/wp-json/wp/v2/posts?per_page=100');
     const posts = await response.json();
     return posts.map(post => `/blog/${post.slug}`);
   } catch (error) {
