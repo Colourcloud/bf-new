@@ -258,7 +258,7 @@ export default async function LocationPage({
                 <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className='text-white'>{faqItem.question}</AccordionTrigger>
                     <AccordionContent className='text-white'>
-                    {faqItem.answer}
+                    <div dangerouslySetInnerHTML={{ __html: faqItem.answer || '' }} />
                     </AccordionContent>
                 </AccordionItem>
                 ))}
