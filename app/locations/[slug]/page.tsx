@@ -38,6 +38,7 @@ type Location = {
       services?: Array<{
         service_title?: string
         service_description?: string
+        service_link?: string
       }>
     }
     faq?: Array<{
@@ -232,7 +233,13 @@ export default async function LocationPage({
                     <div key={index} className="service-info-card border-b border-[#222222] group hover:bg-[#111111] [transition:background-color_0.3s]">
                         <div className="flex flex-col px-4 md:flex-row gap-6 md:gap-20 justify-between py-12 md:py-16 max-w-[1440px] mx-auto">
                             <div className="w-full md:w-1/2">
-                                <h6 className='text-2xl md:text-3xl lg:text-3xl font-bold text-white'>{service.service_title}</h6>
+                                {service.service_link ? (
+                                    <Link href={service.service_link} target='_blank'>
+                                        <h6 className='text-2xl md:text-3xl lg:text-3xl font-bold text-white'>{service.service_title}</h6>
+                                    </Link>
+                                ) : (
+                                    <h6 className='text-2xl md:text-3xl lg:text-3xl font-bold text-white'>{service.service_title}</h6>
+                                )}
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div 
