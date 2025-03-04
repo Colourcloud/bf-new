@@ -26,6 +26,8 @@ type Location = {
     location_description?: string
     location_image?: number
     more_information?: {
+      heading?: string
+      sub_paragraph?: string
       introduction_text?: string
       introduction_description?: string
       introduction_images?: number[]
@@ -161,8 +163,8 @@ export default async function LocationPage({
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
                 <Link href="/locations" className='text-white font-medium flex flex-row gap-2 items-center'><FaArrowLeftLong /> Back to locations</Link>
                 <div className="header-text flex flex-col">
-                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">Providing Full Stack Website Services To the {acf.location_name || 'Local'} Area.</h1>
-                    <h4 className="text-xl text-white mt-6 lg:text-xl">{acf.location_description || 'Contact us to learn more about our services.'}</h4>
+                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">{acf.more_information?.heading || 'Providing Full Stack Website Services To the Local Area.'}</h1>
+                    <h4 className="text-xl text-white mt-6 lg:text-xl">{acf.more_information?.sub_paragraph}</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>
