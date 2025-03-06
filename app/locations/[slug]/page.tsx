@@ -149,7 +149,7 @@ export async function generateMetadata({
   const location = await getLocation(validatedParams.slug)
   
   return {
-    title: `${location.acf.meta_title}`,
+    title: location.acf.meta_title || `${location.acf.location_name} - Website Design & Development Services | Builtflat`,
     description: location.acf.meta_description || location.acf.location_description,
   }
 }
