@@ -355,3 +355,13 @@ textarea {
 .location-faq a {
   color: var(--primary-color);
 }
+
+.location_introduction_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+}

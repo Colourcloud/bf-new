@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Button from './Button';
 import AnimatedText from './AnimateText';
+import Reviews from '../locations/Reviews';
 
 import testimonialData from '../../data/Testimonial.json';
 
@@ -33,27 +34,7 @@ const Testimonials: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <div className="site-wrapper spaced-m spaced-p">
-                <h6 className='text-left lg:text-center text-xl lg:text-4xl font-semibold opacity-50 text-white'>Hear it from our clients!</h6>
-                <section className="testimonial-cards flex flex-col xl:flex-row flex-wrap gap-6 mt-12">
-                    {rows.map((row, rowIndex) => (
-                    <div key={rowIndex} className="card-row flex flex-col xl:flex-row gap-6">
-                    {row.map((item) => (
-                        <div key={item.id} className="quote-card w-full 2xl:w-[450px] p-6 rounded-md border border-[#222] flex flex-col gap-6">
-                            <div className="top-section flex flex-row gap-3">
-                                <Image src={item.imageSrc} alt={item.altText} className="rounded-full w-11 h-11" width="120" height="120" />
-                                <div className="test-name">
-                                    <h4 className='text-white font-medium'>{item.name}</h4>
-                                    <p className='text-white font-light'>{item.company}</p>
-                                </div>
-                            </div>
-                            <p className='text-white font-light'>{item.testimonial}</p>
-                        </div>
-                    ))}
-                </div>
-                ))}
-            </section>
-            </div>
+            <Reviews />
         </section>
         </>
     );

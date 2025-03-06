@@ -210,9 +210,11 @@ export default async function LocationPage({
                 <div className="flex flex-col gap-6 w-full lg:w-1/2">
                     <AnimatedText><h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">{acf.more_information?.introduction_text || 'Welcome'}</h2></AnimatedText>
                     {(acf.more_information?.introduction_description || '').split('\r\n\r\n').map((paragraph, index) => (
-                        <p key={index} className="text-[--text-on-dark] text-base md:text-lg">
-                            {paragraph}
-                        </p>
+                        <p 
+                            key={index} 
+                            className="location_introduction_desc text-[--text-on-dark] text-base md:text-lg"
+                            dangerouslySetInnerHTML={{ __html: paragraph }}
+                        />
                     ))}
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple mt-4" href="/contact" >Get a Free Consultation / Quote</Button>
                 </div>
@@ -277,9 +279,11 @@ export default async function LocationPage({
                 <div className="flex flex-col gap-6 w-full lg:w-1/2">
                     <AnimatedText><h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">{acf.about_us?.about_us_heading || 'Welcome'}</h2></AnimatedText>
                     {(acf.about_us?.about_us_description || '').split('\r\n\r\n').map((paragraph, index) => (
-                        <p key={index} className="text-[--text-on-dark] text-base md:text-lg">
-                            {paragraph}
-                        </p>
+                        <p 
+                            key={index} 
+                            className="text-[--text-on-dark] text-base md:text-lg"
+                            dangerouslySetInnerHTML={{ __html: paragraph }}
+                        />
                     ))}
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple mt-4" href="/contact" >Get a Free Consultation / Quote</Button>
                 </div>
