@@ -8,6 +8,8 @@ import Link from 'next/link'
 import AnimatedText from '@/app/components/common/AnimateText'
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Portfolio from '@/app/components/common/Portfolio'
+import Clients from '@/app/components/locations/Clients'
+import Reviews from '@/app/components/locations/Reviews'
 import Statistics from '@/app/components/locations/Statistics'
 import {
     Accordion,
@@ -25,6 +27,7 @@ type Location = {
     maori_name?: string
     location_description?: string
     location_image?: number
+    meta_description?: string
     more_information?: {
       heading?: string
       sub_paragraph?: string
@@ -40,6 +43,11 @@ type Location = {
         service_description?: string
         service_link?: string
       }>
+    }
+    about_us?: {
+      about_us_heading?: string
+      about_us_description?: string
+      about_us_image?: number
     }
     faq?: Array<{
       question?: string
@@ -98,7 +106,8 @@ async function getLocation(slug: string): Promise<Location & { mediaDetails: Rec
   // Collect all media IDs that need to be fetched
   const mediaIds = [
     location.acf?.location_image,
-    ...(location.acf?.more_information?.introduction_images || [])
+    ...(location.acf?.more_information?.introduction_images || []),
+    location.acf?.about_us?.about_us_image
   ].filter(Boolean) // Remove any null/undefined values
   
   // If no media IDs, return early with empty mediaDetails
@@ -140,7 +149,7 @@ export async function generateMetadata({
   
   return {
     title: `${location.acf.location_name} - Website Design & Development Services | Builtflat`,
-    description: location.acf.location_description,
+    description: location.acf.meta_description || location.acf.location_description,
   }
 }
 
@@ -187,6 +196,12 @@ export default async function LocationPage({
                 ))}
             </div>
         </header>
+
+      <section className="bg-black py-12 border-b border-[#222222]">
+        <Clients />  
+      </section>
+
+      <Reviews />
         
       <section className="py-12 lg:py-32 bg-[--dark-background-color] border-b border-[#222222]">
         <div className="site-wrapper">
@@ -251,6 +266,35 @@ export default async function LocationPage({
                     </div>
                 ))}
             </div>
+
+      {/* About us Section */} 
+
+       <section className="py-12 lg:py-32 bg-[--dark-background-color] border-b border-[#222222]">
+        <div className="site-wrapper">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-24 justify-between items-center">
+                <div className="flex flex-col gap-6 w-full lg:w-1/2">
+                    <AnimatedText><h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">{acf.about_us?.about_us_heading || 'Welcome'}</h2></AnimatedText>
+                    {(acf.about_us?.about_us_description || '').split('\r\n\r\n').map((paragraph, index) => (
+                        <p key={index} className="text-[--text-on-dark] text-base md:text-lg">
+                            {paragraph}
+                        </p>
+                    ))}
+                </div>
+                <div className="w-full lg:w-1/2 rounded-lg overflow-hidden">
+                    {acf.about_us?.about_us_image && mediaDetails[acf.about_us?.about_us_image] && (
+                        <Image 
+                            src={mediaDetails[acf.about_us?.about_us_image].url}
+                            alt={mediaDetails[acf.about_us?.about_us_image].alt}
+                            className='w-full h-full object-cover'
+                            width={2000}
+                            height={1400}
+                            priority
+                        />
+                    )}
+                </div>
+            </div>
+        </div>
+        </section>   
 
       {/* FAQ Section */}
       <section className="location-faq py-12 lg:py-32 bg-[--dark-background-color] border-b border-[#222222]">

@@ -19,7 +19,7 @@ const Collaboration = () => {
                                 <span className='highlighted-purple-text rounded-full text-sm font-medium'>Collaboration</span>
                                 <AnimatedText><h4 className='text-4xl md:text-5xl font-bold'>Want to expand out your offers and speed up projects? Let&apos;s collaborate!</h4></AnimatedText>
                                 <p className='text-xl font-light'>Builtflat works closely with other design and development agencies in New Zealand, Australia, and internationally to help them meet their project needs. We boost the productivity, capacity, and knowledge of a team to help deliver a more polished, timely project for your clients.</p>
-                                <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/partnership" >Let&apos;s work together</Button>
+                                <Link className="background-purple self-center px-7 py-3 text-sm font-medium rounded-md text-white" href="/partnership" >Let&apos;s work together</Link>
                                 <div className="user-icons flex flex-row justify-start">
                                     <AnimateOnScroll><Image src="/home/avatars/avatar-1.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-10'></Image></AnimateOnScroll>
                                     <AnimateOnScroll><Image src="/home/avatars/avatar-2.jpg" alt="face avatar" width="200" height="200" className='avatar-icon rounded-full mr-[-20px] relative z-20'></Image></AnimateOnScroll>
