@@ -27,6 +27,7 @@ type Location = {
     maori_name?: string
     location_description?: string
     location_image?: number
+    meta_title?: string
     meta_description?: string
     more_information?: {
       heading?: string
@@ -148,7 +149,7 @@ export async function generateMetadata({
   const location = await getLocation(validatedParams.slug)
   
   return {
-    title: `${location.acf.location_name} - Website Design & Development Services | Builtflat`,
+    title: `${location.acf.meta_title}`,
     description: location.acf.meta_description || location.acf.location_description,
   }
 }
