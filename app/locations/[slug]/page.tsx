@@ -213,6 +213,7 @@ export default async function LocationPage({
                             {paragraph}
                         </p>
                     ))}
+                    <Button backgroundColor="--primary-color" textColor="white" className="background-purple mt-4" href="/contact" >Get a Free Consultation / Quote</Button>
                 </div>
                 <div className="w-full lg:w-1/2 rounded-lg overflow-hidden">
                     {acf.location_image && mediaDetails[acf.location_image] && (
@@ -279,6 +280,7 @@ export default async function LocationPage({
                             {paragraph}
                         </p>
                     ))}
+                    <Button backgroundColor="--primary-color" textColor="white" className="background-purple mt-4" href="/contact" >Get a Free Consultation / Quote</Button>
                 </div>
                 <div className="w-full lg:w-1/2 rounded-lg overflow-hidden">
                     {acf.about_us?.about_us_image && mediaDetails[acf.about_us?.about_us_image] && (
