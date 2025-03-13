@@ -240,8 +240,11 @@ export default async function LocationPage({
        <section className="py-12 lg:py-32 border-b border-[#222222] bg-[--dark-background-color]">
             <div className="site-wrapper">
                 <div className="flex flex-col gap-6 max-w-5xl">
-                    <AnimatedText><h4 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white'>We help businesses all across {acf.location_name} succeed in their online endevour</h4></AnimatedText>
-                    <p className='text-[--text-on-dark] text-base md:text-lg'>Builtflat offers a complete range of web services to elevate your digital presence in {acf.location_name}. From cutting-edge design to seamless development and strategic maintenance, we cover all your website needs.</p>
+                    <AnimatedText><h4 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white'>{acf.more_information?.more_information_heading}</h4></AnimatedText>
+                    <p 
+                        className='text-[--text-on-dark] text-base md:text-lg'
+                        dangerouslySetInnerHTML={{ __html: acf.more_information?.more_information_text || '' }}
+                    />
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>
                 </div>
             </div>
