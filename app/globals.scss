@@ -348,6 +348,20 @@ textarea {
   visibility: 0;
 }
 
+.service-info-card_description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 .service-info-card_description a {
   color: var(--primary-color);
 }

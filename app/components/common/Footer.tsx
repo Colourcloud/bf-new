@@ -53,6 +53,7 @@ const Footer = () => {
                                 <li className='text-[#898989] text-base'><Link href="/about">Meet The Team</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/about">Our Story</Link></li>
                                 <li className='text-[#898989] text-base'><Link href="/about">Our Design Mission</Link></li>
+                                <li className='text-[#898989] text-base'><Link href="/locations">Locations we Service</Link></li>
                             </ul>
                         </div>
                         <div className="footer-col flex flex-col gap-6">
