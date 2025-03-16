@@ -173,9 +173,9 @@ export default async function LocationPage({
             <div className="site-wrapper">
                 <div className="header-content flex flex-col spaced-m spaced-p w-full text-left lg:w-4/5">
                 <Link href="/locations" className='text-white font-medium flex flex-row gap-2 items-center'><FaArrowLeftLong /> Back to locations</Link>
-                <div className="header-text flex flex-col">
-                    <h1 className="text-4xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">{acf.more_information?.heading || 'Providing Full Stack Website Services To the Local Area.'}</h1>
-                    <h4 className="text-xl text-white mt-6 lg:text-xl">{acf.more_information?.sub_paragraph}</h4>
+                <div className="header-text flex flex-col mt-6 lg:mt-0">
+                    <h1 className="text-3xl purple-gradient leading-tight font-bold md:text-6xl lg:text-7xl pb-4">{acf.more_information?.heading || 'Providing Full Stack Website Services To the Local Area.'}</h1>
+                    <h4 className="text-base text-white mt-6 lg:text-xl">{acf.more_information?.sub_paragraph}</h4>
                     </div>
                     <div className="header-buttons flex flex-col items-start sm:flex-row gap-6 mt-10">
                     <Button backgroundColor="--primary-color" textColor="white" className="background-purple" href="/contact" >Free Consultation</Button>

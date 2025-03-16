@@ -16,21 +16,21 @@ const Statistics = () => {
                     <div className="text-block w-full md:w-3/4">
                         <AnimatedText><h4 className='text-white font-bold text-4xl md:text-5xl'>We&apos;ve helped New Zealand businesses succeed with their websites</h4></AnimatedText>
                     </div>
-                    <div className="text-block w-full flex flex-row flex-wrap lg:flex-nowrap md:flex-row lg:justify-evenly items-start gap-12">
+                    <div className="text-block w-full flex flex-row flex-wrap lg:flex-nowrap md:flex-row lg:justify-evenly items-start gap-8 md:gap-12">
                         <div className="statistic-block flex flex-col gap-3 w-full lg:w-1/4">
-                        <CountUp target={5} className='purple-gradient font-extrabold text-6xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
+                        <CountUp target={5} className='purple-gradient font-extrabold text-5xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
                             <p className='text-[--text-on-dark] font-medium text-lg'>Years in the industry</p>
                         </div>
                         <div className="statistic-block flex flex-col gap-3 w-full lg:w-1/4">
-                            <CountUp target={47} className='purple-gradient font-extrabold text-6xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
+                            <CountUp target={47} className='purple-gradient font-extrabold text-5xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
                             <p className='text-[--text-on-dark] font-medium text-lg'>Satisfied customers</p>
                         </div>
                         <div className="statistic-block flex flex-col gap-3 w-full lg:w-1/4">
-                            <CountUp target={24000} className='purple-gradient font-extrabold text-6xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
+                            <CountUp target={24000} className='purple-gradient font-extrabold text-5xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
                             <p className='text-[--text-on-dark] font-medium text-lg'>Combined hours of experience</p>
                         </div>
                         <div className="statistic-block flex flex-col gap-3 w-full lg:w-1/4">
-                            <CountUp target={3} className='purple-gradient font-extrabold text-6xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
+                            <CountUp target={3} className='purple-gradient font-extrabold text-5xl md:text-5xl xl:text-7xl border-b-2 border-[#D3C6FF] py-4' />
                             <p className='text-[--text-on-dark] font-medium text-lg'>Countries serviced by us</p>
                         </div>
                     </div>

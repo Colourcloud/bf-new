@@ -96,15 +96,15 @@ const LocationList = async () => {
                         <Link href={`/locations/${location.slug}`} key={location.id}>
                             <div className="location-card border-t border-[#222222] group hover:bg-[#111111] [transition:background-color_0.3s]">
                             <div className="flex flex-col lg:flex-row max-w-[1440px] mx-auto px-4 gap-8 lg:gap-24">
-                                <div className="flex flex-col gap-4 w-full lg:w-1/2 py-12">
-                                    <h6 className='text-2xl md:text-3xl lg:text-4xl font-bold text-[#888888] group-hover:text-white group-hover:scale-105 origin-left [transition:transform_0.5s,color_0.5s]'>
+                                <div className="flex flex-col gap-4 w-full lg:w-1/2 py-6 lg:py-12">
+                                    <h6 className='text-2xl md:text-3xl lg:text-4xl font-bold text-[#888888] lg:group-hover:text-white lg:group-hover:scale-105 origin-left [transition:transform_0.5s,color_0.5s] md:text-white'>
                                         {location.acf?.location_name || location.title.rendered}
                                         {location.acf?.maori_name && (
                                             <span className='text-base md:text-lg lg:text-xl text-[--text-on-dark]'> {location.acf.maori_name}</span>
                                         )}
                                     </h6>
-                                    <div className="location-description overflow-hidden group-hover:max-h-[500px] group-hover:opacity-100 [transition:max-height_0.5s,opacity_0.5s] max-h-0 opacity-0">
-                                        <p className='text-[--text-on-dark] text-base'>
+                                    <div className="location-description lg:overflow-hidden lg:group-hover:max-h-[500px] lg:group-hover:opacity-100 [transition:max-height_0.5s,opacity_0.5s] lg:max-h-0 lg:opacity-0 opacity-100">
+                                        <p className='text-[--text-on-dark] text-base lg:line-clamp-none line-clamp-3'>
                                             {location.acf?.location_description || 'No description available'}
                                         </p>
                                     </div>
@@ -114,7 +114,7 @@ const LocationList = async () => {
                                         <Image 
                                             src={location.imageUrl}
                                             alt={`${location.acf?.location_name || location.title.rendered}, New Zealand`}
-                                            className='absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-[1.2] [transition:transform_0.5s,opacity_0.5s]'
+                                            className='absolute inset-0 w-full h-full object-cover lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:scale-[1.2] [transition:transform_0.5s,opacity_0.5s] opacity-100'
                                             fill
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                             priority
