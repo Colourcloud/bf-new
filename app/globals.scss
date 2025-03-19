@@ -360,6 +360,9 @@ textarea {
     flex-direction: column;
     gap: 0.5rem;
   }
+  b {
+    color: white;
+  }
 }
 
 .service-info-card_description a {
@@ -377,5 +380,8 @@ textarea {
   ul {
     list-style-type: disc;
     list-style-position: inside;
+  }
+  b {
+    color: white;
   }
 }
