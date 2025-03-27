@@ -44,7 +44,7 @@ async function getLocationCategoryId(locationSlug: string, locationName: string)
     
     // First try: exact match with the cleaned location slug
     let res = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/categories?slug=${cleanSlug}`, {
-      next: { revalidate: 3600 }
+      cache: 'no-store'
     })
     
     if (!res.ok) {
@@ -61,7 +61,7 @@ async function getLocationCategoryId(locationSlug: string, locationName: string)
     // Second try: using the location name provided as prop
     if (locationName) {
       res = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/categories?slug=${locationName.toLowerCase()}`, {
-        next: { revalidate: 3600 }
+        cache: 'no-store'
       })
       
       if (res.ok) {
@@ -75,7 +75,7 @@ async function getLocationCategoryId(locationSlug: string, locationName: string)
     
     // Third try: get all location categories and look for a case-insensitive match
     res = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/categories?parent=23`, {
-      next: { revalidate: 3600 }
+      cache: 'no-store'
     })
     
     if (!res.ok) {
@@ -110,8 +110,8 @@ async function getBlogPostsByCategory(categoryId: number): Promise<BlogPost[]> {
   try {
     if (!categoryId) return []
     
-    const res = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/posts?categories=${categoryId}&per_page=3`, {
-      next: { revalidate: 3600 }
+    const res = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/posts?categories=${categoryId}&per_page=10`, {
+      cache: 'no-store'
     })
     
     if (!res.ok) {
@@ -125,7 +125,7 @@ async function getBlogPostsByCategory(categoryId: number): Promise<BlogPost[]> {
     
     if (mediaIds.length > 0) {
       const mediaRes = await fetch(`https://blog.builtflat.co.nz/wp-json/wp/v2/media?include=${mediaIds.join(',')}`, {
-        next: { revalidate: 3600 }
+        cache: 'no-store'
       })
       
       if (mediaRes.ok) {
