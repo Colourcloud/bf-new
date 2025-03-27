@@ -11,6 +11,7 @@ import Portfolio from '@/app/components/common/Portfolio'
 import Clients from '@/app/components/locations/Clients'
 import Reviews from '@/app/components/locations/Reviews'
 import Statistics from '@/app/components/locations/Statistics'
+import LocationBlogPosts from '@/app/components/locations/LocationBlogPosts'
 import {
     Accordion,
     AccordionContent,
@@ -305,6 +306,12 @@ export default async function LocationPage({
             </div>
         </div>
         </section>   
+
+      {/* Blog Posts Section */}
+      <LocationBlogPosts 
+        locationSlug={validatedParams.slug} 
+        locationName={acf.location_name || ''}
+      />
 
       {/* FAQ Section */}
       <section className="location-faq py-12 lg:py-32 bg-[--dark-background-color] border-b border-[#222222]">
