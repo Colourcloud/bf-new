@@ -17,7 +17,7 @@ const Footer = () => {
                             <p className='text-gray-400 font-light text-base'>We make getting online easy for everyone. It shouldn&apos;t be a scary endeavour. We save that for &#127875; Halloween &#127875;</p>
                             <div className="flex flex-col gap-3">
                                 <p className='text-gray-400 font-light text-sm'>Servicing Business in Auckland, Wellington, Christchurch, and the rest of New Zealand.</p>
-                                <a href="tel:+64272888888" className='text-[--primary-color] font-light text-sm'>+64 27 288 8888</a>
+                                <a href="tel:+64223376425" className='text-[--primary-color] font-light text-sm'>+64 22 337 6425</a>
                                 <a href="mailto:hello@builtflat.com" className='text-[--primary-color] font-light text-sm'>hello@builtflat.com</a>
                             </div>
                             
