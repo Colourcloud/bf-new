@@ -6,12 +6,12 @@ export async function POST(request: NextRequest) {
 
   // Create a transporter
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST, // Replace with your SMTP host
-    port: 465, // Common ports are 587, 465 (SSL required), or 25
-    secure: true, // true for 465, false for other ports
+    host: process.env.SMTP_HOST,
+    port: 587,
+    secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_USER, // SMTP username from env file
-      pass: process.env.SMTP_PASS, // SMTP password from env file
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
     },
   });
 
