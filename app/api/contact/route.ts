@@ -138,7 +138,7 @@ export async function POST(request: NextRequest) {
         // Set email data
         const mailData = {
             from: '"Builtflat Contact Submission" <email@builtflat.co.nz>',
-            to: `hello@builtflat.co.nz`,
+            to: ['hello@builtflat.co.nz', 'jaromme@builtflat.co.nz', 'sam@builtflat.co.nz'],
             subject: `Message From ${sanitizedData.name}`,
             text: sanitizedData.message + " | Sent from: " + sanitizedData.email,
             html: htmlContent

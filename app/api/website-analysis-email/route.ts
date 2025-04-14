@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
   // Set email data
   const mailData = {
     from: '"Builtflat Website Analysis Submission" <email@builtflat.co.nz>',
-    to: `hello@builtflat.co.nz`, // You might want to sanitize this email input
+    to: ['hello@builtflat.co.nz', 'jaromme@builtflat.co.nz', 'sam@builtflat.co.nz'],
     subject: `Message From ${formData.name}`,
     text: `${formData.message} | Sent from: ${formData.email}`,
     html: htmlContent
